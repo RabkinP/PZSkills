@@ -1,2 +1,38 @@
-_site/
+# OS files
 .DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local build and cache output
+_site/
+.cache/
+.tmp/
+tmp/
+
+# Local AL packages
+.alpackages/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Test and coverage output
+coverage/
+
+# Miscellaneous local files
+*.log

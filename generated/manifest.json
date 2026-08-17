@@ -34,7 +34,34 @@
   ],
   "uiLanguages": [
     "en",
-    "ru"
+    "ar",
+    "ca",
+    "ch",
+    "cn",
+    "cs",
+    "da",
+    "de",
+    "es",
+    "es_cl",
+    "es_mx",
+    "fi",
+    "fr",
+    "hu",
+    "id",
+    "it",
+    "jp",
+    "ko",
+    "nl",
+    "no",
+    "pl",
+    "pt",
+    "ptbr",
+    "ro",
+    "ru",
+    "strew",
+    "th",
+    "tr",
+    "ua"
   ],
   "sourceHash": "421f8d9e123c1017",
   "counts": {
@@ -44,6 +71,6 @@
   },
   "diagnostics": {
     "unknownMediaCodes": 0,
-    "missingTranslations": 1010
+    "missingTranslations": 0
   }
 }

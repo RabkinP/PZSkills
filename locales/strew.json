@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "name": "Strewberrie",
+    "showEnglishSecondary": true
+  },
+  "ui": {
+    "pageTitleModern": "Strewberrie Collection Tracker",
+    "headingModern": "Project Zomboid Strewberrie Tracker",
+    "filters": "Strewberrie Filters",
+    "status": "Strewberrie Status",
+    "effect": "Strewberrie Effect",
+    "skill": "Strewberrie Skill",
+    "allItems": "All Strewberries",
+    "status_all": "All",
+    "status_missing": "Missing Strewberries",
+    "status_found": "Found Strewberries",
+    "levels": "Strewberrie {from}–{to}",
+    "skillXp": "{skill} +XP",
+    "xpBoost": "{skill} XP",
+    "recipe": "Strewberrie: {recipe}",
+    "recipesCount": "{count} strewberries",
+    "showRecipes": "Show {count} strewberries",
+    "statusIncrease": "{status} +{amount}",
+    "statusDecrease": "{status} {amount}"
+  }
+}

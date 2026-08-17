@@ -61,8 +61,12 @@ async function discoverUiLanguages(languages) {
 }
 
 function translationsForKey(dictionaries, key, fallback = '') {
-  const englishFallback = dictionaries[DEFAULT_LANGUAGE]?.[key] ?? fallback ?? key;
-  return Object.fromEntries(Object.entries(dictionaries).map(([language, dictionary]) => [language, dictionary[key] ?? englishFallback]));
+  const englishValue = dictionaries[DEFAULT_LANGUAGE]?.[key];
+  const englishFallback = typeof englishValue === 'string' && englishValue.trim() ? englishValue : (fallback || key);
+  return Object.fromEntries(Object.entries(dictionaries).map(([language, dictionary]) => {
+    const value = dictionary[key];
+    return [language, typeof value === 'string' && value.trim() ? value : englishFallback];
+  }));
 }
 
 function recipeFamily(itemId) {

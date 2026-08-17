@@ -139,7 +139,7 @@ export function renderPanels(categories, activeCategoryId, state, language) {
     const groups = category.groups.slice().sort((a, b) => groupName(a, language).localeCompare(groupName(b, language), language, { sensitivity: 'base' }));
     groups.forEach((group) => section.appendChild(renderGroup(category, group, state, language)));
 
-    const notes = getLocale(language)?.categoryNotes?.[category.id] ?? [];
+    const notes = getLocale(language)?.categoryNotes?.[category.id] ?? getLocale('en')?.categoryNotes?.[category.id] ?? [];
     const englishNotes = getLocale('en')?.categoryNotes?.[category.id] ?? [];
     if (notes.length) {
       const footer = document.createElement('footer');

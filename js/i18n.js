@@ -91,6 +91,11 @@ export function dictionaryValue(language, section, key) {
   return locale?.[section]?.[key] ?? locales[DEFAULT_LANGUAGE]?.[section]?.[key] ?? key;
 }
 
+
+export function getLocaleDirection(language) {
+  return getLocale(language)?.meta?.direction === 'rtl' ? 'rtl' : 'ltr';
+}
+
 export function languageName(language) {
   if (locales[language]?.meta?.name) return locales[language].meta.name;
 

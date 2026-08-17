@@ -128,3 +128,16 @@ When `showEnglishSecondary` is enabled, localized catalog names can display the 
 Replace the copied files under `gamedata/`, then rebuild the generated catalog. The parser is deliberately strict around important source structures so that an incompatible game-data change fails the build instead of silently publishing an incomplete catalog.
 
 The included GitHub Pages workflow rebuilds, validates, and deploys the site on push.
+
+## UI localization
+
+The site UI is localized independently from Project Zomboid item/media translations.
+
+- Game translations live in `gamedata/translate/<GAME_LANGUAGE>/`.
+- Website UI translations live in `locales/<language>.json`.
+- Locale files may be partial. Missing UI dictionary keys fall back to `locales/en.json`.
+- `meta.name` controls the language name shown in the selector.
+- `meta.showEnglishSecondary` controls whether English item names are shown below the selected game translation.
+- `meta.direction: "rtl"` enables right-to-left layout for languages such as Arabic.
+
+`scripts/check.mjs` reports UI-key coverage for every enabled locale and verifies that all generated catalog items contain every game language listed in the manifest.

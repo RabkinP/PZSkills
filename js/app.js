@@ -1,6 +1,6 @@
 import { effectChips, groupLabel, itemSearchText, normalizeCatalog, recipeName } from './catalog.js';
 import { filterItems, sortItems } from './filters.js';
-import { dictionaryValue, englishSecondary, getSupportedLanguages, languageName, loadLocales, localized, normalizeLanguage, t } from './i18n.js';
+import { dictionaryValue, englishSecondary, getLocaleDirection, getSupportedLanguages, languageName, loadLocales, localized, normalizeLanguage, t } from './i18n.js';
 import { createEmptyState, exportState, importState, loadState, saveState } from './state.js';
 import { downloadJson, escapeHtml, showToast } from './utils.js';
 
@@ -42,6 +42,7 @@ function setSelectOptions(selectId, options, selected) {
 function renderStaticUi() {
   const lang = currentLanguage();
   document.documentElement.lang = lang;
+  document.documentElement.dir = getLocaleDirection(lang);
   document.title = t(lang, 'pageTitleModern');
   document.getElementById('pageHeading').textContent = t(lang, 'headingModern');
   document.getElementById('globalSearch').placeholder = t(lang, 'searchPlaceholder');
