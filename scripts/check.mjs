@@ -1,8 +1,44 @@
 import { access, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { ALLOWED_UNRESOLVED_RECIPE_REFERENCES } from './config.mjs';
+import { parseItemsFile } from './lib/items-parser.mjs';
+import { parseRecordedMedia } from './lib/media-parser.mjs';
 
 const root = process.cwd();
+
+function assertParserRegressionChecks() {
+  const itemFixture = `module Base
+{
+ item TestItem // trailing comment
+ {
+  DisplayCategory = SkillBook, // property comment
+ }
+}`;
+  const parsedItems = parseItemsFile(itemFixture);
+  if (parsedItems.length !== 1 || parsedItems[0].id !== 'TestItem') {
+    throw new Error('Item parser regression: trailing comments are no longer supported');
+  }
+
+  let malformedItemRejected = false;
+  try { parseItemsFile('item TestItem unexpected\n{\n}'); } catch { malformedItemRejected = true; }
+  if (!malformedItemRejected) throw new Error('Item parser regression: malformed declarations must fail explicitly');
+
+  const mediaFixture = `RecMedia = RecMedia or {}
+RecMedia["test-guid"]={
+ lines={ { text="brace } inside string", codes="CRP-1" } },
+ category="Retail-VHS"
+} ;`;
+  const parsedMedia = parseRecordedMedia(mediaFixture);
+  if (parsedMedia.length !== 1 || parsedMedia[0].guid !== 'test-guid' || parsedMedia[0].codes[0] !== 'CRP-1') {
+    throw new Error('Recorded-media parser regression: flexible table formatting is no longer supported');
+  }
+
+  let unterminatedMediaRejected = false;
+  try { parseRecordedMedia('RecMedia["bad"] = { category="Retail-VHS"'); } catch { unterminatedMediaRejected = true; }
+  if (!unterminatedMediaRejected) throw new Error('Recorded-media parser regression: unterminated tables must fail explicitly');
+}
+
+assertParserRegressionChecks();
 const required = [
   'generated/manifest.json',
   'generated/books.json',
@@ -21,6 +57,26 @@ if (!manifest.languages.includes('en')) throw new Error('English game locale is 
 if (!manifest.uiLanguages?.includes('en')) throw new Error('English UI locale is required');
 if (manifest.counts.books <= 0 || manifest.counts.recipeSources <= 0 || manifest.counts.vhs <= 0) {
   throw new Error('Generated catalog is unexpectedly empty');
+}
+
+const catalogs = {
+  books: await readJson('generated/books.json'),
+  recipeSources: await readJson('generated/recipe-sources.json'),
+  vhs: await readJson('generated/vhs.json')
+};
+for (const [category, catalog] of Object.entries(catalogs)) {
+  const actualCount = (catalog.groups ?? []).reduce((sum, group) => sum + (group.items ?? []).length, 0);
+  if (manifest.counts?.[category] !== actualCount) {
+    throw new Error(`Manifest count mismatch for '${category}': manifest=${manifest.counts?.[category]}, actual=${actualCount}`);
+  }
+}
+
+for (const [domain, files] of Object.entries(manifest.diagnostics?.localizationDomains ?? {})) {
+  for (const language of manifest.languages) {
+    if (!files?.[language]) {
+      throw new Error(`Localization domain '${domain}' is unresolved for published language '${language}'`);
+    }
+  }
 }
 
 const english = await readJson('locales/en.json');

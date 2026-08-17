@@ -71,7 +71,7 @@
   },
   "diagnostics": {
     "unknownMediaCodes": 0,
-    "missingTranslations": 8275,
+    "missingTranslations": 6977,
     "duplicateTranslationKeys": 1514,
     "ambiguousTranslationKeys": 761,
     "recipeResolution": {

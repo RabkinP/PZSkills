@@ -15,6 +15,12 @@ export function recipeName(recipe, language) {
   return gameDictionaryValue(language, 'recipes', recipe) || recipe;
 }
 
+export function itemRecipes(item) {
+  return item.recipes ?? (item.effects ?? [])
+    .filter((effect) => effect.type === 'recipe')
+    .map((effect) => effect.recipe);
+}
+
 export function groupLabel(group, language) {
   if (!group) return '';
   if (group.kind === 'skill') return skillName(group.key, language);
@@ -26,8 +32,8 @@ export function groupLabel(group, language) {
 
 export function normalizeCatalog(categories) {
   const items = [];
-  for (const category of categories) {
-    for (const group of category.groups) {
+  for (const [categoryOrder, category] of categories.entries()) {
+    for (const [sourceGroupOrder, group] of category.groups.entries()) {
       for (const item of group.items) {
         const skills = new Set();
         if (item.skill) skills.add(item.skill);
@@ -43,7 +49,17 @@ export function normalizeCatalog(categories) {
           else if (effect.type === 'status') effectTypes.add('other');
         }
 
-        items.push({ ...item, categoryId: category.id, categoryIcon: category.icon, sourceGroup: group, skills: [...skills], effectTypes: [...effectTypes], key: makeItemKey(category.id, item.id) });
+        items.push({
+          ...item,
+          categoryId: category.id,
+          categoryIcon: category.icon,
+          categoryOrder,
+          sourceGroup: group,
+          sourceGroupOrder,
+          skills: [...skills],
+          effectTypes: [...effectTypes],
+          key: makeItemKey(category.id, item.id)
+        });
       }
     }
   }
@@ -53,7 +69,7 @@ export function normalizeCatalog(categories) {
 export function itemSearchText(item, language) {
   const parts = [item.id, item.sourceId, ...Object.values(item.names ?? {}), ...item.skills, ...item.effectTypes];
   for (const skill of item.skills) for (const lang of getSupportedLanguages()) parts.push(skillName(skill, lang));
-  for (const recipe of item.recipes ?? []) for (const lang of getSupportedLanguages()) parts.push(recipe, recipeName(recipe, lang));
+  for (const recipe of itemRecipes(item)) for (const lang of getSupportedLanguages()) parts.push(recipe, recipeName(recipe, lang));
   for (const effect of item.effects ?? []) parts.push(effect.type, effect.skill, effect.recipe, effect.status, effect.code);
   parts.push(groupLabel(item.sourceGroup, language));
   return parts.filter(Boolean).join(' ').toLowerCase();
@@ -69,7 +85,7 @@ export function effectChips(item, language) {
     const hasXp = (item.effects ?? []).some((effect) => effect.type === 'skillXp' && effect.skill === skill);
     if (hasXp) chips.push({ type: 'xp', text: t(language, 'skillXp', { skill: skillName(skill, language) }) });
   }
-  const recipes = item.recipes ?? (item.effects ?? []).filter((effect) => effect.type === 'recipe').map((effect) => effect.recipe);
+  const recipes = itemRecipes(item);
   if (recipes.length) chips.push({ type: 'recipe', text: t(language, 'recipesCount', { count: recipes.length }) });
   for (const effect of item.effects ?? []) {
     if (effect.type !== 'status') continue;

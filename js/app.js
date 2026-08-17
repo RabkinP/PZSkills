@@ -1,4 +1,4 @@
-import { effectChips, groupLabel, itemSearchText, normalizeCatalog, recipeName, skillName } from './catalog.js';
+import { effectChips, groupLabel, itemRecipes, itemSearchText, normalizeCatalog, recipeName, skillName } from './catalog.js';
 import { filterItems, sortItems } from './filters.js';
 import { dictionaryValue, englishSecondary, getLocaleDirection, getSupportedLanguages, languageName, loadGameDictionaries, loadLocales, localized, normalizeLanguage, t } from './i18n.js';
 import { createEmptyState, exportState, importState, loadState, saveState } from './state.js';
@@ -96,20 +96,35 @@ function renderCategories() {
 function groupKeyFor(item) {
   const grouping = state.settings.grouping;
   const lang = currentLanguage();
-  if (grouping === 'none') return { key: 'all', label: '' };
+  if (grouping === 'none') return { key: 'all', label: '', order: 0 };
   if (grouping === 'skill') {
     const skill = item.skills[0];
-    return skill ? { key: `skill:${skill}`, label: skillName(skill, lang) } : { key: 'skill:other', label: t(lang, 'other') };
+    return skill
+      ? { key: `skill:${skill}`, label: skillName(skill, lang), order: 0 }
+      : { key: 'skill:other', label: t(lang, 'other'), order: 1 };
   }
   if (grouping === 'effect') {
     const type = item.effectTypes.includes('xp') ? 'xp' : item.effectTypes.includes('recipe') ? 'recipe' : 'other';
-    return { key: `effect:${type}`, label: type === 'xp' ? t(lang, 'effectXp') : type === 'recipe' ? t(lang, 'effectRecipe') : t(lang, 'effectOther') };
+    const order = { xp: 0, recipe: 1, other: 2 }[type];
+    return { key: `effect:${type}`, label: type === 'xp' ? t(lang, 'effectXp') : type === 'recipe' ? t(lang, 'effectRecipe') : t(lang, 'effectOther'), order };
   }
   if (grouping === 'type' || (grouping === 'default' && filters.category === 'all')) {
-    return { key: `type:${item.categoryId}`, label: dictionaryValue(lang, 'categories', item.categoryId) };
+    return { key: `type:${item.categoryId}`, label: dictionaryValue(lang, 'categories', item.categoryId), order: item.categoryOrder };
   }
-  if (grouping === 'default') return { key: item.sourceGroup.id, label: groupLabel(item.sourceGroup, lang) };
-  return { key: 'all', label: '' };
+  if (grouping === 'default') {
+    return { key: item.sourceGroup.id, label: groupLabel(item.sourceGroup, lang), order: item.sourceGroupOrder };
+  }
+  return { key: 'all', label: '', order: 0 };
+}
+
+function compareGroups(a, b, language) {
+  const grouping = state.settings.grouping;
+  if (grouping === 'skill') {
+    if (a.order !== b.order) return a.order - b.order;
+    return a.label.localeCompare(b.label, language, { numeric: true, sensitivity: 'base' });
+  }
+  if (a.order !== b.order) return a.order - b.order;
+  return a.label.localeCompare(b.label, language, { numeric: true, sensitivity: 'base' });
 }
 
 function renderItem(item) {
@@ -118,7 +133,7 @@ function renderItem(item) {
   const primary = localized(item.names, lang);
   const secondary = englishSecondary(item.names, lang);
   const chips = effectChips(item, lang).map((chip) => `<span class="meta-chip ${chip.type}">${escapeHtml(chip.text)}</span>`).join('');
-  const recipes = item.recipes ?? (item.effects ?? []).filter((effect) => effect.type === 'recipe').map((effect) => effect.recipe);
+  const recipes = itemRecipes(item);
   const recipeDetails = recipes.length ? `<details class="recipe-details"><summary>${escapeHtml(t(lang, 'showRecipes', { count: recipes.length }))}</summary><ul class="recipe-list">${recipes.map((recipe) => `<li>${escapeHtml(recipeName(recipe, lang))}</li>`).join('')}</ul></details>` : '';
   return `<label class="item-card${found ? ' found' : ''}" data-item-key="${escapeHtml(item.key)}">
     <input class="item-check" type="checkbox" data-key="${escapeHtml(item.key)}"${found ? ' checked' : ''}>
@@ -138,11 +153,12 @@ function renderResults() {
   const groups = new Map();
   for (const item of sorted) {
     const descriptor = groupKeyFor(item);
-    if (!groups.has(descriptor.key)) groups.set(descriptor.key, { label: descriptor.label, items: [] });
+    if (!groups.has(descriptor.key)) groups.set(descriptor.key, { ...descriptor, items: [] });
     groups.get(descriptor.key).items.push(item);
   }
 
-  const html = [...groups.values()].map((group) => {
+  const orderedGroups = [...groups.values()].sort((a, b) => compareGroups(a, b, lang));
+  const html = orderedGroups.map((group) => {
     if (state.settings.grouping === 'none') return group.items.map(renderItem).join('');
     const foundCount = group.items.filter((item) => state.found[item.key]).length;
     const secondaryLabel = lang !== 'en' ? (() => {
@@ -187,6 +203,10 @@ function persistView() { state.settings.activeCategory = filters.category; state
 function resetTransientFilters() { filters.skills.clear(); filters.effects.clear(); filters.status = 'all'; filters.query = ''; document.getElementById('globalSearch').value = ''; persistView(); }
 function closeDrawer() { document.getElementById('filtersPanel').classList.remove('open'); document.getElementById('drawerBackdrop').hidden = true; }
 function openDrawer() { document.getElementById('filtersPanel').classList.add('open'); document.getElementById('drawerBackdrop').hidden = false; }
+function closeActionMenu() {
+  document.getElementById('actionMenu').hidden = true;
+  document.getElementById('menuBtn').setAttribute('aria-expanded', 'false');
+}
 
 function sanitizeImportedState(imported) {
   const allowed = new Set(allItems.map((item) => item.key));
@@ -212,11 +232,33 @@ function attachEvents() {
     if (clear) { if (clear.dataset.clear === 'skills') filters.skills.clear(); else if (clear.dataset.clear === 'effects') filters.effects.clear(); else resetTransientFilters(); renderAll(); return; }
     const remove = event.target.closest('[data-remove-kind]');
     if (remove) { if (remove.dataset.removeKind === 'skill') filters.skills.delete(remove.dataset.removeValue); if (remove.dataset.removeKind === 'effect') filters.effects.delete(remove.dataset.removeValue); if (remove.dataset.removeKind === 'status') filters.status = 'all'; persistView(); renderAll(); return; }
-    if (event.target.id === 'menuBtn') { const menu = document.getElementById('actionMenu'); menu.hidden = !menu.hidden; event.target.setAttribute('aria-expanded', String(!menu.hidden)); return; }
-    if (!event.target.closest('.header-actions')) document.getElementById('actionMenu').hidden = true;
-    if (event.target.id === 'exportBtn') { downloadJson(exportState(state), 'pz-checklist-progress.json'); showToast(t(currentLanguage(), 'progressExported')); }
-    if (event.target.id === 'importBtn') document.getElementById('importFileInput').click();
-    if (event.target.id === 'resetAllBtn' && confirm(t(currentLanguage(), 'resetConfirm'))) { const lang = state.settings.language; state = createEmptyState(); state.settings.language = lang; filters = { query: '', category: 'all', status: 'all', skills: new Set(), effects: new Set() }; saveState(state); renderAll(); }
+    if (event.target.id === 'menuBtn') {
+      const menu = document.getElementById('actionMenu');
+      menu.hidden = !menu.hidden;
+      event.target.setAttribute('aria-expanded', String(!menu.hidden));
+      return;
+    }
+    if (!event.target.closest('.header-actions')) closeActionMenu();
+    if (event.target.id === 'exportBtn') {
+      closeActionMenu();
+      downloadJson(exportState(state), 'pz-checklist-progress.json');
+      showToast(t(currentLanguage(), 'progressExported'));
+    }
+    if (event.target.id === 'importBtn') {
+      closeActionMenu();
+      document.getElementById('importFileInput').click();
+    }
+    if (event.target.id === 'resetAllBtn') {
+      closeActionMenu();
+      if (confirm(t(currentLanguage(), 'resetConfirm'))) {
+        const lang = state.settings.language;
+        state = createEmptyState();
+        state.settings.language = lang;
+        filters = { query: '', category: 'all', status: 'all', skills: new Set(), effects: new Set() };
+        saveState(state);
+        renderAll();
+      }
+    }
     if (event.target.id === 'mobileFiltersBtn') openDrawer();
     if (event.target.id === 'closeFiltersBtn' || event.target.id === 'drawerBackdrop') closeDrawer();
     if (event.target.id === 'expandCollapseBtn') { allExpanded = !allExpanded; document.querySelectorAll('.catalog-group').forEach((group) => { group.open = allExpanded; }); document.getElementById('expandCollapseBtn').textContent = t(currentLanguage(), allExpanded ? 'collapseAll' : 'expandAll'); }
@@ -233,7 +275,16 @@ function attachEvents() {
   });
 
   document.getElementById('globalSearch').addEventListener('input', (event) => { filters.query = event.target.value; renderResults(); });
-  document.addEventListener('keydown', (event) => { if (event.key === '/' && !/INPUT|TEXTAREA|SELECT/.test(document.activeElement?.tagName)) { event.preventDefault(); document.getElementById('globalSearch').focus(); } if (event.key === 'Escape') closeDrawer(); });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === '/' && !/INPUT|TEXTAREA|SELECT/.test(document.activeElement?.tagName)) {
+      event.preventDefault();
+      document.getElementById('globalSearch').focus();
+    }
+    if (event.key === 'Escape') {
+      closeDrawer();
+      closeActionMenu();
+    }
+  });
 }
 
 async function init() {

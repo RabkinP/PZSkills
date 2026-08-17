@@ -86,8 +86,13 @@ function discoverDomainFiles(indexes, languages, anchors, domainName, { required
   const referenceKeys = indexes[DEFAULT_LANGUAGE].keysInFile(englishFile);
   for (const language of languages) {
     if (language === DEFAULT_LANGUAGE) continue;
-    files[language] = indexes[language].findDomainFile(anchors)
-      ?? indexes[language].findDomainFileByExactOverlap(referenceKeys);
+    const anchored = indexes[language].findDomainFile(anchors);
+    const overlapped = anchored ? null : indexes[language].findDomainFileByExactOverlap(referenceKeys);
+    const resolved = anchored ?? overlapped;
+    if (!resolved && required) {
+      throw new Error(`Could not identify '${domainName}' localization domain for language '${language}' using exact anchors or exact-key overlap`);
+    }
+    files[language] = resolved;
   }
   return files;
 }
@@ -174,35 +179,46 @@ function buildRecipeSources(items, translated) {
 }
 
 function buildVhs(records, translated) {
-  const relevant = records.filter((record) => ['Retail-VHS', 'Home-VHS'].includes(record.category)).map((record) => {
-    const effects = dedupeEffects(record.codes.map(parseMediaCode));
-    return { record, effects };
-  }).filter(({ record, effects }) => {
-    const hasChecklistEffect = effects.some((effect) => effect.type === 'skillXp' || effect.type === 'recipe');
-    const englishName = record.itemDisplayNameKey
-      ? translated('media', record.itemDisplayNameKey, record.guid, `media:${record.guid}`).en
-      : '';
-    return hasChecklistEffect || englishName === 'VHS: The Dog Goblin';
-  });
+  const candidates = records
+    .filter((record) => ['Retail-VHS', 'Home-VHS'].includes(record.category))
+    .map((record) => {
+      const effects = dedupeEffects(record.codes.map(parseMediaCode));
+      const names = record.itemDisplayNameKey
+        ? translated('media', record.itemDisplayNameKey, record.guid, `media:${record.guid}`)
+        : {};
+      return { record, effects, names };
+    });
+
+  const relevant = candidates
+    .filter(({ effects, names }) => {
+      const hasChecklistEffect = effects.some((effect) => effect.type === 'skillXp' || effect.type === 'recipe');
+      return hasChecklistEffect || names.en === 'VHS: The Dog Goblin';
+    })
+    .map((entry) => ({
+      ...entry,
+      titleNames: entry.record.titleKey
+        ? translated('media', entry.record.titleKey, entry.record.titleKey, `media-title:${entry.record.titleKey}`)
+        : null
+    }));
 
   const retailSeriesCounts = new Map();
-  for (const { record } of relevant) {
+  for (const { record, titleNames } of relevant) {
     if (record.category !== 'Retail-VHS') continue;
-    const title = record.titleKey ? translated('media', record.titleKey, record.titleKey, `media-title:${record.titleKey}`).en : 'Other';
+    const title = titleNames?.en ?? 'Other';
     retailSeriesCounts.set(title, (retailSeriesCounts.get(title) ?? 0) + 1);
   }
 
   const groups = new Map();
-  for (const { record, effects } of relevant) {
+  for (const { record, effects, names, titleNames } of relevant) {
     let groupKey;
     let groupNames = null;
     if (record.category === 'Home-VHS') {
       groupKey = 'home';
     } else {
-      const englishTitle = record.titleKey ? translated('media', record.titleKey, record.titleKey, `media-title:${record.titleKey}`).en : 'Other';
+      const englishTitle = titleNames?.en ?? 'Other';
       if ((retailSeriesCounts.get(englishTitle) ?? 0) > 1) {
         groupKey = `series:${englishTitle}`;
-        groupNames = translated('media', record.titleKey, englishTitle, `media-title:${record.titleKey}`);
+        groupNames = titleNames;
       } else {
         groupKey = 'retail-other';
       }
@@ -216,7 +232,6 @@ function buildVhs(records, translated) {
       items: []
     };
 
-    const names = translated('media', record.itemDisplayNameKey, record.guid, `media:${record.guid}`);
     const legacyId = names.en || `VHS:${record.guid}`;
     group.items.push({
       id: legacyId,
