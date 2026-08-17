@@ -19,24 +19,50 @@ const hash = (value) => createHash('sha256').update(value).digest('hex').slice(0
 async function discoverLanguages() {
   const entries = await readdir(path.join(gameDataDir, 'translate'), { withFileTypes: true });
   const languages = [];
+
   for (const entry of entries) {
     if (!entry.isDirectory()) continue;
-    const code = entry.name.toLowerCase();
+
+    // Keep the real directory name for filesystem access. Project Zomboid uses
+    // mixed/upper-case locale directories, while the website uses normalized
+    // lower-case language identifiers. Linux paths are case-sensitive.
+    const sourceDir = entry.name;
+    const code = sourceDir.toLowerCase();
+
     try {
-      await readFile(path.join(gameDataDir, 'translate', code, 'ItemName.json'));
-      await readFile(path.join(gameDataDir, 'translate', code, 'Recorded_Media.json'));
-      await readFile(path.join(localesDir, `${code}.json`));
-      languages.push(code);
+      await readFile(path.join(gameDataDir, 'translate', sourceDir, 'ItemName.json'));
+      await readFile(path.join(gameDataDir, 'translate', sourceDir, 'Recorded_Media.json'));
+      languages.push({ code, sourceDir });
     } catch {
-      console.warn(`Skipping language '${code}': game translations or locales/${code}.json are incomplete.`);
+      console.warn(`Skipping language '${sourceDir}': ItemName.json or Recorded_Media.json is missing.`);
     }
   }
-  if (!languages.includes(DEFAULT_LANGUAGE)) throw new Error(`Default language '${DEFAULT_LANGUAGE}' is unavailable`);
-  return languages.sort((a, b) => (a === DEFAULT_LANGUAGE ? -1 : b === DEFAULT_LANGUAGE ? 1 : a.localeCompare(b)));
+
+  if (!languages.some(({ code }) => code === DEFAULT_LANGUAGE)) {
+    throw new Error(`Default language '${DEFAULT_LANGUAGE}' is unavailable`);
+  }
+
+  return languages.sort((a, b) => (
+    a.code === DEFAULT_LANGUAGE ? -1
+      : b.code === DEFAULT_LANGUAGE ? 1
+        : a.code.localeCompare(b.code)
+  ));
+}
+
+async function discoverUiLanguages(languages) {
+  const entries = await readdir(localesDir, { withFileTypes: true });
+  const available = new Set(
+    entries
+      .filter((entry) => entry.isFile() && entry.name.toLowerCase().endsWith('.json'))
+      .map((entry) => entry.name.slice(0, -5).toLowerCase())
+  );
+
+  return languages.filter((language) => available.has(language));
 }
 
 function translationsForKey(dictionaries, key, fallback = '') {
-  return Object.fromEntries(Object.entries(dictionaries).map(([language, dictionary]) => [language, dictionary[key] ?? (fallback || key)]));
+  const englishFallback = dictionaries[DEFAULT_LANGUAGE]?.[key] ?? fallback ?? key;
+  return Object.fromEntries(Object.entries(dictionaries).map(([language, dictionary]) => [language, dictionary[key] ?? englishFallback]));
 }
 
 function recipeFamily(itemId) {
@@ -205,7 +231,10 @@ function validate(catalog, languages) {
 }
 
 await mkdir(outputDir, { recursive: true });
-const languages = await discoverLanguages();
+const discoveredLanguages = await discoverLanguages();
+const languages = discoveredLanguages.map(({ code }) => code);
+const languageSourceDirs = Object.fromEntries(discoveredLanguages.map(({ code, sourceDir }) => [code, sourceDir]));
+const uiLanguages = await discoverUiLanguages(languages);
 const literatureText = await readFile(path.join(gameDataDir, 'items', 'literature.txt'), 'utf8');
 const mediaText = await readFile(path.join(gameDataDir, 'recorded_media.lua'), 'utf8');
 const normalItemsText = await readFile(path.join(gameDataDir, 'items', 'normal.txt'), 'utf8');
@@ -221,8 +250,9 @@ if (!/item\s+VHS_Retail\b/.test(normalItemsText) || !/item\s+VHS_Home\b/.test(no
 const itemNames = {};
 const mediaNames = {};
 for (const language of languages) {
-  itemNames[language] = await readJson(path.join(gameDataDir, 'translate', language, 'ItemName.json'));
-  mediaNames[language] = await readJson(path.join(gameDataDir, 'translate', language, 'Recorded_Media.json'));
+  const sourceDir = languageSourceDirs[language];
+  itemNames[language] = await readJson(path.join(gameDataDir, 'translate', sourceDir, 'ItemName.json'));
+  mediaNames[language] = await readJson(path.join(gameDataDir, 'translate', sourceDir, 'Recorded_Media.json'));
 }
 
 
@@ -250,6 +280,7 @@ await writeJson(path.join(outputDir, 'manifest.json'), {
   schemaVersion: 1,
   defaultLanguage: DEFAULT_LANGUAGE,
   languages,
+  uiLanguages,
   sourceHash: hash(literatureText + mediaText + normalItemsText),
   counts: Object.fromEntries(catalog.map((category) => [category.id, category.groups.reduce((sum, group) => sum + group.items.length, 0)])),
   diagnostics: {

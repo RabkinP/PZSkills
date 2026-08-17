@@ -3,6 +3,37 @@
   "defaultLanguage": "en",
   "languages": [
     "en",
+    "ar",
+    "ca",
+    "ch",
+    "cn",
+    "cs",
+    "da",
+    "de",
+    "es",
+    "es_cl",
+    "es_mx",
+    "fi",
+    "fr",
+    "hu",
+    "id",
+    "it",
+    "jp",
+    "ko",
+    "nl",
+    "no",
+    "pl",
+    "pt",
+    "ptbr",
+    "ro",
+    "ru",
+    "strew",
+    "th",
+    "tr",
+    "ua"
+  ],
+  "uiLanguages": [
+    "en",
     "ru"
   ],
   "sourceHash": "421f8d9e123c1017",
@@ -13,6 +44,6 @@
   },
   "diagnostics": {
     "unknownMediaCodes": 0,
-    "missingTranslations": 0
+    "missingTranslations": 1010
   }
 }

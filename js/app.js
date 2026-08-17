@@ -18,7 +18,7 @@ async function loadData() {
     if (!response.ok) throw new Error('Could not load generated/manifest.json');
     return response.json();
   });
-  await loadLocales(manifest.languages);
+  await loadLocales(manifest.languages, manifest.uiLanguages);
   categories = await Promise.all(['books.json', 'recipe-sources.json', 'vhs.json'].map(async (file) => {
     const response = await fetch(`./generated/${file}`);
     if (!response.ok) throw new Error(`Could not load generated/${file}`);

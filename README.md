@@ -106,9 +106,11 @@ Site UI text comes from:
 locales/<language>.json
 ```
 
-A language becomes available when the build finds both required game translation files and the matching site locale file. JavaScript changes are not required for an additional language.
+A language becomes available whenever the build finds both required game translation files. Project Zomboid locale directory names are matched case-insensitively, so directories such as `DE`, `ES_MX`, and `PTBR` are supported without renaming them.
 
-`locales/<language>.json` can set:
+A matching `locales/<language>.json` file is optional. If it is missing, the website UI falls back to English while catalog names still use the selected game translation. Missing individual game translation strings also fall back to their English game values. JavaScript changes are not required for an additional language.
+
+`locales/<language>.json` can optionally set:
 
 ```json
 {
