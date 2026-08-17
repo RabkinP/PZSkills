@@ -1,0 +1,14 @@
+{
+    "Attributes_Type_None": "Ingen",
+    "Attributes_Type_Quality": "Kvalitet",
+    "Attributes_Type_Durability": "Holdbarhed",
+    "Attributes_Type_WoodWetness": "Træfugtighed",
+    "Attributes_Type_Uses": "Funktioner",
+    "Attributes_Type_DurabilityOnUse": "Holdbarhed ved brug",
+    "Attributes_Type_CraftedBy": "Fremstillet Af",
+    "Attributes_Type_MetalType": "Type Af Metal",
+    "Attributes_Type_WoodType": "Type Af Træ",
+    "Attributes_Type_ContainsWood": "Indeholder Træ",
+    "Attributes_Type_ContainsMetal": "Indeholder Metal",
+    "Attributes_TooltipOverride_Durability": "Holdbarhed ved brug"
+}

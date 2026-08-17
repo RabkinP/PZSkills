@@ -1,0 +1,22 @@
+{
+    "MultiStageBuild_CreateWoodenWall_1": "Hacer Pared de Madera Endeble",
+    "MultiStageBuild_UpgradeWoodenWall_1To2": "Mejorar Pared de Madera",
+    "MultiStageBuild_CreateWoodenWall_2": "Hacer Pared de Madera",
+    "MultiStageBuild_UpgradeWoodenWall_1To3": "Mejorar a Pared de Madera Firme",
+    "MultiStageBuild_UpgradeWoodenWall_2To3": "Mejorar a Pared de Madera Firme",
+    "MultiStageBuild_CreateWoodenWall_3": "Hacer Pared de Madera Firme",
+    "MultiStageBuild_CreateWoodenWindow_1": "Hacer Ventana de Madera Endeble",
+    "MultiStageBuild_UpgradeWoodenWindow_1To2": "Mejorar a Ventana de Madera",
+    "MultiStageBuild_CreateWoodenWindow_2": "Hacer Ventana de Madera",
+    "MultiStageBuild_UpgradeWoodenWindow_1To3": "Mejorar a Ventana de Madera Firme",
+    "MultiStageBuild_UpgradeWoodenWindow_2To3": "Mejorar a Ventana de Madera Firme",
+    "MultiStageBuild_CreateWoodenWindow_3": "Hacer Ventana de Madera Firme",
+    "MultiStageBuild_CreateMetalWall_1": "Hacer Pared de Metal",
+    "MultiStageBuild_UpgradeMetalWall_1To2": "Mejorar a Pared de Metal Firme",
+    "MultiStageBuild_CreateMetalWall_2": "Hacer",
+    "MultiStageBuild_CreateMetalWindow_1": "Hacer Ventana de Metal",
+    "MultiStageBuild_UpgradeMetalWindow_1To2": "Mejorar a Ventana de Metal Firme",
+    "MultiStageBuild_CreateMetalWindow_2": "Hacer Ventana de Metal Firme",
+    "MultiStageBuild_UpgradeWoodenDoorFrame_1To2": "Mejorar a Marco de Puerta Estable",
+    "MultiStageBuild_UpgradeWoodenDoorFrame_2To3": "Mejorar a Marco de Puerta Firme"
+}

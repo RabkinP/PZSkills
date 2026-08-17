@@ -1,0 +1,14 @@
+{
+    "Attributes_Type_None": "Tidak ada",
+    "Attributes_Type_Quality": "Kualitas",
+    "Attributes_Type_Durability": "Daya Tahan",
+    "Attributes_Type_WoodWetness": "Kelembapan Kayu",
+    "Attributes_Type_Uses": "Memakai",
+    "Attributes_Type_DurabilityOnUse": "Ketahanan Saat Digunakan",
+    "Attributes_Type_CraftedBy": "Dibuat Oleh",
+    "Attributes_Type_MetalType": "Tipe Logam",
+    "Attributes_Type_WoodType": "Tipe Kayu",
+    "Attributes_Type_ContainsWood": "Mengandung Kayu",
+    "Attributes_Type_ContainsMetal": "Mengandung Logam",
+    "Attributes_TooltipOverride_Durability": "Sisa Pemakaian"
+}

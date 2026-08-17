@@ -1,0 +1,13 @@
+{
+    "BODYPART_PELVIS": "Pánev",
+    "BODYPART_SPINE": "Páteř",
+    "BODYPART_HEAD": "Hlava",
+    "BODYPART_LEFT_UPPER_LEG": "Levé stehno",
+    "BODYPART_LEFT_LOWER_LEG": "Levé lýtko",
+    "BODYPART_RIGHT_UPPER_LEG": "Pravé stehno",
+    "BODYPART_RIGHT_LOWER_LEG": "Pravé lýtko",
+    "BODYPART_LEFT_UPPER_ARM": "Levé nadloktí",
+    "BODYPART_LEFT_LOWER_ARM": "Levé předloktí",
+    "BODYPART_RIGHT_UPPER_ARM": "Pravé nadloktí",
+    "BODYPART_RIGHT_LOWER_ARM": "Pravé předloktí"
+}

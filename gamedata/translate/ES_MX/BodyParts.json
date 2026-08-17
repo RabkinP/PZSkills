@@ -1,0 +1,13 @@
+{
+    "BODYPART_PELVIS": "Pelvis",
+    "BODYPART_SPINE": "Columna vertebral",
+    "BODYPART_HEAD": "Cabeza",
+    "BODYPART_LEFT_UPPER_LEG": "Muslo izquierdo",
+    "BODYPART_RIGHT_UPPER_LEG": "Muslo derecho",
+    "BODYPART_LEFT_LOWER_LEG": "Tibia izquierda",
+    "BODYPART_RIGHT_LOWER_LEG": "Tibia derecha",
+    "BODYPART_LEFT_UPPER_ARM": "Bicep izquierdo",
+    "BODYPART_LEFT_LOWER_ARM": "Brazo izquierdo",
+    "BODYPART_RIGHT_UPPER_ARM": "Bicep derecho",
+    "BODYPART_RIGHT_LOWER_ARM": "Brazo izquierdo"
+}

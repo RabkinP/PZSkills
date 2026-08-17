@@ -1,0 +1,14 @@
+{
+    "Attributes_Type_None": "Ei mitään",
+    "Attributes_Type_Quality": "Laatu",
+    "Attributes_Type_Durability": "Kestävyys / Kesto",
+    "Attributes_Type_WoodWetness": "Puun kosteus",
+    "Attributes_Type_Uses": "Käyttömäärä",
+    "Attributes_Type_DurabilityOnUse": "Kestävyys Käyttäessä",
+    "Attributes_Type_CraftedBy": "Luonut",
+    "Attributes_Type_MetalType": "Metallin Tyyppi",
+    "Attributes_Type_WoodType": "Puun Tyyppi",
+    "Attributes_Type_ContainsWood": "Sisältää Puuta",
+    "Attributes_Type_ContainsMetal": "Sisältää Metallia",
+    "Attributes_TooltipOverride_Durability": "Kestävyyden käyttökerrat"
+}

@@ -1,0 +1,22 @@
+{
+    "MultiStageBuild_CreateWoodenWall_1": "Zbuduj słabą drewnianą ścianę",
+    "MultiStageBuild_UpgradeWoodenWall_1To2": "Ulepsz do drewnianej ściany",
+    "MultiStageBuild_CreateWoodenWall_2": "Zbuduj drewnianą ścianę",
+    "MultiStageBuild_UpgradeWoodenWall_1To3": "Ulepsz do mocnej drewnianej ściany",
+    "MultiStageBuild_UpgradeWoodenWall_2To3": "Ulepsz do mocnej drewnianej ściany",
+    "MultiStageBuild_CreateWoodenWall_3": "Zbuduj mocną drewnianą ścianę",
+    "MultiStageBuild_CreateWoodenWindow_1": "Zbuduj słabe drewniane okno",
+    "MultiStageBuild_UpgradeWoodenWindow_1To2": "Ulepsz do drewnianego okna",
+    "MultiStageBuild_CreateWoodenWindow_2": "Zbuduj drewniane okno",
+    "MultiStageBuild_UpgradeWoodenWindow_1To3": "Ulepsz do mocnego drewnianego okna",
+    "MultiStageBuild_UpgradeWoodenWindow_2To3": "Ulepsz do mocnego drewnianego okna",
+    "MultiStageBuild_CreateWoodenWindow_3": "Zbuduj mocne drewniane okno",
+    "MultiStageBuild_CreateMetalWall_1": "Zbuduj metalową ścianę",
+    "MultiStageBuild_UpgradeMetalWall_1To2": "Ulepsz do mocnej metalowej ściany",
+    "MultiStageBuild_CreateMetalWall_2": "Zbuduj mocną metalową ścianę",
+    "MultiStageBuild_CreateMetalWindow_1": "Zbuduj metalowe okno",
+    "MultiStageBuild_UpgradeMetalWindow_1To2": "Ulepsz do mocnego metalowego okna",
+    "MultiStageBuild_CreateMetalWindow_2": "Zbuduj mocne metalowe okno",
+    "MultiStageBuild_UpgradeWoodenDoorFrame_1To2": "Ulepsz do stabilnej framugi drzwi",
+    "MultiStageBuild_UpgradeWoodenDoorFrame_2To3": "Ulepsz do mocnej framugi drzwi"
+}

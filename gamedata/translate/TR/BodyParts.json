@@ -1,0 +1,13 @@
+{
+    "BODYPART_PELVIS": "Pelvis",
+    "BODYPART_SPINE": "Omurga",
+    "BODYPART_HEAD": "Baş",
+    "BODYPART_LEFT_UPPER_LEG": "Sol Üst Bacak",
+    "BODYPART_LEFT_LOWER_LEG": "Sol Alt Bacak",
+    "BODYPART_RIGHT_UPPER_LEG": "Sağ Üst Bacak",
+    "BODYPART_RIGHT_LOWER_LEG": "Sağ Alt Bacak",
+    "BODYPART_LEFT_UPPER_ARM": "Sol Üst Kol",
+    "BODYPART_LEFT_LOWER_ARM": "Sol Alt Kol",
+    "BODYPART_RIGHT_UPPER_ARM": "Sağ Üst Kol",
+    "BODYPART_RIGHT_LOWER_ARM": "Sağ Alt Kol"
+}

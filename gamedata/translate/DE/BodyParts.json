@@ -1,0 +1,13 @@
+{
+    "BODYPART_PELVIS": "Becken",
+    "BODYPART_SPINE": "Wirbel",
+    "BODYPART_HEAD": "Kopf",
+    "BODYPART_LEFT_UPPER_LEG": "Linker Oberschenkel",
+    "BODYPART_LEFT_LOWER_LEG": "Linker Unterschenkel",
+    "BODYPART_RIGHT_UPPER_LEG": "Rechter Oberschenkel",
+    "BODYPART_RIGHT_LOWER_LEG": "Rechter Unterschenkel",
+    "BODYPART_LEFT_UPPER_ARM": "Linker Oberarm",
+    "BODYPART_LEFT_LOWER_ARM": "Linker Unterarm",
+    "BODYPART_RIGHT_UPPER_ARM": "Rechter Oberarm",
+    "BODYPART_RIGHT_LOWER_ARM": "Rechter Unterarm"
+}

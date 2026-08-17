@@ -1,0 +1,13 @@
+{
+    "BODYPART_PELVIS": "Pelvis",
+    "BODYPART_SPINE": "Coloană",
+    "BODYPART_HEAD": "Cap",
+    "BODYPART_LEFT_UPPER_LEG": "Partea Superioară A Piciorului Stâng",
+    "BODYPART_LEFT_LOWER_LEG": "Partea Inferioară A Piciorului Stâng",
+    "BODYPART_RIGHT_UPPER_LEG": "Partea Superioară A Piciorului Drept",
+    "BODYPART_RIGHT_LOWER_LEG": "Partea Inferioară A Piciorului Drept",
+    "BODYPART_LEFT_UPPER_ARM": "Partea Superioară A Brațului Stâng",
+    "BODYPART_LEFT_LOWER_ARM": "Partea Inferioară A Brațului Stâng",
+    "BODYPART_RIGHT_UPPER_ARM": "Partea Superioară A Brațului Drept",
+    "BODYPART_RIGHT_LOWER_ARM": "Partea Inferioară A Brațului Drept"
+}

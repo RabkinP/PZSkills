@@ -1,0 +1,13 @@
+{
+    "BODYPART_PELVIS": "Pelvi",
+    "BODYPART_SPINE": "Colonna vertebrale",
+    "BODYPART_HEAD": "Testa",
+    "BODYPART_LEFT_UPPER_LEG": "Parte superiore gamba sinistra",
+    "BODYPART_LEFT_LOWER_LEG": "Parte inferiore gamba sinistra",
+    "BODYPART_RIGHT_UPPER_LEG": "Parte superiore gamba destra",
+    "BODYPART_RIGHT_LOWER_LEG": "Parte inferiore gamba destra",
+    "BODYPART_LEFT_UPPER_ARM": "parte superiore braccio sinistro",
+    "BODYPART_LEFT_LOWER_ARM": "Parte inferiore braccio sinistro",
+    "BODYPART_RIGHT_UPPER_ARM": "Parte superiore braccio destro",
+    "BODYPART_RIGHT_LOWER_ARM": "Parte inferiore braccio destro"
+}

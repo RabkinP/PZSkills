@@ -1,0 +1,14 @@
+{
+    "Attributes_Type_ContainsMetal": "Bevat metaal",
+    "Attributes_Type_MetalType": "Metaaltype",
+    "Attributes_Type_None": "Geen",
+    "Attributes_Type_Quality": "Kwaliteit",
+    "Attributes_Type_DurabilityOnUse": "Duurzaamheid bij gebruik",
+    "Attributes_Type_WoodType": "Houttype",
+    "Attributes_Type_CraftedBy": "Gemaakt door",
+    "Attributes_Type_Durability": "Duurzaamheid",
+    "Attributes_Type_WoodWetness": "Houtvochtigheid",
+    "Attributes_Type_ContainsWood": "Bevat hout",
+    "Attributes_Type_Uses": "Gebruiken",
+    "Attributes_TooltipOverride_Durability": "Duurzaamheid aantal gebruiken"
+}

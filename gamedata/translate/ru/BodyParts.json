@@ -1,0 +1,13 @@
+{
+    "BODYPART_PELVIS": "Таз",
+    "BODYPART_SPINE": "Позвоночник",
+    "BODYPART_HEAD": "Голова",
+    "BODYPART_LEFT_UPPER_LEG": "Левое бедро",
+    "BODYPART_LEFT_LOWER_LEG": "Левая голень",
+    "BODYPART_RIGHT_UPPER_LEG": "Правое бедро",
+    "BODYPART_RIGHT_LOWER_LEG": "Правая голень",
+    "BODYPART_LEFT_UPPER_ARM": "Левое плечо",
+    "BODYPART_LEFT_LOWER_ARM": "Левое предплечье",
+    "BODYPART_RIGHT_UPPER_ARM": "Правое плечо",
+    "BODYPART_RIGHT_LOWER_ARM": "Правое предплечье"
+}

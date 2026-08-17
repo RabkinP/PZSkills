@@ -1,0 +1,22 @@
+{
+    "MultiStageBuild_CreateWoodenWall_1": "สร้างกำแพงไม้ง่อนแง่น",
+    "MultiStageBuild_UpgradeWoodenWall_1To2": "อัปเกรดเป็นกำแพงไม้",
+    "MultiStageBuild_CreateWoodenWall_2": "สร้างกำแพงไม้",
+    "MultiStageBuild_UpgradeWoodenWall_1To3": "อัปเกรดเป็นกำแพงไม้แข็งแรง",
+    "MultiStageBuild_UpgradeWoodenWall_2To3": "อัปเกรดเป็นกำแพงไม้แข็งแรง",
+    "MultiStageBuild_CreateWoodenWall_3": "สร้างกำแพงไม้แข็งแรง",
+    "MultiStageBuild_CreateWoodenWindow_1": "สร้างหน้าต่างไม้ง่อนแง่น",
+    "MultiStageBuild_UpgradeWoodenWindow_1To2": "อัปเกรดเป็นหน้าต่างไม้",
+    "MultiStageBuild_CreateWoodenWindow_2": "สร้างหน้าต่างไม้",
+    "MultiStageBuild_UpgradeWoodenWindow_1To3": "อัปเกรดเป็นหน้าต่างไม้แข็งแรง",
+    "MultiStageBuild_UpgradeWoodenWindow_2To3": "อัปเกรดเป็นหน้าต่างไม้แข็งแรง",
+    "MultiStageBuild_CreateWoodenWindow_3": "สร้างหน้าต่างไม้แข็งแรง",
+    "MultiStageBuild_CreateMetalWall_1": "สร้างกำแพงโลหะ",
+    "MultiStageBuild_UpgradeMetalWall_1To2": "อัปเกรดเป็นกำแพงโลหะแข็งแรง",
+    "MultiStageBuild_CreateMetalWall_2": "สร้างกำแพงโลหะแข็งแรง",
+    "MultiStageBuild_CreateMetalWindow_1": "สร้างหน้าต่างโลหะ",
+    "MultiStageBuild_UpgradeMetalWindow_1To2": "อัปเกรดเป็นหน้าต่างโลหะแข็งแรง",
+    "MultiStageBuild_CreateMetalWindow_2": "สร้างหน้าต่างโลหะแข็งแรง",
+    "MultiStageBuild_UpgradeWoodenDoorFrame_1To2": "อัปเกรดเป็นโครงประตูไม้มั่นคง",
+    "MultiStageBuild_UpgradeWoodenDoorFrame_2To3": "อัปเกรดเป็นโครงประตูไม้แข็งแรง"
+}

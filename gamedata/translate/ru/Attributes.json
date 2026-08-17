@@ -1,0 +1,14 @@
+{
+    "Attributes_Type_None": "Нет",
+    "Attributes_Type_Quality": "Качество",
+    "Attributes_Type_Durability": "Прочность",
+    "Attributes_Type_WoodWetness": "Влажность дерева",
+    "Attributes_Type_Uses": "исп.",
+    "Attributes_Type_DurabilityOnUse": "Прочность при использовании",
+    "Attributes_Type_CraftedBy": "Создано",
+    "Attributes_Type_MetalType": "Тип металла",
+    "Attributes_Type_WoodType": "Тип дерева",
+    "Attributes_Type_ContainsWood": "Содержит дерево",
+    "Attributes_Type_ContainsMetal": "Содержит металл",
+    "Attributes_TooltipOverride_Durability": "Исп. прочности"
+}

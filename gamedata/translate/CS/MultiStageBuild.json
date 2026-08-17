@@ -1,0 +1,22 @@
+{
+    "MultiStageBuild_CreateWoodenWall_1": "Postavit chatrnou dřevěnou zeď",
+    "MultiStageBuild_UpgradeWoodenWall_1To2": "Vylepšit na dřevěnou zeď",
+    "MultiStageBuild_CreateWoodenWall_2": "Postavit dřevěnou zeď",
+    "MultiStageBuild_UpgradeWoodenWall_1To3": "Vylepšit na pevnou dřevěnou zeď",
+    "MultiStageBuild_UpgradeWoodenWall_2To3": "Vylepšit na pevnou dřevěnou zeď",
+    "MultiStageBuild_CreateWoodenWall_3": "Postavit pevnou dřevěnou zeď",
+    "MultiStageBuild_CreateWoodenWindow_1": "Postavit chatrné dřevěné okno",
+    "MultiStageBuild_UpgradeWoodenWindow_1To2": "Vylepšit na dřevěné okno",
+    "MultiStageBuild_CreateWoodenWindow_2": "Postavit dřevěné okno",
+    "MultiStageBuild_UpgradeWoodenWindow_1To3": "Vylepšit na pevné dřevěné okno",
+    "MultiStageBuild_UpgradeWoodenWindow_2To3": "Vylepšit na pevné dřevěné okno",
+    "MultiStageBuild_CreateWoodenWindow_3": "Postavit pevné dřevěné okno",
+    "MultiStageBuild_CreateMetalWall_1": "Postavit kovovou zeď",
+    "MultiStageBuild_UpgradeMetalWall_1To2": "Vylepšit na pevnou kovovou zeď",
+    "MultiStageBuild_CreateMetalWall_2": "Postavit pevnou kovovou zeď",
+    "MultiStageBuild_CreateMetalWindow_1": "Postavit kovové okno",
+    "MultiStageBuild_UpgradeMetalWindow_1To2": "Vylepšit na pevné kovové okno",
+    "MultiStageBuild_CreateMetalWindow_2": "Postavit pevné kovové okno",
+    "MultiStageBuild_UpgradeWoodenDoorFrame_1To2": "Vylepšit na stabilní dřevěnou zárubeň",
+    "MultiStageBuild_UpgradeWoodenDoorFrame_2To3": "Vylepšit na pevnou dřevěnou zárubeň"
+}

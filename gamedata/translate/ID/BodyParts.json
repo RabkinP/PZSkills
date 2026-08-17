@@ -1,0 +1,13 @@
+{
+    "BODYPART_PELVIS": "Panggul",
+    "BODYPART_SPINE": "Punggung",
+    "BODYPART_HEAD": "Kepala",
+    "BODYPART_LEFT_UPPER_LEG": "Paha Kiri",
+    "BODYPART_LEFT_LOWER_LEG": "Betis Kiri",
+    "BODYPART_RIGHT_UPPER_LEG": "Paha Kanan",
+    "BODYPART_RIGHT_LOWER_LEG": "Betis Kanan",
+    "BODYPART_LEFT_UPPER_ARM": "Lengan Atas Kiri",
+    "BODYPART_LEFT_LOWER_ARM": "Lengan Bawah Kiri",
+    "BODYPART_RIGHT_UPPER_ARM": "Lengan Atas Kanan",
+    "BODYPART_RIGHT_LOWER_ARM": "Lengan Bawah Kanan"
+}

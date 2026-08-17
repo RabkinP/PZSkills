@@ -1,0 +1,22 @@
+{
+    "MultiStageBuild_CreateWoodenWall_1": "",
+    "MultiStageBuild_UpgradeWoodenWall_1To2": "Opgrader til trævæg",
+    "MultiStageBuild_CreateWoodenWall_2": "Byg trævæg",
+    "MultiStageBuild_UpgradeWoodenWall_1To3": "Opgrader til stærk trævæg",
+    "MultiStageBuild_UpgradeWoodenWall_2To3": "Opgrader til stærk trævæg",
+    "MultiStageBuild_CreateWoodenWall_3": "Byg stærk trævæg",
+    "MultiStageBuild_CreateWoodenWindow_1": "Byg vakkelvornt trævindue",
+    "MultiStageBuild_UpgradeWoodenWindow_1To2": "Opgrader til trævindue",
+    "MultiStageBuild_CreateWoodenWindow_2": "Byg trævindue",
+    "MultiStageBuild_UpgradeWoodenWindow_1To3": "Opgrader til stærkt trævindue",
+    "MultiStageBuild_UpgradeWoodenWindow_2To3": "Opgrader til stærkt trævindue",
+    "MultiStageBuild_CreateWoodenWindow_3": "Byg stærkt trævindue",
+    "MultiStageBuild_CreateMetalWall_1": "Byg metalvæg",
+    "MultiStageBuild_UpgradeMetalWall_1To2": "Opgrader til stærk metalvæg",
+    "MultiStageBuild_CreateMetalWall_2": "Byg stærk metalvæg",
+    "MultiStageBuild_CreateMetalWindow_1": "Byg metalvindue",
+    "MultiStageBuild_UpgradeMetalWindow_1To2": "Opgrader til stærkt metalvindue",
+    "MultiStageBuild_CreateMetalWindow_2": "Byg stærkt metalvindue",
+    "MultiStageBuild_UpgradeWoodenDoorFrame_1To2": "Opgrader til stabil trædørkarm",
+    "MultiStageBuild_UpgradeWoodenDoorFrame_2To3": "Opgrader til stærk trædørkarm"
+}

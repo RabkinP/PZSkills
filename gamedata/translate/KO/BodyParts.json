@@ -1,0 +1,13 @@
+{
+    "BODYPART_PELVIS": "골반",
+    "BODYPART_SPINE": "척추",
+    "BODYPART_HEAD": "머리",
+    "BODYPART_LEFT_UPPER_LEG": "왼 윗다리",
+    "BODYPART_LEFT_LOWER_LEG": "왼 아랫다리",
+    "BODYPART_RIGHT_UPPER_LEG": "오른 윗다리",
+    "BODYPART_RIGHT_LOWER_LEG": "오른 아랫다리",
+    "BODYPART_LEFT_UPPER_ARM": "왼 위팔",
+    "BODYPART_LEFT_LOWER_ARM": "왼 아래팔",
+    "BODYPART_RIGHT_UPPER_ARM": "오른 위팔",
+    "BODYPART_RIGHT_LOWER_ARM": "왼 아래팔"
+}

@@ -1,0 +1,13 @@
+{
+    "BODYPART_PELVIS": "Bækken",
+    "BODYPART_SPINE": "Rygrad",
+    "BODYPART_HEAD": "Hoved",
+    "BODYPART_LEFT_UPPER_LEG": "Venstre Lår",
+    "BODYPART_LEFT_LOWER_LEG": "Venstre Underben",
+    "BODYPART_RIGHT_UPPER_LEG": "Højre Lår",
+    "BODYPART_RIGHT_LOWER_LEG": "Højre Underben",
+    "BODYPART_LEFT_UPPER_ARM": "Venstre Overarm",
+    "BODYPART_LEFT_LOWER_ARM": "Venstre Underarm",
+    "BODYPART_RIGHT_UPPER_ARM": "Højre Overarm",
+    "BODYPART_RIGHT_LOWER_ARM": "Højre Underarm"
+}

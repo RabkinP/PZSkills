@@ -1,0 +1,37 @@
+{
+    "GameModeRefresh_Title": "Atualização dos Modos de Jogo",
+    "GameModeRefresh_Description": "Embora os jogadores ainda possam personalizar hiperativamente as configurações do Project Zomboid por meio do modo Sandbox Personalizado, e esta certamente ainda seja uma maneira compatível e válida de jogar, sabemos que muitos jogadores desejam padrões 'prontos para uso' que atendam aos seus estilos de jogo sem precisar ajustar configurações. Para isso, chegou a hora de atualizar os Modos de Jogo e começar a ajustar o equilíbrio para muitos dos novos recursos adicionados na Build 42. Para esse fim, o modo Apocalipse foi reequilibrado para servir como o modo de jogo 'Canônico da Lore', enquanto os outros modos foram substituídos por novas versões que atendem a diferentes estilos de jogo.",
+    
+    "GameModeRefresh_Apocalypse": "Como Apocalipse é o modo 'Canônico', elementos como tabelas de saque, ciclos de crescimento animal, estações de colheita, condição de veículos e outros são focados em capturar uma sensação autêntica do Kentucky de 1993 tomado pelos Mortos-Vivos (por exemplo: armas de fogo mais abundantes no mundo). Isso significa que certos recursos 'artificiais de jogo', como Renascimento de Zumbis e Efeitos de Saque ao Matar Zumbis, foram desativados. Também ajustamos certos elementos de jogabilidade com base em testes de jogo, como reduzir o efeito da Tensão Muscular e Desconforto, tornar as cercas mais vulneráveis a ataques concentrados de Zumbis, habilitar o travamento de armas de fogo e muito mais.",
+    
+    "GameModeRefresh_Outbreak": "O modo Surto destina-se a atender jogadores que desejam um modo que respeite aqueles que podem ter tempo limitado, permanecendo desafiador se você enfrentar mais do que pode lidar. Em geral, coisas como progressão de habilidades não-combate, eficácia da geladeira, prazos de animais/agricultura e densidade de saque são mais adequadas para jogadas menos intensivas em tempo.",
+    
+    "GameModeRefresh_Extinction": "Extinção é voltado para jogadores veteranos, trazendo os Corredores (Sprinters) para um modo de jogo oficial pela primeira vez no Project Zomboid. Espere resistência brutal, suprimentos mais escassos e esteja preparado para ficar alerta o tempo todo. Este modo NÃO é recomendado como sua primeira experiência em Zomboid, pois provavelmente será muito curta.",
+    
+    "GameModeRefresh_Rising": "Ascensão é o lugar para aqueles que desejam uma experiência mais aconchegante, para que possam sair e construir aquela propriedade pós-apocalíptica perfeita. Com menos foco em combate e mais abundância dos blocos de construção para o novo mundo, cabe a você fazer o trabalho duro para criar sua nova existência. Só não baixe a guarda, porque ainda é 'Como Você Morreu'.",
+    
+    "GameModeRefresh_Presets": "Cada um dos novos Modos de Jogo tem uma predefinição correspondente no Sandbox Personalizado para você ajustar ao seu gosto. Espere ajustes finais nas várias configurações dos modos de jogo com base em testes de jogabilidade à medida que avançamos em direção à B42 Estável.",
+    
+    "NewFirearms_Title": "Novas Armas de Fogo",
+    "NewFirearms_Description": "Como muitos notaram na atualização 42.14, houve uma Reformulação de Munição para consolidar e atualizar os tipos de itens, e como muitos também adivinharam, isso foi em preparação para novas armas de fogo serem adicionadas ao jogo. Estas novas armas de fogo são equilibradas para se encaixarem no conjunto existente de armas (e seus visuais atualizados) e complementam o arsenal existente. Estas armas de fogo pretendem ser consistentes com os tipos de armas populares no Kentucky de 1993, e também houve uma extensa reformulação da tabela de saque para representar mais adequadamente a distribuição de tipos de armas de fogo entre uso civil, policial e militar. A compatibilidade cruzada de munição também é um foco, então sobreviventes que desejam um carregamento eficiente em saques devem prestar atenção tanto na munição quanto na seleção de carregadores.",
+    
+    "Firearm_JS14": "Fuzil JS-14 - Um fuzil de 5.56x45mm alimentado por um carregador de vinte tiros, e utilizando uma ação em escala reduzida baseada no Fuzil M1A, o JS-14 é extremamente popular entre civis, e também usado por algumas agências policiais e correcionais. É robusto e leve, embora não seja conhecido por sua precisão.",
+    
+    "Firearm_JS3T": "Escopeta Tática JS-3T - Frequentemente chamada de 'Arma de Controle de Distúrbios', esta escopeta calibre 12 é o modelo policial da onipresente Escopeta JS-2000, apresentando maior capacidade com peso aumentado. Amplamente usada pela polícia como poder de fogo pesado para patrulheiros, também é utilizada pelos militares em situações de arrombamento e combate próximo.",
+    
+    "Firearm_L92": "Carabina L92 - Projetada pela primeira vez em 1892, a testada e comprovada ação de alavanca tem sido uma favorita dos americanos desde que foi introduzida. A L92 é uma versão modernizada introduzida na década de 1950, disparando o cartucho .357 Magnum sem fumaça, em vez das variantes de cartucho obsoletas originais.",
+    
+    "Firearm_L94": "Fuzil L94 - Um clássico 'fuzil de caça', o L94 e seu cartucho .30-30 é um dos fuzis de caça e fazenda mais famosos e populares de todos os tempos. Embora o cartucho com aro tenha tido adoção limitada em outras armas de fogo, o L94 fornece um pacote prático, preciso e letal.",
+    
+    "Firearm_MSR7T": "Fuzil Tático MSR7T - Construído no onipresente receptor de ação curta 788 em 7.62x51mm, o MSR7T é especializado para uso policial e militar, com um cano de precisão e coronha pesada. Embora um tanto volumoso, é a escolha preferida quando tiros precisos de longo alcance são necessários.",
+    
+    "Firearm_Trapper": "Carabina Trapper - Desenvolvida na década de 1980, a Carabina Trapper foi projetada para fornecer uma carabina econômica, prática e versátil para uso em acampamentos e áreas selvagens. Compartilhando a popular munição e carregadores .45 ACP com a pistola 1911, a Trapper fornece uma arma compacta para uso de médio alcance, embora tenha reputação de ser um tanto não confiável.",
+    
+    "GameplayUpdates_Title": "E Mais!",
+    "GameplayUpdates_Description": "As atualizações de jogabilidade incluem um novo sistema de mira para armas de fogo com gamepad para melhor suporte a controles, impacto reduzido na durabilidade ao usar ferramentas para seu propósito pretendido, cones de luz ajustados para representar mais adequadamente diferentes luzes/lanternas, 'E Mais!' As Notas de Atualização completas podem ser encontradas AQUI, detalhando mais novos recursos, mudanças de equilíbrio e MUITAS correções tanto para Um Jogador quanto para Multijogador.",
+    
+    "Reminder_Title": "Lembrete",
+    "Reminder_Description": "Um lembrete de que o Branch Instável B42 é... bem... Instável. Então não se esqueça de fazer backup do seu save (ou, como recomendado, comece um novo), sabendo que atualizações podem e irão quebrar coisas. Nosso grupo de teste 'Amigos do Beta' já forneceu um monte de feedback sobre este novo conteúdo, e queremos ouvir o seu também! Você é sempre bem-vindo para se juntar à nossa discussão no Discord AQUI, nossos fóruns AQUI, e você pode se inscrever em nossa newsletter AQUI! Apareça e conte-nos suas opiniões sobre o novo conteúdo!",
+    
+    "SignOff": "Fiquem armados, amigos, e evitem as coisas que assombram a noite. The Indie Stone"
+}

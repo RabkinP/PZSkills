@@ -1,0 +1,14 @@
+{
+    "Attributes_Type_None": "Aucun",
+    "Attributes_Type_Quality": "Qualité",
+    "Attributes_Type_Durability": "Durabilité",
+    "Attributes_Type_WoodWetness": "Humidité du bois",
+    "Attributes_Type_Uses": "Utilise",
+    "Attributes_Type_DurabilityOnUse": "Durabilité à l'utilisation",
+    "Attributes_Type_CraftedBy": "Fabriqué par",
+    "Attributes_Type_MetalType": "Type de métal",
+    "Attributes_Type_WoodType": "Type de bois",
+    "Attributes_Type_ContainsWood": "Contient du bois",
+    "Attributes_Type_ContainsMetal": "Contient du métal",
+    "Attributes_TooltipOverride_Durability": "Utilisation de la durabilité"
+}

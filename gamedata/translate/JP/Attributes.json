@@ -1,0 +1,14 @@
+{
+    "Attributes_Type_None": "None",
+    "Attributes_Type_Quality": "品質",
+    "Attributes_Type_Durability": "Durability",
+    "Attributes_Type_WoodWetness": "Wood Wetness",
+    "Attributes_Type_Uses": "回分使用",
+    "Attributes_Type_DurabilityOnUse": "Durability On Use",
+    "Attributes_Type_CraftedBy": "Crafted By",
+    "Attributes_Type_MetalType": "金属の種類",
+    "Attributes_Type_WoodType": "木材の種類",
+    "Attributes_Type_ContainsWood": "Contains Wood",
+    "Attributes_Type_ContainsMetal": "Contains Metal",
+    "Attributes_TooltipOverride_Durability": "Durability Uses"
+}

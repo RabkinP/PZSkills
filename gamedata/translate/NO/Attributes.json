@@ -1,0 +1,14 @@
+{
+    "Attributes_Type_None": "Ingen",
+    "Attributes_Type_Quality": "Kvalitet",
+    "Attributes_Type_Durability": "Slitestyrke",
+    "Attributes_Type_WoodWetness": "Trefuktighet",
+    "Attributes_Type_Uses": "antall bruk",
+    "Attributes_Type_DurabilityOnUse": "Slitasje ved bruk",
+    "Attributes_Type_CraftedBy": "Laget av",
+    "Attributes_Type_MetalType": "Metalltype",
+    "Attributes_Type_WoodType": "Tretype",
+    "Attributes_Type_ContainsWood": "Inneholder Tre",
+    "Attributes_Type_ContainsMetal": "Inneholder Metall",
+    "Attributes_TooltipOverride_Durability": "Antall forbruk"
+}

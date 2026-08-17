@@ -1,0 +1,14 @@
+{
+    "Attributes_Type_None": "ไม่ระบุ",
+    "Attributes_Type_Quality": "คุณภาพ",
+    "Attributes_Type_Durability": "ความทนทาน",
+    "Attributes_Type_WoodWetness": "ความชื้นของไม้",
+    "Attributes_Type_Uses": "จำนวนการใช้งาน",
+    "Attributes_Type_DurabilityOnUse": "ความทนทานที่สูญเสียต่อการใช้",
+    "Attributes_Type_CraftedBy": "สร้างโดย",
+    "Attributes_Type_MetalType": "ประเภทโลหะ",
+    "Attributes_Type_WoodType": "ประเภทไม้",
+    "Attributes_Type_ContainsWood": "มีไม้เป็นส่วนประกอบ",
+    "Attributes_Type_ContainsMetal": "มีโลหะเป็นส่วนประกอบ",
+    "Attributes_TooltipOverride_Durability": "จำนวนการใช้งาน"
+}

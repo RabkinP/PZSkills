@@ -1,0 +1,13 @@
+{
+    "BODYPART_PELVIS": "Bassin",
+    "BODYPART_SPINE": "Colonne vertébrale",
+    "BODYPART_HEAD": "Crâne",
+    "BODYPART_LEFT_UPPER_LEG": "Cuisse gauche",
+    "BODYPART_LEFT_LOWER_LEG": "Mollet gauche",
+    "BODYPART_RIGHT_UPPER_LEG": "Cuisse droite",
+    "BODYPART_RIGHT_LOWER_LEG": "Mollet droit",
+    "BODYPART_LEFT_UPPER_ARM": "Bras gauche",
+    "BODYPART_LEFT_LOWER_ARM": "Avant-bras gauche",
+    "BODYPART_RIGHT_UPPER_ARM": "Bras droit",
+    "BODYPART_RIGHT_LOWER_ARM": "Avant-bras droit"
+}

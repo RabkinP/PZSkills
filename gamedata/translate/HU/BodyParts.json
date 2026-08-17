@@ -1,0 +1,13 @@
+{
+    "BODYPART_PELVIS": "Medence",
+    "BODYPART_SPINE": "Gerinc",
+    "BODYPART_HEAD": "Fej",
+    "BODYPART_LEFT_UPPER_LEG": "Bal Comb",
+    "BODYPART_LEFT_LOWER_LEG": "Bal Lábszár",
+    "BODYPART_RIGHT_UPPER_LEG": "Jobb Comb",
+    "BODYPART_RIGHT_LOWER_LEG": "Jobb Lábszár",
+    "BODYPART_LEFT_UPPER_ARM": "Bal Felkar",
+    "BODYPART_LEFT_LOWER_ARM": "Bal Alkar",
+    "BODYPART_RIGHT_UPPER_ARM": "Jobb Felkar",
+    "BODYPART_RIGHT_LOWER_ARM": "Jobb Alkar"
+}

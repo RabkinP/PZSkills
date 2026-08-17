@@ -1,0 +1,22 @@
+{
+    "MultiStageBuild_CreateWoodenWall_1": "脆い木の壁を製作する",
+    "MultiStageBuild_UpgradeWoodenWall_1To2": "木の壁を補強する",
+    "MultiStageBuild_CreateWoodenWall_2": "木の壁を製作する",
+    "MultiStageBuild_UpgradeWoodenWall_1To3": "頑丈な木の壁へ補強する",
+    "MultiStageBuild_UpgradeWoodenWall_2To3": "頑丈な木の壁へ補強する",
+    "MultiStageBuild_CreateWoodenWall_3": "頑丈な木の壁を製作する",
+    "MultiStageBuild_CreateWoodenWindow_1": "脆い木の窓を製作する",
+    "MultiStageBuild_UpgradeWoodenWindow_1To2": "木の窓を補強する",
+    "MultiStageBuild_CreateWoodenWindow_2": "木の窓を製作する",
+    "MultiStageBuild_UpgradeWoodenWindow_1To3": "頑丈な木の窓へ補強する",
+    "MultiStageBuild_UpgradeWoodenWindow_2To3": "頑丈な木の窓へ補強する",
+    "MultiStageBuild_CreateWoodenWindow_3": "頑丈な木の窓を製作する",
+    "MultiStageBuild_CreateMetalWall_1": "金属の壁を製作する",
+    "MultiStageBuild_UpgradeMetalWall_1To2": "頑丈な金属の壁へ補強する",
+    "MultiStageBuild_CreateMetalWall_2": "頑丈な金属の壁を製作する",
+    "MultiStageBuild_CreateMetalWindow_1": "金属の窓を製作する",
+    "MultiStageBuild_UpgradeMetalWindow_1To2": "頑丈な金属の窓へ補強する",
+    "MultiStageBuild_CreateMetalWindow_2": "頑丈な金属の窓を製作する",
+    "MultiStageBuild_UpgradeWoodenDoorFrame_1To2": "安定した木のドア枠を補強する",
+    "MultiStageBuild_UpgradeWoodenDoorFrame_2To3": "頑丈な木のドア枠へ補強する"
+}

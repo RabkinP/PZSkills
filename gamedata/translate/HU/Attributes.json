@@ -1,0 +1,14 @@
+{
+    "Attributes_Type_None": "Nincs",
+    "Attributes_Type_Quality": "Minőség",
+    "Attributes_Type_Durability": "Tartósság",
+    "Attributes_Type_WoodWetness": "Fa nedvessége",
+    "Attributes_Type_Uses": "Felhasználhatóság",
+    "Attributes_Type_DurabilityOnUse": "Tartósság használatban",
+    "Attributes_Type_CraftedBy": "Készítette",
+    "Attributes_Type_MetalType": "Fém típusa",
+    "Attributes_Type_WoodType": "Fa típusa",
+    "Attributes_Type_ContainsWood": "Fát tartalmaz",
+    "Attributes_Type_ContainsMetal": "Fémet tartalmaz",
+    "Attributes_TooltipOverride_Durability": "Tartósság használatban"
+}

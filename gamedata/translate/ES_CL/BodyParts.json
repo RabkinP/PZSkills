@@ -1,0 +1,13 @@
+{
+    "BODYPART_PELVIS": "Pelvis",
+    "BODYPART_SPINE": "Columna",
+    "BODYPART_HEAD": "Cabezal",
+    "BODYPART_LEFT_UPPER_LEG": "Muslo izquierdo",
+    "BODYPART_LEFT_LOWER_LEG": "Espinilla izquierda",
+    "BODYPART_RIGHT_UPPER_LEG": "Muslo derecho",
+    "BODYPART_RIGHT_LOWER_LEG": "Espinilla derecha",
+    "BODYPART_LEFT_UPPER_ARM": "Brazo Izquierdo",
+    "BODYPART_LEFT_LOWER_ARM": "Antebrazo Izquierdo",
+    "BODYPART_RIGHT_UPPER_ARM": "Brazo Derecho",
+    "BODYPART_RIGHT_LOWER_ARM": "Antebrazo Derecho"
+}

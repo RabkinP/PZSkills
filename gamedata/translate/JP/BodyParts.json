@@ -1,0 +1,13 @@
+{
+    "BODYPART_PELVIS": "骨盤",
+    "BODYPART_SPINE": "脊椎",
+    "BODYPART_HEAD": "頭部",
+    "BODYPART_LEFT_UPPER_LEG": "左太もも",
+    "BODYPART_LEFT_LOWER_LEG": "左すね",
+    "BODYPART_RIGHT_UPPER_LEG": "右太もも",
+    "BODYPART_RIGHT_LOWER_LEG": "右すね",
+    "BODYPART_LEFT_UPPER_ARM": "左上腕",
+    "BODYPART_LEFT_LOWER_ARM": "左前腕",
+    "BODYPART_RIGHT_UPPER_ARM": "右上腕",
+    "BODYPART_RIGHT_LOWER_ARM": "右前腕"
+}

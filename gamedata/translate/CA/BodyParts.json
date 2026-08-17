@@ -1,0 +1,13 @@
+{
+    "BODYPART_PELVIS": "Pelvis",
+    "BODYPART_SPINE": "Columna",
+    "BODYPART_HEAD": "Cap",
+    "BODYPART_LEFT_UPPER_LEG": "Cuixa esquerra",
+    "BODYPART_LEFT_LOWER_LEG": "Canella esquerra",
+    "BODYPART_RIGHT_UPPER_LEG": "Cuixa dreta",
+    "BODYPART_RIGHT_LOWER_LEG": "Canella dreta",
+    "BODYPART_LEFT_UPPER_ARM": "Braç esquerre",
+    "BODYPART_LEFT_LOWER_ARM": "Avantbraç esquerre",
+    "BODYPART_RIGHT_UPPER_ARM": "Braç dret",
+    "BODYPART_RIGHT_LOWER_ARM": "Avantbraç dret"
+}

@@ -1,0 +1,14 @@
+{
+    "Attributes_Type_None": "Žádné",
+    "Attributes_Type_Quality": "Kvalita",
+    "Attributes_Type_Durability": "Odolnost",
+    "Attributes_Type_WoodWetness": "Vlhkost dřeva",
+    "Attributes_Type_Uses": "Použití",
+    "Attributes_Type_DurabilityOnUse": "Opotřebení při použití",
+    "Attributes_Type_CraftedBy": "Vyrobeno kým",
+    "Attributes_Type_MetalType": "Typ kovu",
+    "Attributes_Type_WoodType": "Typ dřeva",
+    "Attributes_Type_ContainsWood": "Obsahuje dřevo",
+    "Attributes_Type_ContainsMetal": "Obsahuje kov",
+    "Attributes_TooltipOverride_Durability": "Počet použití"
+}

@@ -1,0 +1,13 @@
+{
+    "BODYPART_PELVIS": "Lantio",
+    "BODYPART_SPINE": "Selkäranka",
+    "BODYPART_HEAD": "Pää",
+    "BODYPART_LEFT_UPPER_LEG": "Vasen Reisi",
+    "BODYPART_LEFT_LOWER_LEG": "Vasen Sääri",
+    "BODYPART_RIGHT_UPPER_LEG": "Oikea Reisi",
+    "BODYPART_RIGHT_LOWER_LEG": "Oikea Sääri",
+    "BODYPART_LEFT_UPPER_ARM": "Vasen Hartia",
+    "BODYPART_LEFT_LOWER_ARM": "Vasen Kyynärvarsi",
+    "BODYPART_RIGHT_UPPER_ARM": "Oikea Hartia",
+    "BODYPART_RIGHT_LOWER_ARM": "Oikea Kyynärvarsi"
+}

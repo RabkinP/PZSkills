@@ -1,0 +1,22 @@
+{
+    "MultiStageBuild_CreateWoodenWall_1": "삐걱거리는 나무 벽 만들기",
+    "MultiStageBuild_CreateWoodenWall_2": "평범한 나무 벽 만들기",
+    "MultiStageBuild_CreateWoodenWall_3": "튼튼한 나무 벽 만들기",
+    "MultiStageBuild_UpgradeWoodenWall_1To2": "평범한 나무 벽으로 품질 올리기",
+    "MultiStageBuild_UpgradeWoodenWall_1To3": "튼튼한 나무 벽으로 품질 올리기",
+    "MultiStageBuild_UpgradeWoodenWall_2To3": "튼튼한 나무 벽으로 품질 올리기",
+    "MultiStageBuild_CreateWoodenWindow_1": "삐걱거리는 나무 창문 만들기",
+    "MultiStageBuild_CreateWoodenWindow_2": "평범한 나무 창문 만들기",
+    "MultiStageBuild_CreateWoodenWindow_3": "튼튼한 나무 창문 만들기",
+    "MultiStageBuild_UpgradeWoodenWindow_1To2": "평범한 나무 창문으로 품질 올리기",
+    "MultiStageBuild_UpgradeWoodenWindow_1To3": "튼튼한 나무 창문으로 품질 올리기",
+    "MultiStageBuild_UpgradeWoodenWindow_2To3": "튼튼한 나무 창문으로 품질 올리기",
+    "MultiStageBuild_CreateMetalWall_1": "삐걱거리는 금속 벽 만들기",
+    "MultiStageBuild_CreateMetalWall_2": "평범한 금속 벽 만들기",
+    "MultiStageBuild_UpgradeMetalWall_1To2": "평범한 금속 벽으로 품질 올리기",
+    "MultiStageBuild_CreateMetalWindow_1": "삐걱거리는 금속 창문 만들기",
+    "MultiStageBuild_CreateMetalWindow_2": "평범한 금속 창문 만들기",
+    "MultiStageBuild_UpgradeMetalWindow_1To2": "평범한 금속 창문으로 품질 올리기",
+    "MultiStageBuild_UpgradeWoodenDoorFrame_1To2": "평범한 나무 문틀로 품질 올리기",
+    "MultiStageBuild_UpgradeWoodenDoorFrame_2To3": "튼튼한 나무 문틀로 품질 올리기"
+}

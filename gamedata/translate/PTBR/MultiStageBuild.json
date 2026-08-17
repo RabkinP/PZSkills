@@ -1,0 +1,22 @@
+{
+    "MultiStageBuild_CreateWoodenWall_1": "Construir Parede de Madeira Precária",
+    "MultiStageBuild_UpgradeWoodenWall_1To2": "Melhorar para Parede de Madeira",
+    "MultiStageBuild_CreateWoodenWall_2": "Construir Parede de Madeira",
+    "MultiStageBuild_UpgradeWoodenWall_1To3": "Melhorar para Parede de Madeira Reforçada",
+    "MultiStageBuild_UpgradeWoodenWall_2To3": "Melhorar para Parede de Madeira Reforçada",
+    "MultiStageBuild_CreateWoodenWall_3": "Construir Parede de Madeira Reforçada",
+    "MultiStageBuild_CreateWoodenWindow_1": "Construir Janela de Madeira Precária",
+    "MultiStageBuild_UpgradeWoodenWindow_1To2": "Melhorar para Janela de Madeira",
+    "MultiStageBuild_CreateWoodenWindow_2": "Construir Janela de Madeira",
+    "MultiStageBuild_UpgradeWoodenWindow_1To3": "Melhorar para Janela de Madeira Reforçada",
+    "MultiStageBuild_UpgradeWoodenWindow_2To3": "Melhorar para Janela de Madeira Reforçada",
+    "MultiStageBuild_CreateWoodenWindow_3": "Construir Janela de Madeira Reforçada",
+    "MultiStageBuild_CreateMetalWall_1": "Construir Parede de Metal",
+    "MultiStageBuild_UpgradeMetalWall_1To2": "Melhorar para Parede de Metal Reforçada",
+    "MultiStageBuild_CreateMetalWall_2": "Construir Parede de Metal Reforçada",
+    "MultiStageBuild_CreateMetalWindow_1": "Construir Janela de Metal",
+    "MultiStageBuild_UpgradeMetalWindow_1To2": "Melhorar para Janela de Metal Reforçada",
+    "MultiStageBuild_CreateMetalWindow_2": "Construir Janela de Metal Reforçada",
+    "MultiStageBuild_UpgradeWoodenDoorFrame_1To2": "Melhorar para Batente de Porta de Madeira Estável",
+    "MultiStageBuild_UpgradeWoodenDoorFrame_2To3": "Melhorar para Batente de Porta de Madeira Reforçado"
+}

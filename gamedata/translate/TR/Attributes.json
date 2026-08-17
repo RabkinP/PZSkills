@@ -1,0 +1,14 @@
+{
+    "Attributes_Type_None": "Yok",
+    "Attributes_Type_Quality": "Kalite",
+    "Attributes_Type_Durability": "Dayanıklılık",
+    "Attributes_Type_WoodWetness": "Odun Islaklığı",
+    "Attributes_Type_Uses": "Kullanım",
+    "Attributes_Type_DurabilityOnUse": "Kullanıma Bağlı Eskime",
+    "Attributes_Type_CraftedBy": "Üreten",
+    "Attributes_Type_MetalType": "Metal Türü",
+    "Attributes_Type_WoodType": "Odun Türü",
+    "Attributes_Type_ContainsWood": "Odun İçerir",
+    "Attributes_Type_ContainsMetal": "Metal İçerir",
+    "Attributes_TooltipOverride_Durability": "Dayanıklılık Kullanımı"
+}

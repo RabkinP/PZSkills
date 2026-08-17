@@ -1,0 +1,13 @@
+{
+    "BODYPART_PELVIS": "Miednica",
+    "BODYPART_SPINE": "Kręgosłup",
+    "BODYPART_HEAD": "Głowa",
+    "BODYPART_LEFT_UPPER_LEG": "Lewa górna część nogi",
+    "BODYPART_LEFT_LOWER_LEG": "Lewa dolna część nogi",
+    "BODYPART_RIGHT_UPPER_LEG": "Prawa górna część nogi",
+    "BODYPART_RIGHT_LOWER_LEG": "Prawa dolna część nogi",
+    "BODYPART_LEFT_UPPER_ARM": "Lewe ramię",
+    "BODYPART_LEFT_LOWER_ARM": "Lewe przedramię",
+    "BODYPART_RIGHT_UPPER_ARM": "Prawe ramię",
+    "BODYPART_RIGHT_LOWER_ARM": "Prawe przedramię"
+}

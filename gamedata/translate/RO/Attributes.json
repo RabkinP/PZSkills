@@ -1,0 +1,14 @@
+{
+    "Attributes_Type_None": "Niciunul",
+    "Attributes_Type_Quality": "Calitate",
+    "Attributes_Type_Durability": "Durabilitate",
+    "Attributes_Type_WoodWetness": "Umezeala Lemnului",
+    "Attributes_Type_Uses": "Utilizări",
+    "Attributes_Type_DurabilityOnUse": "Durabilitate Pe Utilizare",
+    "Attributes_Type_CraftedBy": "Confecționat De",
+    "Attributes_Type_MetalType": "Tip De Metal",
+    "Attributes_Type_WoodType": "Tip De Lemn",
+    "Attributes_Type_ContainsWood": "Conține Lemn",
+    "Attributes_Type_ContainsMetal": "Conține Metal",
+    "Attributes_TooltipOverride_Durability": "Utilizări De Durabilitate"
+}

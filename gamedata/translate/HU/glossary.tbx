@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE martif PUBLIC "ISO 12200:1999A//DTD MARTIF core (DXFcdV04)//EN" "TBXcdv04.dtd">
+<martif type="TBX" xml:lang="en">
+    <martifHeader>
+        <fileDesc>
+            <sourceDesc>
+                <p>Weblate Glossary</p>
+            </sourceDesc>
+        </fileDesc>
+    </martifHeader>
+    <text>
+        <body>
+            <termEntry id="Az Overhead a fejalatti/fej feletti elhelyezkedésre utal, amit a magyarban a Faliszekrény fejez ki a legtermészetesebben a bútoroknál. https://www.ikea.com/hu/hu/cat/faliszekrenyek-23608/">
+                <langSet xml:lang="en"><tig><term>Overhead Cupboard</term></tig></langSet>
+                <langSet xml:lang="HU"><tig><term>Faliszekrény</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Letisztult, azonnal érthető, és a Zomboid menüjében sokkal könnyebben áttekinthető. A magyarban a „kockás” jelző önmagában is tökéletesen kifejezi a mintát (mint a kockás ing vagy kockás abrosz esetében).">
+                <langSet xml:lang="en"><tig><term>Checkered</term></tig></langSet>
+                <langSet xml:lang="HU"><tig><term>Kockás</term></tig></langSet>
+            </termEntry>
+        </body>
+    </text>
+</martif>

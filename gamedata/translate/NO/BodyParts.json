@@ -1,0 +1,13 @@
+{
+    "BODYPART_PELVIS": "Bekkenet",
+    "BODYPART_SPINE": "Ryggrad",
+    "BODYPART_HEAD": "Hode",
+    "BODYPART_LEFT_UPPER_LEG": "Øvre Venstrebein",
+    "BODYPART_LEFT_LOWER_LEG": "Nedre Venstrebein",
+    "BODYPART_RIGHT_UPPER_LEG": "Øvre Høyrebein",
+    "BODYPART_RIGHT_LOWER_LEG": "Nedre Høyrebein",
+    "BODYPART_LEFT_UPPER_ARM": "Øvre Venstrearm",
+    "BODYPART_LEFT_LOWER_ARM": "Nedre Venstrearm",
+    "BODYPART_RIGHT_UPPER_ARM": "Øvre Høyrearm",
+    "BODYPART_RIGHT_LOWER_ARM": "Nedre Høyrearm"
+}

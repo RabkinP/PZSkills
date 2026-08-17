@@ -1,0 +1,14 @@
+{
+    "Attributes_Type_None": "없음",
+    "Attributes_Type_Quality": "품질",
+    "Attributes_Type_Durability": "내구도",
+    "Attributes_Type_WoodWetness": "나무 습도",
+    "Attributes_Type_Uses": "소모",
+    "Attributes_Type_DurabilityOnUse": "내구도 소모",
+    "Attributes_Type_CraftedBy": "제작자:",
+    "Attributes_Type_MetalType": "금속 종류",
+    "Attributes_Type_WoodType": "목재 종류",
+    "Attributes_Type_ContainsWood": "목재 포함",
+    "Attributes_Type_ContainsMetal": "금속 포함",
+    "Attributes_TooltipOverride_Durability": "내구도 소모"
+}

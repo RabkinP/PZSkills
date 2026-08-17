@@ -1,0 +1,13 @@
+{
+    "BODYPART_PELVIS": "เชิงกราน",
+    "BODYPART_SPINE": "สันหลัง",
+    "BODYPART_HEAD": "ศีรษะ",
+    "BODYPART_LEFT_UPPER_LEG": "ต้นขาซ้าย",
+    "BODYPART_LEFT_LOWER_LEG": "ขาท่อนล่างซ้าย",
+    "BODYPART_RIGHT_UPPER_LEG": "ต้นขาขวา",
+    "BODYPART_RIGHT_LOWER_LEG": "ขาท่อนล่างขวา",
+    "BODYPART_LEFT_UPPER_ARM": "ต้นแขนซ้าย",
+    "BODYPART_LEFT_LOWER_ARM": "แขนท่อนล่างซ้าย",
+    "BODYPART_RIGHT_UPPER_ARM": "ต้นแขนขวา",
+    "BODYPART_RIGHT_LOWER_ARM": "แขนท่อนล่างขวา"
+}
