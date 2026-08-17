@@ -1,144 +1,128 @@
-# Project Zomboid Checklist
+# Project Zomboid Collection Tracker
 
-A multilingual checklist for Project Zomboid skill books, recipe magazines, and VHS tapes.
+A static, multilingual collection tracker for Project Zomboid skill books, recipe sources, and gameplay-relevant VHS tapes.
 
-The website is a static GitHub Pages application. Checklist content is generated from copied Project Zomboid game files during the build, so normal game updates do not require editing the frontend or generated catalog by hand.
+The catalog is generated from copied Project Zomboid game data. The browser UI consumes normalized JSON and does not depend on the original game-file format.
 
-## Architecture
+## UI features
 
-```text
-gamedata/                 Project Zomboid source files
-    ↓
-scripts/build-data.mjs    Parse, normalize and validate
-    ↓
-generated/*.json          Frontend-ready catalog
-    ↓
-js/ + locales/            Static multilingual frontend
-    ↓
-GitHub Pages
+- Responsive desktop and mobile layout.
+- Global search across names, game IDs, skills, recipes, and effects.
+- `All`, `Skill Books`, `Recipe Sources`, and `VHS Tapes` catalog views.
+- Status filter: `All`, `Missing`, or `Found`.
+- Multi-select skill filters.
+- Effect filters for XP / XP boosts, recipes, and other gameplay effects.
+- Grouping by default game-data groups, skill, effect, content type, or no grouping.
+- Sorting by name, game ID, missing-first, or found-first.
+- Expand/collapse all grouped results.
+- Active-filter chips with one-click removal.
+- Semantic metadata chips on item cards.
+- Recipe lists can be expanded directly from relevant cards.
+- Found items use a collection-state treatment instead of todo-style strikethrough text.
+- Desktop filter sidebar and mobile filter drawer.
+- `/` keyboard shortcut focuses global search.
+- Light/dark appearance follows the operating-system preference.
+
+## Progress and preferences
+
+Progress is stored automatically in `localStorage` under `pzChecklistState_v4`.
+
+The persisted state contains stable user preferences and collection progress:
+
+```json
+{
+  "version": 4,
+  "found": {},
+  "settings": {
+    "language": "en",
+    "activeCategory": "all",
+    "status": "all",
+    "grouping": "default",
+    "sort": "name"
+  }
+}
 ```
 
-The browser never parses Project Zomboid files directly. It only downloads normalized JSON from `generated/`.
+Search text and temporary skill/effect selections are intentionally not persisted. This prevents a returning user from opening the site with an unexpectedly narrow or empty result set.
 
-## Updating after a Project Zomboid update
+Older v1, v2, and v3 checklist states are migrated automatically. Progress and persisted preferences can also be exported to JSON and imported later.
 
-Replace the copied files inside `gamedata/` with fresh versions from the game installation and push the changes.
+## Data pipeline
 
-The GitHub Pages workflow automatically:
+```text
+gamedata/
+    ↓
+scripts/build-data.mjs
+    ↓
+generated/*.json
+    ↓
+static frontend
+```
 
-1. parses the game files;
-2. validates the parsed structure;
-3. generates `generated/books.json`, `generated/recipe-sources.json`, `generated/vhs.json`, and `generated/manifest.json`;
-4. builds the static Pages artifact;
-5. deploys it.
+The build reads Project Zomboid item definitions, recorded-media definitions, and game translations. It validates expected source structures and produces normalized JSON for the frontend.
 
-For a local rebuild:
+Run:
 
 ```bash
 npm run build:data
 npm run check
 ```
 
-No npm dependencies are required; Node.js is used only as the build runtime.
+There are no npm runtime dependencies.
 
-## Game data inputs
-
-The current parser reads:
+## Project structure
 
 ```text
-gamedata/
-├── items/
-│   ├── literature.txt
-│   └── normal.txt
-├── recorded_media.lua
-└── translate/
-    ├── en/
-    │   ├── ItemName.json
-    │   └── Recorded_Media.json
-    └── ru/
-        ├── ItemName.json
-        └── Recorded_Media.json
+.
+├── gamedata/                 Copied Project Zomboid source data
+├── generated/                Generated normalized catalog JSON
+├── locales/                  UI dictionaries and site-specific translations
+├── scripts/                  Parsers, validation, and data generation
+├── js/
+│   ├── app.js                Application state, UI orchestration, and events
+│   ├── catalog.js            Normalized catalog helpers and semantic metadata
+│   ├── filters.js            Faceted filtering and sorting
+│   ├── i18n.js               Runtime localization helpers
+│   ├── state.js              Persistence, migration, import, and export
+│   └── utils.js              Shared utility functions
+├── css/main.css              Responsive application styles
+└── index.html                Static application shell
 ```
-
-`literature.txt` is the source of skill books and recipe magazines. `recorded_media.lua` is the source of concrete recorded-media entries and their effect codes. Translation files provide localized game names.
-
-`normal.txt` is currently used only as a structural sanity check for the expected VHS parent item definitions.
-
-## Generated data
-
-Generated files are JSON rather than JavaScript modules. The frontend does not know about Project Zomboid fields such as `DisplayCategory`, `LearnedRecipes`, or recorded-media code syntax.
-
-The generated model stores semantic information, for example:
-
-```json
-{
-  "id": "Base.BookCarpentry1",
-  "names": {
-    "en": "Carpentry I: ...",
-    "ru": "Localized book title ..."
-  },
-  "skill": "Carpentry",
-  "levelFrom": 1,
-  "levelTo": 2
-}
-```
-
-VHS effects are normalized into structures such as:
-
-```json
-{ "type": "skillXp", "skill": "Carpentry", "amount": 1 }
-```
-
-or:
-
-```json
-{ "type": "recipe", "recipe": "CraftMakeshiftRadio" }
-```
-
-This keeps presentation and localization separate from the game parser.
 
 ## Adding another language
 
-No JavaScript changes are required to add a language.
+Localization is intentionally separated into two layers.
 
-For a language code such as `de`:
+Game-provided names come from:
 
-1. create `gamedata/translate/de/`;
-2. copy the game's `ItemName.json` and `Recorded_Media.json` into it;
-3. create `locales/de.json` using `locales/en.json` as the schema;
-4. run `npm run build:data`.
+```text
+gamedata/translate/<language>/ItemName.json
+gamedata/translate/<language>/Recorded_Media.json
+```
 
-The build discovers complete languages automatically and writes them to `generated/manifest.json`. The language selector is populated from that manifest at runtime.
+Site UI text comes from:
 
-Game item and VHS names come from Project Zomboid translation files. Website-specific strings, skill labels, group labels, status names, and optional friendly recipe labels come from `locales/<lang>.json`.
+```text
+locales/<language>.json
+```
 
-If a friendly recipe label is missing, the UI falls back to a human-readable form of the internal recipe identifier. This means newly added recipes still appear automatically even before an optional presentation translation is added.
+A language becomes available when the build finds both required game translation files and the matching site locale file. JavaScript changes are not required for an additional language.
 
-Each locale may set:
+`locales/<language>.json` can set:
 
 ```json
 {
   "meta": {
-    "name": "German",
+    "name": "Language name",
     "showEnglishSecondary": true
   }
 }
 ```
 
-When `showEnglishSecondary` is enabled, English game names and descriptions are shown below the selected language, matching the current Russian presentation.
+When `showEnglishSecondary` is enabled, localized catalog names can display the English game name as secondary information.
 
-## User progress
+## Updating after a Project Zomboid update
 
-Progress is stored only in browser `localStorage` and is not included in generated catalog files.
+Replace the copied files under `gamedata/`, then rebuild the generated catalog. The parser is deliberately strict around important source structures so that an incompatible game-data change fails the build instead of silently publishing an incomplete catalog.
 
-Users can also export and import their progress as JSON. The selected language and per-category `Hide found` settings are included in the exported state.
-
-The current implementation remains compatible with previous `pzChecklistState_v1`, `v2`, and `v3` browser state formats.
-
-## Parser maintenance
-
-The build intentionally fails when a major expected source structure disappears instead of silently publishing an empty checklist.
-
-Recorded-media skill codes are mapped in `scripts/config.mjs`. If Project Zomboid introduces a new effect code, it is preserved as an unknown effect and reported by build diagnostics so the mapping can be updated deliberately.
-
-Recipe magazine grouping is derived from item IDs. Known families receive translated display labels from `locales/<lang>.json`; an unknown future family still appears using its source family identifier.
+The included GitHub Pages workflow rebuilds, validates, and deploys the site on push.

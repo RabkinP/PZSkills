@@ -3,37 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PZ Checklist — Books, Magazines, VHS</title>
+  <meta name="theme-color" content="#17191c">
+  <title>PZ Collection Tracker</title>
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-<div class="wrap">
-  <header class="top">
-    <div class="header-row">
-      <h1 id="pageHeading">Project Zomboid — Checklist (Books · Magazines · VHS)</h1>
-      <label class="language-picker">
-        <span id="languageLabel">Language</span>
-        <select id="languageSelect" aria-label="Language"></select>
-      </label>
+<header class="app-header">
+  <div class="header-inner">
+    <div class="brand-row">
+      <div>
+        <h1 id="pageHeading">Project Zomboid Collection Tracker</h1>
+        <div class="overall-progress">
+          <span id="grandTotal">0 / 0</span>
+          <div class="progress-track"><div class="progress-fill" id="progressBar"></div></div>
+          <span id="progressPercent">0%</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <select id="languageSelect" class="compact-select" aria-label="Language"></select>
+        <button id="menuBtn" class="icon-button" aria-label="More actions" aria-expanded="false">•••</button>
+        <div id="actionMenu" class="action-menu" hidden>
+          <button id="exportBtn"></button>
+          <button id="importBtn"></button>
+          <button id="resetAllBtn" class="danger-text"></button>
+        </div>
+        <input type="file" id="importFileInput" accept="application/json,.json" hidden>
+      </div>
     </div>
-    <div class="stats-row">
-      <span class="grand"><span id="totalFoundLabel">Found:</span> <span id="grandTotal">0 / 0</span></span>
-      <div class="progress-track"><div class="progress-fill" id="progressBar"></div></div>
-    </div>
-    <div class="toolbar">
-      <button type="button" id="exportBtn">Export JSON</button>
-      <button type="button" id="importBtn">Import JSON</button>
-      <button type="button" class="danger-outline" id="resetAllBtn">Reset all</button>
-      <input type="file" id="importFileInput" accept="application/json,.json" hidden>
-    </div>
-    <nav class="tabs" id="tabsNav"></nav>
-  </header>
 
-  <main id="tabPanels"></main>
+    <nav id="categoryNav" class="category-nav"></nav>
+
+    <div class="search-row">
+      <label class="search-box">
+        <span aria-hidden="true">⌕</span>
+        <input id="globalSearch" type="search" autocomplete="off">
+        <kbd>/</kbd>
+      </label>
+      <button id="mobileFiltersBtn" class="filter-button"><span id="mobileFiltersLabel"></span><span id="mobileFilterCount" class="count-badge" hidden></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="app-shell">
+  <aside id="filtersPanel" class="filters-panel">
+    <div class="mobile-drawer-heading">
+      <strong id="filtersHeading"></strong>
+      <button id="closeFiltersBtn" class="icon-button" aria-label="Close">×</button>
+    </div>
+
+    <section class="filter-section">
+      <h2 id="statusHeading"></h2>
+      <div id="statusControl" class="segmented-control"></div>
+    </section>
+
+    <section class="filter-section">
+      <div class="section-heading-row"><h2 id="effectHeading"></h2><button class="text-button" data-clear="effects" id="clearEffectsBtn"></button></div>
+      <div id="effectFilters" class="check-list"></div>
+    </section>
+
+    <section class="filter-section">
+      <div class="section-heading-row"><h2 id="skillHeading"></h2><button class="text-button" data-clear="skills" id="clearSkillsBtn"></button></div>
+      <div id="skillFilters" class="check-list skill-list"></div>
+    </section>
+
+    <button id="resetFiltersBtn" class="secondary-button full-width"></button>
+  </aside>
+  <div id="drawerBackdrop" class="drawer-backdrop" hidden></div>
+
+  <main class="content-area">
+    <div class="view-toolbar">
+      <div class="results-summary"><strong id="resultCount">0</strong><span id="resultLabel"></span></div>
+      <div class="view-controls">
+        <label><span id="groupByLabel"></span><select id="groupBySelect"></select></label>
+        <label><span id="sortByLabel"></span><select id="sortBySelect"></select></label>
+        <button id="expandCollapseBtn" class="secondary-button"></button>
+      </div>
+    </div>
+
+    <div id="activeFilters" class="active-filters" hidden></div>
+    <div id="catalogResults" class="catalog-results"></div>
+    <div id="emptyState" class="empty-state" hidden></div>
+  </main>
 </div>
 
 <div id="toast"></div>
-
 <script type="module" src="./js/app.js"></script>
 </body>
 </html>
