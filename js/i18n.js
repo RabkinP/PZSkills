@@ -1,6 +1,7 @@
 export const DEFAULT_LANGUAGE = 'en';
 
 let locales = {};
+let gameDictionaries = { skills: {}, recipes: {} };
 let supportedLanguages = [DEFAULT_LANGUAGE];
 
 const LANGUAGE_TAG_ALIASES = {
@@ -40,6 +41,21 @@ export async function loadLocales(languages, uiLanguages = [DEFAULT_LANGUAGE]) {
   for (const [language, locale] of entries) {
     if (locale) locales[language] = locale;
   }
+}
+
+
+export function loadGameDictionaries(value) {
+  gameDictionaries = value && typeof value === 'object' ? value : { skills: {}, recipes: {} };
+}
+
+export function gameDictionaryValue(language, section, key) {
+  const entry = gameDictionaries?.[section]?.[key];
+  if (!entry) return '';
+  return localized(entry.names, language);
+}
+
+export function gameDictionaryEntry(section, key) {
+  return gameDictionaries?.[section]?.[key] ?? null;
 }
 
 export function getSupportedLanguages() {

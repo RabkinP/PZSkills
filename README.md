@@ -43,9 +43,7 @@ The persisted state contains stable user preferences and collection progress:
 }
 ```
 
-Search text and temporary skill/effect selections are intentionally not persisted. This prevents a returning user from opening the site with an unexpectedly narrow or empty result set.
-
-Older v1, v2, and v3 checklist states are migrated automatically. Progress and persisted preferences can also be exported to JSON and imported later.
+Search text and temporary skill/effect selections are intentionally not persisted. Older v1, v2, and v3 checklist states are migrated automatically. Progress and persisted preferences can also be exported to JSON and imported later.
 
 ## Data pipeline
 
@@ -59,8 +57,6 @@ generated/*.json
 static frontend
 ```
 
-The build reads Project Zomboid item definitions, recorded-media definitions, and game translations. It validates expected source structures and produces normalized JSON for the frontend.
-
 Run:
 
 ```bash
@@ -70,74 +66,135 @@ npm run check
 
 There are no npm runtime dependencies.
 
+## Translation architecture
+
+Project Zomboid localization data is treated as game data, not as website UI text.
+
+The build recursively scans **all JSON files** under every `gamedata/translate/<language>/` directory. It does not require localization files to keep names such as `Recipes.json`, `ItemName.json`, or `IG_UI.json`.
+
+Localization lookup is deliberately strict:
+
+```text
+localization domain + exact key → translated value
+```
+
+The build does **not** use:
+
+- fuzzy matching;
+- case-insensitive key matching;
+- punctuation stripping;
+- underscore/dash normalization;
+- module-prefix removal as a generic lookup rule.
+
+This is intentional. Project Zomboid uses exact identifiers from Java/Lua data, and a similar-looking localization key must not be silently treated as the same object.
+
+### Localization domains
+
+The same exact key can legitimately exist in different game translation tables with different values. For example, a recipe key may also occur in moveable-object translations. Therefore the build does not create one global `key → value` map.
+
+Instead it identifies the relevant localization domains (items, recipes, skills, recorded media) by exact anchor keys. File names are not part of the lookup contract. If an incomplete locale does not contain all anchors, the build identifies its corresponding domain file by the unique highest overlap of **exact keys** with the English domain. Translation lookup inside the selected domain remains exact and case-sensitive.
+
+This means renaming `Recipes.json` or `ItemName.json` does not break the build as long as the localization keys themselves remain valid.
+
+### Domain-specific mappings
+
+If Project Zomboid source data uses one identifier but the recipe localization table uses a different exact key, the mapping must be explicit and reviewed. These mappings live in:
+
+```text
+scripts/lib/recipe-translations.mjs
+```
+
+No generic normalization is applied.
+
+At the moment the catalog resolves recipe translations as:
+
+```text
+392 exact references
+4 explicit mappings
+1 known unresolved reference: MakeSlugTrap
+```
+
+`MakeSlugTrap` has no localization key in the supplied game translation data and is explicitly allowlisted as unresolved. Any new unresolved recipe reference fails the build until reviewed.
+
+### Generated game dictionaries
+
+Game-derived localized names are generated into:
+
+```text
+generated/dictionaries.json
+```
+
+It currently contains:
+
+- official Project Zomboid skill names from the game localization data;
+- localized names for all recipes referenced by the tracker.
+
+Website UI locale files no longer need to duplicate skill or recipe names.
+
+## UI localization
+
+Website-specific UI text is separate from game translations:
+
+```text
+locales/<language>.json
+```
+
+Locale files may be partial. Missing UI keys fall back to `locales/en.json`.
+
+`meta` supports:
+
+```json
+{
+  "meta": {
+    "name": "Language name",
+    "showEnglishSecondary": true,
+    "direction": "ltr"
+  }
+}
+```
+
+- `name` controls the label in the language selector.
+- `showEnglishSecondary` controls whether English game names are shown below the selected translation.
+- `direction: "rtl"` enables right-to-left layout.
+
+Adding or replacing game localization files does not require JavaScript changes.
+
 ## Project structure
 
 ```text
 .
 ├── gamedata/                 Copied Project Zomboid source data
-├── generated/                Generated normalized catalog JSON
-├── locales/                  UI dictionaries and site-specific translations
-├── scripts/                  Parsers, validation, and data generation
+├── generated/                Generated normalized catalog and game dictionaries
+├── locales/                  Website UI dictionaries only
+├── scripts/
+│   ├── build-data.mjs        Catalog generation and strict localization resolution
+│   ├── check.mjs             Generated-data and locale validation
+│   └── lib/
+│       ├── translation-index.mjs
+│       ├── recipe-translations.mjs
+│       ├── items-parser.mjs
+│       ├── media-parser.mjs
+│       └── effects.mjs
 ├── js/
 │   ├── app.js                Application state, UI orchestration, and events
 │   ├── catalog.js            Normalized catalog helpers and semantic metadata
 │   ├── filters.js            Faceted filtering and sorting
-│   ├── i18n.js               Runtime localization helpers
+│   ├── i18n.js               Runtime UI/game localization helpers
 │   ├── state.js              Persistence, migration, import, and export
 │   └── utils.js              Shared utility functions
 ├── css/main.css              Responsive application styles
 └── index.html                Static application shell
 ```
 
-## Adding another language
-
-Localization is intentionally separated into two layers.
-
-Game-provided names come from:
-
-```text
-gamedata/translate/<language>/ItemName.json
-gamedata/translate/<language>/Recorded_Media.json
-```
-
-Site UI text comes from:
-
-```text
-locales/<language>.json
-```
-
-A language becomes available whenever the build finds both required game translation files. Project Zomboid locale directory names are matched case-insensitively, so directories such as `DE`, `ES_MX`, and `PTBR` are supported without renaming them.
-
-A matching `locales/<language>.json` file is optional. If it is missing, the website UI falls back to English while catalog names still use the selected game translation. Missing individual game translation strings also fall back to their English game values. JavaScript changes are not required for an additional language.
-
-`locales/<language>.json` can optionally set:
-
-```json
-{
-  "meta": {
-    "name": "Language name",
-    "showEnglishSecondary": true
-  }
-}
-```
-
-When `showEnglishSecondary` is enabled, localized catalog names can display the English game name as secondary information.
-
 ## Updating after a Project Zomboid update
 
-Replace the copied files under `gamedata/`, then rebuild the generated catalog. The parser is deliberately strict around important source structures so that an incompatible game-data change fails the build instead of silently publishing an incomplete catalog.
+Replace the copied files under `gamedata/`, then rebuild:
+
+```bash
+npm run build:data
+npm run check
+```
+
+The generator is deliberately strict. New unknown media codes, new unresolved recipe localization references, missing required English localization keys, or incompatible source structures fail the build instead of silently publishing incorrect data.
 
 The included GitHub Pages workflow rebuilds, validates, and deploys the site on push.
-
-## UI localization
-
-The site UI is localized independently from Project Zomboid item/media translations.
-
-- Game translations live in `gamedata/translate/<GAME_LANGUAGE>/`.
-- Website UI translations live in `locales/<language>.json`.
-- Locale files may be partial. Missing UI dictionary keys fall back to `locales/en.json`.
-- `meta.name` controls the language name shown in the selector.
-- `meta.showEnglishSecondary` controls whether English item names are shown below the selected game translation.
-- `meta.direction: "rtl"` enables right-to-left layout for languages such as Arabic.
-
-`scripts/check.mjs` reports UI-key coverage for every enabled locale and verifies that all generated catalog items contain every game language listed in the manifest.

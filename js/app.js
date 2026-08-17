@@ -1,6 +1,6 @@
-import { effectChips, groupLabel, itemSearchText, normalizeCatalog, recipeName } from './catalog.js';
+import { effectChips, groupLabel, itemSearchText, normalizeCatalog, recipeName, skillName } from './catalog.js';
 import { filterItems, sortItems } from './filters.js';
-import { dictionaryValue, englishSecondary, getLocaleDirection, getSupportedLanguages, languageName, loadLocales, localized, normalizeLanguage, t } from './i18n.js';
+import { dictionaryValue, englishSecondary, getLocaleDirection, getSupportedLanguages, languageName, loadGameDictionaries, loadLocales, localized, normalizeLanguage, t } from './i18n.js';
 import { createEmptyState, exportState, importState, loadState, saveState } from './state.js';
 import { downloadJson, escapeHtml, showToast } from './utils.js';
 
@@ -19,8 +19,11 @@ async function loadData() {
     return response.json();
   });
   await loadLocales(manifest.languages, manifest.uiLanguages);
+  const dictionariesResponse = await fetch(`./generated/dictionaries.json?v=${encodeURIComponent(manifest.sourceHash)}`);
+  if (!dictionariesResponse.ok) throw new Error('Could not load generated/dictionaries.json');
+  loadGameDictionaries(await dictionariesResponse.json());
   categories = await Promise.all(['books.json', 'recipe-sources.json', 'vhs.json'].map(async (file) => {
-    const response = await fetch(`./generated/${file}`);
+    const response = await fetch(`./generated/${file}?v=${encodeURIComponent(manifest.sourceHash)}`);
     if (!response.ok) throw new Error(`Could not load generated/${file}`);
     return response.json();
   }));
@@ -76,8 +79,8 @@ function renderStaticUi() {
   const effects = [['xp', t(lang, 'effectXp')], ['recipe', t(lang, 'effectRecipe')], ['other', t(lang, 'effectOther')]];
   document.getElementById('effectFilters').innerHTML = effects.map(([value, label]) => `<label class="check-row"><input type="checkbox" data-effect="${value}"${filters.effects.has(value) ? ' checked' : ''}><span>${escapeHtml(label)}</span></label>`).join('');
 
-  const skills = [...new Set(allItems.flatMap((item) => item.skills))].sort((a, b) => dictionaryValue(lang, 'skills', a).localeCompare(dictionaryValue(lang, 'skills', b), lang));
-  document.getElementById('skillFilters').innerHTML = skills.map((skill) => `<label class="check-row"><input type="checkbox" data-skill="${escapeHtml(skill)}"${filters.skills.has(skill) ? ' checked' : ''}><span>${escapeHtml(dictionaryValue(lang, 'skills', skill))}</span></label>`).join('');
+  const skills = [...new Set(allItems.flatMap((item) => item.skills))].sort((a, b) => skillName(a, lang).localeCompare(skillName(b, lang), lang));
+  document.getElementById('skillFilters').innerHTML = skills.map((skill) => `<label class="check-row"><input type="checkbox" data-skill="${escapeHtml(skill)}"${filters.skills.has(skill) ? ' checked' : ''}><span>${escapeHtml(skillName(skill, lang))}</span></label>`).join('');
 }
 
 function renderCategories() {
@@ -96,7 +99,7 @@ function groupKeyFor(item) {
   if (grouping === 'none') return { key: 'all', label: '' };
   if (grouping === 'skill') {
     const skill = item.skills[0];
-    return skill ? { key: `skill:${skill}`, label: dictionaryValue(lang, 'skills', skill) } : { key: 'skill:other', label: t(lang, 'other') };
+    return skill ? { key: `skill:${skill}`, label: skillName(skill, lang) } : { key: 'skill:other', label: t(lang, 'other') };
   }
   if (grouping === 'effect') {
     const type = item.effectTypes.includes('xp') ? 'xp' : item.effectTypes.includes('recipe') ? 'recipe' : 'other';
@@ -119,7 +122,7 @@ function renderItem(item) {
   const recipeDetails = recipes.length ? `<details class="recipe-details"><summary>${escapeHtml(t(lang, 'showRecipes', { count: recipes.length }))}</summary><ul class="recipe-list">${recipes.map((recipe) => `<li>${escapeHtml(recipeName(recipe, lang))}</li>`).join('')}</ul></details>` : '';
   return `<label class="item-card${found ? ' found' : ''}" data-item-key="${escapeHtml(item.key)}">
     <input class="item-check" type="checkbox" data-key="${escapeHtml(item.key)}"${found ? ' checked' : ''}>
-    <span class="item-body"><span class="item-heading"><span><span class="item-name">${escapeHtml(primary)}</span>${secondary ? `<span class="item-secondary">${escapeHtml(secondary)}</span>` : ''}</span></span><span class="item-id">${escapeHtml(item.id)}</span><span class="chip-row">${chips}</span>${recipeDetails}</span>
+    <span class="item-body"><span class="item-heading"><span><span class="item-name">${escapeHtml(primary)}</span>${secondary ? `<span class="item-secondary">${escapeHtml(secondary)}</span>` : ''}</span></span><span class="chip-row">${chips}</span>${recipeDetails}</span>
   </label>`;
 }
 
@@ -161,7 +164,7 @@ function renderActiveFilters() {
   const chips = [];
   if (filters.status !== 'all') chips.push({ kind: 'status', value: filters.status, label: t(lang, `status_${filters.status}`) });
   for (const effect of filters.effects) chips.push({ kind: 'effect', value: effect, label: effect === 'xp' ? t(lang, 'effectXp') : effect === 'recipe' ? t(lang, 'effectRecipe') : t(lang, 'effectOther') });
-  for (const skill of filters.skills) chips.push({ kind: 'skill', value: skill, label: dictionaryValue(lang, 'skills', skill) });
+  for (const skill of filters.skills) chips.push({ kind: 'skill', value: skill, label: skillName(skill, lang) });
   container.hidden = chips.length === 0;
   container.innerHTML = chips.map((chip) => `<button class="filter-chip" data-remove-kind="${chip.kind}" data-remove-value="${escapeHtml(chip.value)}">${escapeHtml(chip.label)} ×</button>`).join('') + (chips.length ? `<button class="text-button" data-clear="all">${escapeHtml(t(lang, 'clearAll'))}</button>` : '');
   const count = filters.skills.size + filters.effects.size + (filters.status === 'all' ? 0 : 1);
