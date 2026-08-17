@@ -198,3 +198,21 @@ npm run check
 The generator is deliberately strict. New unknown media codes, new unresolved recipe localization references, missing required English localization keys, or incompatible source structures fail the build instead of silently publishing incorrect data.
 
 The included GitHub Pages workflow rebuilds, validates, and deploys the site on push.
+## Licensing and Project Zomboid data
+
+This repository contains two different kinds of material:
+
+1. **Original PZSkills code and website content.** Unless stated otherwise, the original source code, scripts, styles, and website-specific UI content created for this project are licensed under the MIT License. See [`LICENSE`](LICENSE).
+2. **Project Zomboid game data.** Files copied from Project Zomboid under `gamedata/`, and generated catalog/dictionary files under `generated/` that reproduce or derive from that game data, are **not** covered by the MIT License. Project Zomboid and its game content remain the property of The Indie Stone.
+
+The Project Zomboid data is included only to build and operate this unofficial, non-commercial fan utility. The repository is not intended to provide Project Zomboid, or a playable part of Project Zomboid, for download.
+
+Project Zomboid Terms and Conditions permit distribution of base files/content subject to their conditions, including that doing so must not make Project Zomboid available to play or download and must not be for prohibited purposes. The Indie Stone's Modding Policy also states that The Indie Stone owns Project Zomboid and its contents. Review the current terms before redistributing or reusing the game-derived files:
+
+- Project Zomboid Terms and Conditions: https://projectzomboid.com/blog/support/terms-conditions/
+- Project Zomboid Modding Policy: https://projectzomboid.com/blog/modding-policy/
+
+Thanks to The Indie Stone for creating Project Zomboid. PZSkills is an unofficial fan project and is not affiliated with, endorsed by, or an official product of The Indie Stone.
+
+If you reuse this repository, do not assume that the MIT License grants rights to Project Zomboid game data. You are responsible for complying with The Indie Stone's current terms and any other applicable rights or licences.
+

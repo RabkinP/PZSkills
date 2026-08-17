@@ -1,3 +1,28 @@
+PZSkills Licensing Notice
+
+The MIT License below applies only to original source code and other original
+project material created for PZSkills, unless a file or directory states
+otherwise.
+
+It does NOT apply to:
+
+- Project Zomboid files copied under `gamedata/`;
+- generated files under `generated/` insofar as they contain, reproduce, or
+  transform Project Zomboid game data; or
+- any other Project Zomboid names, translations, data, assets, or content.
+
+Project Zomboid and its game content remain the property of The Indie Stone
+and are included and used subject to The Indie Stone's applicable terms and
+policies. Nothing in this file grants additional rights to that material.
+
+Project Zomboid Terms and Conditions:
+https://projectzomboid.com/blog/support/terms-conditions/
+
+Project Zomboid Modding Policy:
+https://projectzomboid.com/blog/modding-policy/
+
+----------------------------------------------------------------------
+
 MIT License
 
 Copyright (c) 2026 RabkinP
