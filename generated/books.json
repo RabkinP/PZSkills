@@ -1,0 +1,1494 @@
+{
+  "id": "books",
+  "icon": "📚",
+  "groups": [
+    {
+      "id": "books-carpentry",
+      "kind": "skill",
+      "key": "Carpentry",
+      "items": [
+        {
+          "id": "Base.BookCarpentry1",
+          "sourceId": "BookCarpentry1",
+          "names": {
+            "en": "Carpentry I: \"A Guide to Nailing\"",
+            "ru": "Плотничество, Том 1: «Основы забивания гвоздей»"
+          },
+          "skill": "Carpentry",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookCarpentry2",
+          "sourceId": "BookCarpentry2",
+          "names": {
+            "en": "Carpentry II: \"Carpentry, Woodcraft Style\"",
+            "ru": "Плотничество, Том 2: «Искусство работы с деревом»"
+          },
+          "skill": "Carpentry",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookCarpentry3",
+          "sourceId": "BookCarpentry3",
+          "names": {
+            "en": "Carpentry III: \"Hand Crafted Shelving and Storage\"",
+            "ru": "Плотничество, Том 3: «Полки и стелажи своими руками»"
+          },
+          "skill": "Carpentry",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookCarpentry4",
+          "sourceId": "BookCarpentry4",
+          "names": {
+            "en": "Carpentry IV: \"Making Your Own Cabin From Scratch\"",
+            "ru": "Плотничество, Том 4: «Строим свою собственную хижину с нуля»"
+          },
+          "skill": "Carpentry",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookCarpentry5",
+          "sourceId": "BookCarpentry5",
+          "names": {
+            "en": "Carpentry V: \"Site Joinery and Architectural Carpentry\"",
+            "ru": "Плотничество, Том 5: «Столярные архитектурные объекты»"
+          },
+          "skill": "Carpentry",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-carving",
+      "kind": "skill",
+      "key": "Carving",
+      "items": [
+        {
+          "id": "Base.BookCarving1",
+          "sourceId": "BookCarving1",
+          "names": {
+            "en": "Carving I: \"Beginners Carving\"",
+            "ru": "Резьба, Том 1: «Резьба для начинающих»"
+          },
+          "skill": "Carving",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookCarving2",
+          "sourceId": "BookCarving2",
+          "names": {
+            "en": "Carving II: \"Cool Woodshaping Projects!\"",
+            "ru": "Резьба, Том 2: «Крутые проекты по формованию дерева»"
+          },
+          "skill": "Carving",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookCarving3",
+          "sourceId": "BookCarving3",
+          "names": {
+            "en": "Carving III: \"Grinling Gibbons: His Life and Works\"",
+            "ru": "Резьба, Том 3: «Гринлинг Гиббонс: жизнь и творчество»"
+          },
+          "skill": "Carving",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookCarving4",
+          "sourceId": "BookCarving4",
+          "names": {
+            "en": "Carving IV: \"Medieval Wood and Bone Carving Techniques\"",
+            "ru": "Резьба, Том 4: «Средневековые техники резьбы по дереву и кости»"
+          },
+          "skill": "Carving",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookCarving5",
+          "sourceId": "BookCarving5",
+          "names": {
+            "en": "Carving V: \"The Art and Process of Natural Material Carving\"",
+            "ru": "Резьба, Том 5: «Искусство и процесс резьбы по природным материалам»"
+          },
+          "skill": "Carving",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-cooking",
+      "kind": "skill",
+      "key": "Cooking",
+      "items": [
+        {
+          "id": "Base.BookCooking1",
+          "sourceId": "BookCooking1",
+          "names": {
+            "en": "Cooking I: \"Better Burger Flipping\"",
+            "ru": "Кулинария, Том 1: «Готовим идеальный бургер»"
+          },
+          "skill": "Cooking",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookCooking2",
+          "sourceId": "BookCooking2",
+          "names": {
+            "en": "Cooking II: \"Essential Home Cooking Guide\"",
+            "ru": "Кулинария, Том 2: «Основы домашней кулинарии»"
+          },
+          "skill": "Cooking",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookCooking3",
+          "sourceId": "BookCooking3",
+          "names": {
+            "en": "Cooking III: \"Flavorful Cuisine - 1993 Edition\"",
+            "ru": "Кулинария, Том 3: «Вкуснейшие блюда» - 1993"
+          },
+          "skill": "Cooking",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookCooking4",
+          "sourceId": "BookCooking4",
+          "names": {
+            "en": "Cooking IV: \"Professional Tips from a Master Chef\"",
+            "ru": "Кулинария, Том 4: «Профессиональные советы от шеф-повара»"
+          },
+          "skill": "Cooking",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookCooking5",
+          "sourceId": "BookCooking5",
+          "names": {
+            "en": "Cooking V: \"Ruban Vert Gourmet - Complete Cooking Techniques\"",
+            "ru": "Кулинария, Том 5: «Гурманы Зелёной ленты - все кулинарные приёмы»"
+          },
+          "skill": "Cooking",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-electricity",
+      "kind": "skill",
+      "key": "Electricity",
+      "items": [
+        {
+          "id": "Base.BookElectrician1",
+          "sourceId": "BookElectrician1",
+          "names": {
+            "en": "Electrical I: \"Basic Electronics\"",
+            "ru": "Электрика, Том 1: «Основы электрики»"
+          },
+          "skill": "Electricity",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookElectrician2",
+          "sourceId": "BookElectrician2",
+          "names": {
+            "en": "Electrical II: \"Kentucky AV Guide '93\"",
+            "ru": "Электрика, Том 2: «Аудио-видео аппаратура Кентукки» - 1993"
+          },
+          "skill": "Electricity",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookElectrician3",
+          "sourceId": "BookElectrician3",
+          "names": {
+            "en": "Electrical III: \"Practical Wiring Guide\"",
+            "ru": "Электрика, Том 3: «Практика электромонтажа»"
+          },
+          "skill": "Electricity",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookElectrician4",
+          "sourceId": "BookElectrician4",
+          "names": {
+            "en": "Electrical IV: \"Telecommunications in the 20th Century\"",
+            "ru": "Электрика, Том 4: «Телекоммуникации 20-го века»"
+          },
+          "skill": "Electricity",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookElectrician5",
+          "sourceId": "BookElectrician5",
+          "names": {
+            "en": "Electrical V: \"Understanding Integrated Controls for Electronic Systems\"",
+            "ru": "Электрика, Том 5: «Разбор встроенного управления электронными системами»"
+          },
+          "skill": "Electricity",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-farming",
+      "kind": "skill",
+      "key": "Farming",
+      "items": [
+        {
+          "id": "Base.BookFarming1",
+          "sourceId": "BookFarming1",
+          "names": {
+            "en": "Agriculture I: \"Better Gardening\"",
+            "ru": "Фермерство, Том 1: «Основы садоводства»"
+          },
+          "skill": "Farming",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookFarming2",
+          "sourceId": "BookFarming2",
+          "names": {
+            "en": "Agriculture II: \"Growing Food at Home\"",
+            "ru": "Фермерство, Том 2: «Практическое садоводство»"
+          },
+          "skill": "Farming",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookFarming3",
+          "sourceId": "BookFarming3",
+          "names": {
+            "en": "Agriculture III: \"Liam Keating's Subsistence Farming\"",
+            "ru": "Фермерство, Том 3: «Самодостаточное фермерство Лиама Киттинга»"
+          },
+          "skill": "Farming",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookFarming4",
+          "sourceId": "BookFarming4",
+          "names": {
+            "en": "Agriculture IV: \"The Science of Crop Genetics and Yields\"",
+            "ru": "Фермерство, Том 4: «Наука о генетике культур и урожайности»"
+          },
+          "skill": "Farming",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookFarming5",
+          "sourceId": "BookFarming5",
+          "names": {
+            "en": "Agriculture V: \"USDA Guide to Agricultural Output Maximization\"",
+            "ru": "Фермерство, Том 5: «Руководство по максимизации урожая от Минсельхоза США»"
+          },
+          "skill": "Farming",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-firstaid",
+      "kind": "skill",
+      "key": "FirstAid",
+      "items": [
+        {
+          "id": "Base.BookFirstAid1",
+          "sourceId": "BookFirstAid1",
+          "names": {
+            "en": "First Aid I: \"A Scouts Injury Guide\"",
+            "ru": "Медицина, Том 1: «Руководство по травмам для скаутов»"
+          },
+          "skill": "FirstAid",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookFirstAid2",
+          "sourceId": "BookFirstAid2",
+          "names": {
+            "en": "First Aid II: \"Bandaging and Suturing\"",
+            "ru": "Медицина, Том 2: «Перевязка и наложение швов»"
+          },
+          "skill": "FirstAid",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookFirstAid3",
+          "sourceId": "BookFirstAid3",
+          "names": {
+            "en": "First Aid III: \"Emergency Paramedics Manual\"",
+            "ru": "Медицина, Том 3: «Справочник фельдшера»"
+          },
+          "skill": "FirstAid",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookFirstAid4",
+          "sourceId": "BookFirstAid4",
+          "names": {
+            "en": "First Aid IV: \"Gray's Anatomy of the Human Body\"",
+            "ru": "Медицина, Том 4: «Анатомия человеческого тела Грея»"
+          },
+          "skill": "FirstAid",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookFirstAid5",
+          "sourceId": "BookFirstAid5",
+          "names": {
+            "en": "First Aid V: \"Surgical Techniques of the Operating Room\"",
+            "ru": "Медицина, Том 5: «Хирургические техники в операционной»"
+          },
+          "skill": "FirstAid",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-fishing",
+      "kind": "skill",
+      "key": "Fishing",
+      "items": [
+        {
+          "id": "Base.BookFishing1",
+          "sourceId": "BookFishing1",
+          "names": {
+            "en": "Fishing I: \"Dean's Good Fishing Guide\"",
+            "ru": "Рыболовство, Том 1: «Советы по рыбалке от Дина»"
+          },
+          "skill": "Fishing",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookFishing2",
+          "sourceId": "BookFishing2",
+          "names": {
+            "en": "Fishing II: \"Fly Fishing, with JR Hartley\"",
+            "ru": "Рыболовство, Том 2: «Рыбалка нахлыстом от Джей-Ар Хартли»"
+          },
+          "skill": "Fishing",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookFishing3",
+          "sourceId": "BookFishing3",
+          "names": {
+            "en": "Fishing III: \"Fresh and Saltwater Fishing\"",
+            "ru": "Рыболовство, Том 3: «Ловля рыбы в пресной и морской воде»"
+          },
+          "skill": "Fishing",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookFishing4",
+          "sourceId": "BookFishing4",
+          "names": {
+            "en": "Fishing IV: \"Latest Rod and Net Techniques\"",
+            "ru": "Рыболовство, Том 4: «Новейшие методы ловли удочками и сетями»"
+          },
+          "skill": "Fishing",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookFishing5",
+          "sourceId": "BookFishing5",
+          "names": {
+            "en": "Fishing V: \"The Authoritative Kentucky Fishing Guide\"",
+            "ru": "Рыболовство, Том 5: «Официальное руководство по рыбалке в Кентукки»"
+          },
+          "skill": "Fishing",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-flintknapping",
+      "kind": "skill",
+      "key": "FlintKnapping",
+      "items": [
+        {
+          "id": "Base.BookFlintKnapping1",
+          "sourceId": "BookFlintKnapping1",
+          "names": {
+            "en": "Knapping I: \"Flint Knapping 101\"",
+            "ru": "Камнеобработка, Том 1: «Основы обработки кремня»"
+          },
+          "skill": "FlintKnapping",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookFlintKnapping2",
+          "sourceId": "BookFlintKnapping2",
+          "names": {
+            "en": "Knapping II: \"Guide to Kentucky Geology\"",
+            "ru": "Камнеобработка, Том 2: «Путеводитель по геологии Кентукки»"
+          },
+          "skill": "FlintKnapping",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookFlintKnapping3",
+          "sourceId": "BookFlintKnapping3",
+          "names": {
+            "en": "Knapping III: \"Lithic Technology Manual 1993\"",
+            "ru": "Камнеобработка, Том 3: «Руководство по литической технологии» - 1993"
+          },
+          "skill": "FlintKnapping",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookFlintKnapping4",
+          "sourceId": "BookFlintKnapping4",
+          "names": {
+            "en": "Knapping IV: \"Schmidt Rock Hardness Testing Techniques\"",
+            "ru": "Камнеобработка, Том 4: «Техники испытания твёрдости пород Шмидта»"
+          },
+          "skill": "FlintKnapping",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookFlintKnapping5",
+          "sourceId": "BookFlintKnapping5",
+          "names": {
+            "en": "Knapping V: \"Technological Morphometrics of Clovis Artifacts\"",
+            "ru": "Камнеобработка, Том 5: «Технологическая морфометрия артефактов Кловис»"
+          },
+          "skill": "FlintKnapping",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-foraging",
+      "kind": "skill",
+      "key": "Foraging",
+      "items": [
+        {
+          "id": "Base.BookForaging1",
+          "sourceId": "BookForaging1",
+          "names": {
+            "en": "Foraging I: \"A Feast in the Forest\"",
+            "ru": "Собирательство, Том 1: «Пир в лесу»"
+          },
+          "skill": "Foraging",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookForaging2",
+          "sourceId": "BookForaging2",
+          "names": {
+            "en": "Foraging II: \"Dean's Guide to Sticks & Stones\"",
+            "ru": "Собирательство, Том 2: «Руководство по камням и палкам от Дина»"
+          },
+          "skill": "Foraging",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookForaging3",
+          "sourceId": "BookForaging3",
+          "names": {
+            "en": "Foraging III: \"Finding The Treasure in the Trash\"",
+            "ru": "Собирательство, Том 3: «Ищем сокровище в мусоре»"
+          },
+          "skill": "Foraging",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookForaging4",
+          "sourceId": "BookForaging4",
+          "names": {
+            "en": "Foraging IV: \"Survival Foraging: How Nature Can Save Your Life\"",
+            "ru": "Собирательство, Том 4: «Как природа может спасти вашу жизнь»"
+          },
+          "skill": "Foraging",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookForaging5",
+          "sourceId": "BookForaging5",
+          "names": {
+            "en": "Foraging V: \"US Park Service Complete Nature Census - Kentucky\"",
+            "ru": "Собирательство, Том 5: «Полная перепись природных ценностей Кентукки»"
+          },
+          "skill": "Foraging",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-glassmaking",
+      "kind": "skill",
+      "key": "Glassmaking",
+      "items": [
+        {
+          "id": "Base.BookGlassmaking1",
+          "sourceId": "BookGlassmaking1",
+          "names": {
+            "en": "Glassmaking I: \"Glass: A History\"",
+            "ru": "Стеклоделие, Том 1: «История стекла»"
+          },
+          "skill": "Glassmaking",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookGlassmaking2",
+          "sourceId": "BookGlassmaking2",
+          "names": {
+            "en": "Glassmaking II: \"From Sand to Glass: A Journey\"",
+            "ru": "Стеклоделие, Том 2: «Невероятное путешествие: от песка к стеклу»"
+          },
+          "skill": "Glassmaking",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookGlassmaking3",
+          "sourceId": "BookGlassmaking3",
+          "names": {
+            "en": "Glassmaking III: \"Laboratory Manual of Glassblowing\"",
+            "ru": "Стеклоделие, Том 3: «Лабораторное руководство по стеклодувному делу»"
+          },
+          "skill": "Glassmaking",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookGlassmaking4",
+          "sourceId": "BookGlassmaking4",
+          "names": {
+            "en": "Glassmaking IV: \"Secrets of the Carlow Crystal Makers\"",
+            "ru": "Стеклоделие, Том 4: «Секреты производителей хрусталя из Карлоу»"
+          },
+          "skill": "Glassmaking",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookGlassmaking5",
+          "sourceId": "BookGlassmaking5",
+          "names": {
+            "en": "Glassmaking V: \"Venetian Glass: An Electron Microprobe Analysis\"",
+            "ru": "Стеклоделие, Том 5: «Венецианское стекло: электронный микрозондовый анализ»"
+          },
+          "skill": "Glassmaking",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-masonry",
+      "kind": "skill",
+      "key": "Masonry",
+      "items": [
+        {
+          "id": "Base.BookMasonry1",
+          "sourceId": "BookMasonry1",
+          "names": {
+            "en": "Masonry I: \"A Bricklayer's Life\"",
+            "ru": "Каменная кладка, Том 1: «Жизнь каменщика»"
+          },
+          "skill": "Masonry",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookMasonry2",
+          "sourceId": "BookMasonry2",
+          "names": {
+            "en": "Masonry II: \"Flooring: Do It Yourself\"",
+            "ru": "Каменная кладка, Том 2: «Напольные покрытия своими руками»"
+          },
+          "skill": "Masonry",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookMasonry3",
+          "sourceId": "BookMasonry3",
+          "names": {
+            "en": "Masonry III: \"Dibnah's Guide to Bricks\"",
+            "ru": "Каменная кладка, Том 3: «Руководство по кирпичам от Дибна»"
+          },
+          "skill": "Masonry",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookMasonry4",
+          "sourceId": "BookMasonry4",
+          "names": {
+            "en": "Masonry IV: \"Secrets of a Professional Mason\"",
+            "ru": "Каменная кладка, Том 4: «Секреты каменщиков-профессионалов»"
+          },
+          "skill": "Masonry",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookMasonry5",
+          "sourceId": "BookMasonry5",
+          "names": {
+            "en": "Masonry V: \"Statistical Analysis of Historic Masonry Constructions\"",
+            "ru": "Каменная кладка, Том 5: «Статистический анализ исторической кладки»"
+          },
+          "skill": "Masonry",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-mechanics",
+      "kind": "skill",
+      "key": "Mechanics",
+      "items": [
+        {
+          "id": "Base.BookMechanic1",
+          "sourceId": "BookMechanic1",
+          "names": {
+            "en": "Mechanics I: \"Carzone's Repair Guide\"",
+            "ru": "Автомеханика, Том 1: «Основы ремонта от Автозоны»"
+          },
+          "skill": "Mechanics",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookMechanic2",
+          "sourceId": "BookMechanic2",
+          "names": {
+            "en": "Mechanics II: \"How Vehicle Engines Work\"",
+            "ru": "Автомеханика, Том 2: «Как работают автомобильные двигатели»"
+          },
+          "skill": "Mechanics",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookMechanic3",
+          "sourceId": "BookMechanic3",
+          "names": {
+            "en": "Mechanics III: \"Laine's Repair Manual '93\"",
+            "ru": "Автомеханика, Том 3: «Руководство по автосервису от Лайна» - 1993"
+          },
+          "skill": "Mechanics",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookMechanic4",
+          "sourceId": "BookMechanic4",
+          "names": {
+            "en": "Mechanics IV: \"Long Term Vehicle Maintenance\"",
+            "ru": "Автомеханика, Том 4: «Долгосрочное обслуживание автомобилей»"
+          },
+          "skill": "Mechanics",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookMechanic5",
+          "sourceId": "BookMechanic5",
+          "names": {
+            "en": "Mechanics V: \"Mastering Automotive Fault Diagnosis Techniques\"",
+            "ru": "Автомеханика, Том 5: «Освоение методов диагностики неисправностей автомобилей»"
+          },
+          "skill": "Mechanics",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-metalwelding",
+      "kind": "skill",
+      "key": "MetalWelding",
+      "items": [
+        {
+          "id": "Base.BookMetalWelding1",
+          "sourceId": "BookMetalWelding1",
+          "names": {
+            "en": "Welding I: \"Basics of Welding\"",
+            "ru": "Газосварка, Том 1: «Основы сварки»"
+          },
+          "skill": "MetalWelding",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookMetalWelding2",
+          "sourceId": "BookMetalWelding2",
+          "names": {
+            "en": "Welding II: \"Building with Metal\"",
+            "ru": "Газосварка, Том 2: «Строительство из металла»"
+          },
+          "skill": "MetalWelding",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookMetalWelding3",
+          "sourceId": "BookMetalWelding3",
+          "names": {
+            "en": "Welding III: \"Machining Metal: The Mass Genfac Guide\"",
+            "ru": "Газосварка, Том 3: «Руководство по обработке металла от «Mass-Genfac»"
+          },
+          "skill": "MetalWelding",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookMetalWelding4",
+          "sourceId": "BookMetalWelding4",
+          "names": {
+            "en": "Welding IV: \"Ore to Sheets: A Complete Metalworking Manual\"",
+            "ru": "Газосварка, Том 4: «От куска руды до листа металла - подробное руководство»"
+          },
+          "skill": "MetalWelding",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookMetalWelding5",
+          "sourceId": "BookMetalWelding5",
+          "names": {
+            "en": "Welding V: \"Technological Fundamentals of Metal Fabrication\"",
+            "ru": "Газосварка, Том 5: «Технологические основы металлообработки»"
+          },
+          "skill": "MetalWelding",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-blacksmith",
+      "kind": "skill",
+      "key": "Blacksmith",
+      "items": [
+        {
+          "id": "Base.BookBlacksmith1",
+          "sourceId": "BookBlacksmith1",
+          "names": {
+            "en": "Blacksmithing I: \"Elementary Forge Practice\"",
+            "ru": "Кузнечное дело, Том 1: «Первая практика в кузне»"
+          },
+          "skill": "Blacksmith",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookBlacksmith2",
+          "sourceId": "BookBlacksmith2",
+          "names": {
+            "en": "Blacksmithing II: \"General Purpose Blacksmithing\"",
+            "ru": "Кузнечное дело, Том 2: «Ковка общего назначения»"
+          },
+          "skill": "Blacksmith",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookBlacksmith3",
+          "sourceId": "BookBlacksmith3",
+          "names": {
+            "en": "Blacksmithing III: \"Old West Smiths and Their Secrets\"",
+            "ru": "Кузнечное дело, Том 3: «Кузнецы Старого Запада и их секреты»"
+          },
+          "skill": "Blacksmith",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookBlacksmith4",
+          "sourceId": "BookBlacksmith4",
+          "names": {
+            "en": "Blacksmithing IV: \"Really Hard Steel Co. Workers Handbook\"",
+            "ru": "Кузнечное дело, Том 4: «Справочник работника «Really Hard Steel Co.»"
+          },
+          "skill": "Blacksmith",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookBlacksmith5",
+          "sourceId": "BookBlacksmith5",
+          "names": {
+            "en": "Blacksmithing V: \"The Complete Encyclopedia of Metallurgy\"",
+            "ru": "Кузнечное дело, Том 5: «Полная энциклопедия металлургии»"
+          },
+          "skill": "Blacksmith",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-pottery",
+      "kind": "skill",
+      "key": "Pottery",
+      "items": [
+        {
+          "id": "Base.BookPottery1",
+          "sourceId": "BookPottery1",
+          "names": {
+            "en": "Pottery I: \"Ancient Pottery\"",
+            "ru": "Гончарное дело, Том 1: «Древнейшие гончарные изделия»"
+          },
+          "skill": "Pottery",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookPottery2",
+          "sourceId": "BookPottery2",
+          "names": {
+            "en": "Pottery II: \"Build Your Own Kiln\"",
+            "ru": "Гончарное дело, Том 2: «Печь своими руками»"
+          },
+          "skill": "Pottery",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookPottery3",
+          "sourceId": "BookPottery3",
+          "names": {
+            "en": "Pottery III: \"Glazing Ceramics at Home\"",
+            "ru": "Гончарное дело, Том 3: «Глазурование керамики на дому»"
+          },
+          "skill": "Pottery",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookPottery4",
+          "sourceId": "BookPottery4",
+          "names": {
+            "en": "Pottery IV: \"Ming Chinese Masterworks: A Guide\"",
+            "ru": "Гончарное дело, Том 4: «Путеводитель по китайским шедеврам эпохи династии Мин»"
+          },
+          "skill": "Pottery",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookPottery5",
+          "sourceId": "BookPottery5",
+          "names": {
+            "en": "Pottery V: \"Pyrometamorphic Process of Ceramic Materials\"",
+            "ru": "Гончарное дело, Том 5: «Пирометаморфический процесс керамических материалов»"
+          },
+          "skill": "Pottery",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-tailoring",
+      "kind": "skill",
+      "key": "Tailoring",
+      "items": [
+        {
+          "id": "Base.BookTailoring1",
+          "sourceId": "BookTailoring1",
+          "names": {
+            "en": "Tailoring I: \"Basic Clothing Repair\"",
+            "ru": "Шитьё, Том 1: «Основы ремонта одежды»"
+          },
+          "skill": "Tailoring",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookTailoring2",
+          "sourceId": "BookTailoring2",
+          "names": {
+            "en": "Tailoring II: \"From Rags to Royalty: A Sewing Guide\"",
+            "ru": "Шитьё, Том 2: «Из грязи в князи: искусство шитья»"
+          },
+          "skill": "Tailoring",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookTailoring3",
+          "sourceId": "BookTailoring3",
+          "names": {
+            "en": "Tailoring III: \"Haute Couture Tailoring Methods\"",
+            "ru": "Шитьё, Том 3: «Методы пошива одежды от-кутюр»"
+          },
+          "skill": "Tailoring",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookTailoring4",
+          "sourceId": "BookTailoring4",
+          "names": {
+            "en": "Tailoring IV: \"Modern Patterns from the Catwalks of Paris\"",
+            "ru": "Шитьё, Том 4: «Современные выкройки с подиумов Парижа»"
+          },
+          "skill": "Tailoring",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookTailoring5",
+          "sourceId": "BookTailoring5",
+          "names": {
+            "en": "Tailoring V: \"Textile Production and Manufacturing Techniques\"",
+            "ru": "Шитьё, Том 5: «Технологии изготовления текстиля»"
+          },
+          "skill": "Tailoring",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-trapping",
+      "kind": "skill",
+      "key": "Trapping",
+      "items": [
+        {
+          "id": "Base.BookTrapping1",
+          "sourceId": "BookTrapping1",
+          "names": {
+            "en": "Trapping I: \"Basic Pest Control\"",
+            "ru": "Звероловство, Том 1: «Основы борьбы с вредителями»"
+          },
+          "skill": "Trapping",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookTrapping2",
+          "sourceId": "BookTrapping2",
+          "names": {
+            "en": "Trapping II: \"Better Trapping, with Dean\"",
+            "ru": "Звероловство, Том 2: «Лучшие методы отлова от Дина»"
+          },
+          "skill": "Trapping",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookTrapping3",
+          "sourceId": "BookTrapping3",
+          "names": {
+            "en": "Trapping III: \"Park Rangers Wildlife Handbook '93\"",
+            "ru": "Звероловство, Том 3: «Справочник рейнджера по дикой природе» - 1993"
+          },
+          "skill": "Trapping",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookTrapping4",
+          "sourceId": "BookTrapping4",
+          "names": {
+            "en": "Trapping IV: \"Research on Rodents and Mammals of Kentucky\"",
+            "ru": "Звероловство, Том 4: «Изучение грызунов и млекопитающих Кентукки»"
+          },
+          "skill": "Trapping",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookTrapping5",
+          "sourceId": "BookTrapping5",
+          "names": {
+            "en": "Trapping V: \"The Encyclopedia of Applied Animal Psychology\"",
+            "ru": "Звероловство, Том 5: «Энциклопедия прикладной психологии животных»"
+          },
+          "skill": "Trapping",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-aiming",
+      "kind": "skill",
+      "key": "Aiming",
+      "items": [
+        {
+          "id": "Base.BookAiming1",
+          "sourceId": "BookAiming1",
+          "names": {
+            "en": "Aiming I: \"Better Aiming\"",
+            "ru": "Точность, Том 1: «Целимся лучше»"
+          },
+          "skill": "Aiming",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookAiming2",
+          "sourceId": "BookAiming2",
+          "names": {
+            "en": "Aiming II: \"Drawing and Shooting\"",
+            "ru": "Точность, Том 2: «Наведение и стрельба»"
+          },
+          "skill": "Aiming",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookAiming3",
+          "sourceId": "BookAiming3",
+          "names": {
+            "en": "Aiming III: \"Leading Moving Targets\"",
+            "ru": "Точность, Том 3: «Стрельба по движущимся целям»"
+          },
+          "skill": "Aiming",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookAiming4",
+          "sourceId": "BookAiming4",
+          "names": {
+            "en": "Aiming IV: \"Long Range Sniping Tactics\"",
+            "ru": "Точность, Том 4: «Тактика стрельбы на дальней дистанции»"
+          },
+          "skill": "Aiming",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookAiming5",
+          "sourceId": "BookAiming5",
+          "names": {
+            "en": "Aiming V: \"Secrets From the World's Best Snipers\"",
+            "ru": "Точность, Том 5: «Секреты лучших стрелков мира»"
+          },
+          "skill": "Aiming",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-reloading",
+      "kind": "skill",
+      "key": "Reloading",
+      "items": [
+        {
+          "id": "Base.BookReloading1",
+          "sourceId": "BookReloading1",
+          "names": {
+            "en": "Reloading I: \"Basic Reloading\"",
+            "ru": "Перезарядка, Том 1: «Основы перезарядки»"
+          },
+          "skill": "Reloading",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookReloading2",
+          "sourceId": "BookReloading2",
+          "names": {
+            "en": "Reloading II: \"Dead Man's Click\"",
+            "ru": "Перезарядка, Том 2: «Щелчок мертвеца»"
+          },
+          "skill": "Reloading",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookReloading3",
+          "sourceId": "BookReloading3",
+          "names": {
+            "en": "Reloading III: \"Jungle Style Reloading\"",
+            "ru": "Перезарядка, Том 3: «Перезарядка в полевых условиях»"
+          },
+          "skill": "Reloading",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookReloading4",
+          "sourceId": "BookReloading4",
+          "names": {
+            "en": "Reloading IV: \"Strippers, Speedloaders, and Bolt Action\"",
+            "ru": "Перезарядка, Том 4: «Обоймы, спидлоадеры и продольно-скользящие затворы»"
+          },
+          "skill": "Reloading",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookReloading5",
+          "sourceId": "BookReloading5",
+          "names": {
+            "en": "Reloading V: \"The Ultimate Encyclopedia of Reloading Techniques\"",
+            "ru": "Перезарядка, Том 5: «Полная энциклопедия техник перезарядки»"
+          },
+          "skill": "Reloading",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-husbandry",
+      "kind": "skill",
+      "key": "Husbandry",
+      "items": [
+        {
+          "id": "Base.BookHusbandry1",
+          "sourceId": "BookHusbandry1",
+          "names": {
+            "en": "Animal Care I: \"A Tale of St. Francis\"",
+            "ru": "Уход за животными, Том 1: «Сказание о Святом Франциске»"
+          },
+          "skill": "Husbandry",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookHusbandry2",
+          "sourceId": "BookHusbandry2",
+          "names": {
+            "en": "Animal Care II: \"Animal Welfare Basics\"",
+            "ru": "Уход за животными, Том 2: «Основы благополучия животных»"
+          },
+          "skill": "Husbandry",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookHusbandry3",
+          "sourceId": "BookHusbandry3",
+          "names": {
+            "en": "Animal Care III: \"How Animals Think: A Helpful Guide\"",
+            "ru": "Уход за животными, Том 3: «Как думают животные: полезные советы»"
+          },
+          "skill": "Husbandry",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookHusbandry4",
+          "sourceId": "BookHusbandry4",
+          "names": {
+            "en": "Animal Care IV: \"The Wants and Needs of Diverse Fauna\"",
+            "ru": "Уход за животными, Том 4: «Потребности и желания разных видов»"
+          },
+          "skill": "Husbandry",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookHusbandry5",
+          "sourceId": "BookHusbandry5",
+          "names": {
+            "en": "Animal Care V: \"Wilds Tamed: An In-Depth Comparative\"",
+            "ru": "Уход за животными, Том 5: «Приручение диких животных: подробный анализ»"
+          },
+          "skill": "Husbandry",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-butchering",
+      "kind": "skill",
+      "key": "Butchering",
+      "items": [
+        {
+          "id": "Base.BookButchering1",
+          "sourceId": "BookButchering1",
+          "names": {
+            "en": "Butchering I: \"Butchering Basics\"",
+            "ru": "Мясницкое дело, Том 1: «Основы разделки мяса»"
+          },
+          "skill": "Butchering",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookButchering2",
+          "sourceId": "BookButchering2",
+          "names": {
+            "en": "Butchering II: \"From Chuck to Shank\"",
+            "ru": "Мясницкое дело, Том 2: «От шеи до окорока»"
+          },
+          "skill": "Butchering",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookButchering3",
+          "sourceId": "BookButchering3",
+          "names": {
+            "en": "Butchering III: \"Hunter's Guide to Butchering\"",
+            "ru": "Мясницкое дело, Том 3: «Руководство охотника по разделке добычи»"
+          },
+          "skill": "Butchering",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookButchering4",
+          "sourceId": "BookButchering4",
+          "names": {
+            "en": "Butchering IV: \"Master Butcher's Complete Guide\"",
+            "ru": "Мясницкое дело, Том 4: «Полное руководство мастера-мясника»"
+          },
+          "skill": "Butchering",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookButchering5",
+          "sourceId": "BookButchering5",
+          "names": {
+            "en": "Butchering V: \"The Ergonomics of Tools in Meat Cutting Operations\"",
+            "ru": "Мясницкое дело, Том 5: «Эргономика инструментов для разделки мяса»"
+          },
+          "skill": "Butchering",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-tracking",
+      "kind": "skill",
+      "key": "Tracking",
+      "items": [
+        {
+          "id": "Base.BookTracking1",
+          "sourceId": "BookTracking1",
+          "names": {
+            "en": "Tracking I: \"Animal Pawprints\"",
+            "ru": "Выслеживание, Том 1: «Следы животных и их различия»"
+          },
+          "skill": "Tracking",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookTracking2",
+          "sourceId": "BookTracking2",
+          "names": {
+            "en": "Tracking II: \"Hunting with Hemingway\"",
+            "ru": "Выслеживание, Том 2: «Охота с Хемингуэем»"
+          },
+          "skill": "Tracking",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookTracking3",
+          "sourceId": "BookTracking3",
+          "names": {
+            "en": "Tracking III: \"Long Range Animal Tracking\"",
+            "ru": "Выслеживание, Том 3: «Отслеживание животных на больших расстояниях»"
+          },
+          "skill": "Tracking",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookTracking4",
+          "sourceId": "BookTracking4",
+          "names": {
+            "en": "Tracking IV: \"The Smell of Ivory: An African Adventure\"",
+            "ru": "Выслеживание, Том 4: «Запах слоновой кости: африканское приключение»"
+          },
+          "skill": "Tracking",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookTracking5",
+          "sourceId": "BookTracking5",
+          "names": {
+            "en": "Tracking V: \"Understanding Animal Behavior Through Spoor Placement\"",
+            "ru": "Выслеживание, Том 5: «Понимание поведения животных через анализ следов»"
+          },
+          "skill": "Tracking",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-longblade",
+      "kind": "skill",
+      "key": "LongBlade",
+      "items": [
+        {
+          "id": "Base.BookLongBlade1",
+          "sourceId": "BookLongBlade1",
+          "names": {
+            "en": "Long Blade I: \"Cool Swords!\"",
+            "ru": "Длинное режущее, Том 1: «Крутые мечи!»"
+          },
+          "skill": "LongBlade",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookLongBlade2",
+          "sourceId": "BookLongBlade2",
+          "names": {
+            "en": "Long Blade II: \"Fencing: A History\"",
+            "ru": "Длинное режущее, Том 2: «История фехтования»"
+          },
+          "skill": "LongBlade",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookLongBlade3",
+          "sourceId": "BookLongBlade3",
+          "names": {
+            "en": "Long Blade III: \"Old Sword-Play\" by Alfred Hutton",
+            "ru": "Длинное режущее, Том 3: «Старинное фехтование Альфреда Хаттона»"
+          },
+          "skill": "LongBlade",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookLongBlade4",
+          "sourceId": "BookLongBlade4",
+          "names": {
+            "en": "Long Blade IV: \"The Zettels of Johannes Liechtenauer\"",
+            "ru": "Длинное режущее, Том 4: «Заметки Йоханнеса Лихтенауэра»"
+          },
+          "skill": "LongBlade",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookLongBlade5",
+          "sourceId": "BookLongBlade5",
+          "names": {
+            "en": "Long Blade V: \"Wear Analysis of Selected Medieval Swords\"",
+            "ru": "Длинное режущее, Том 5: «Анализ износа средневековых мечей»"
+          },
+          "skill": "LongBlade",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    },
+    {
+      "id": "books-maintenance",
+      "kind": "skill",
+      "key": "Maintenance",
+      "items": [
+        {
+          "id": "Base.BookMaintenance1",
+          "sourceId": "BookMaintenance1",
+          "names": {
+            "en": "Maintenance I: \"Basic Repairs\"",
+            "ru": "Прочность, Том 1: «Основы ремонта и обслуживания»"
+          },
+          "skill": "Maintenance",
+          "levelFrom": 1,
+          "levelTo": 2
+        },
+        {
+          "id": "Base.BookMaintenance2",
+          "sourceId": "BookMaintenance2",
+          "names": {
+            "en": "Maintenance II: \"Better Tools, Made Easy\"",
+            "ru": "Прочность, Том 2: «Инструменты облегчающие жизнь»"
+          },
+          "skill": "Maintenance",
+          "levelFrom": 3,
+          "levelTo": 4
+        },
+        {
+          "id": "Base.BookMaintenance3",
+          "sourceId": "BookMaintenance3",
+          "names": {
+            "en": "Maintenance III: \"Home Guide to Tool Repairs\"",
+            "ru": "Прочность, Том 3: «Починка инструментов на дому»"
+          },
+          "skill": "Maintenance",
+          "levelFrom": 5,
+          "levelTo": 6
+        },
+        {
+          "id": "Base.BookMaintenance4",
+          "sourceId": "BookMaintenance4",
+          "names": {
+            "en": "Maintenance IV: \"Maintaining High Grade Tools\"",
+            "ru": "Прочность, Том 4: «Уход за профессиональным инструментом»"
+          },
+          "skill": "Maintenance",
+          "levelFrom": 7,
+          "levelTo": 8
+        },
+        {
+          "id": "Base.BookMaintenance5",
+          "sourceId": "BookMaintenance5",
+          "names": {
+            "en": "Maintenance V: \"Understanding Biomechanics of Tool Use\"",
+            "ru": "Прочность, Том 5: «Биомеханика в сфере работы с инструментами»"
+          },
+          "skill": "Maintenance",
+          "levelFrom": 9,
+          "levelTo": 10
+        }
+      ]
+    }
+  ]
+}

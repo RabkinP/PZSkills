@@ -1,0 +1,1427 @@
+{
+  "id": "recipeSources",
+  "icon": "📖",
+  "groups": [
+    {
+      "id": "recipes-smithingmag",
+      "kind": "recipeFamily",
+      "key": "SmithingMag",
+      "items": [
+        {
+          "id": "Base.SmithingMag1",
+          "sourceId": "SmithingMag1",
+          "names": {
+            "en": "Magazine: Everyday Smithing - June 1993",
+            "ru": "Журнал: «Кузнечные будни» - Июнь 1993"
+          },
+          "recipes": [
+            "Forge_Tongs",
+            "Forge_Heading_Tool",
+            "Forge_Draw_Plate",
+            "Forge_Nails",
+            "Forge_Smithing_Hammer_Head",
+            "Forge_Masons_Chisel",
+            "Forge_Masons_Trowel",
+            "Forge_Metalworking_Chisel",
+            "Forge_Metalworking_Punch",
+            "Forge_Metalworking_Pliers",
+            "Forge_Fireplace_Poker",
+            "MakeCrudeWhetstone",
+            "Forge_File",
+            "Forge_Drill",
+            "Drill_Draw_Plate",
+            "Drill_Heading_Tool",
+            "Forge_Wrench"
+          ]
+        },
+        {
+          "id": "Base.SmithingMag2",
+          "sourceId": "SmithingMag2",
+          "names": {
+            "en": "Magazine: Everyday Smithing - May 1993",
+            "ru": "Журнал: «Кузнечные будни» - Май 1993"
+          },
+          "recipes": [
+            "base:kitchentools",
+            "Forge_Cooking_Pot",
+            "Forge_Roasting_Pan",
+            "Forge_Saucepan",
+            "Forge_Baking_Tray",
+            "Forge_Baking_Pan",
+            "Forge_Frying_Pan",
+            "Forge_Bucket",
+            "Forge_Corkscrew",
+            "Forge_Kettle",
+            "Forge_Goblet",
+            "Forge_Cup"
+          ]
+        },
+        {
+          "id": "Base.SmithingMag3",
+          "sourceId": "SmithingMag3",
+          "names": {
+            "en": "Magazine: Everyday Smithing - April 1993",
+            "ru": "Журнал: «Кузнечные будни» - Апрель 1993"
+          },
+          "recipes": [
+            "Forge_Steel_Sheet",
+            "Forge_Small_Steel_Sheet",
+            "Forge_Saw",
+            "Forge_Spade_Head",
+            "Forge_Gardening_Trowel",
+            "Forge_Garden_Hoe_Head",
+            "Forge_Hand_Scythe_Head",
+            "Forge_Sheep_Shears",
+            "Forge_Scythe_Head",
+            "Forge_Lantern"
+          ]
+        },
+        {
+          "id": "Base.SmithingMag4",
+          "sourceId": "SmithingMag4",
+          "names": {
+            "en": "Magazine: Small-Scale Smithing",
+            "ru": "Журнал: «Ковка мелких инструментов»"
+          },
+          "recipes": [
+            "Forge_Tweezers",
+            "Forge_Forceps",
+            "Forge_Scissors",
+            "Forge_Door_Knob",
+            "Forge_Hinge",
+            "Forge_Straight_Razor",
+            "Forge_Fishing_Hooks",
+            "Forge_Needle",
+            "Forge_Buckle"
+          ]
+        },
+        {
+          "id": "Base.SmithingMag5",
+          "sourceId": "SmithingMag5",
+          "names": {
+            "en": "Magazine: Blunt Forge",
+            "ru": "Журнал: «Ковка тяжёлых инструментов»"
+          },
+          "recipes": [
+            "Forge_Clawhammer_Head",
+            "Forge_Crowbar",
+            "Forge_Sledgehammer_Head",
+            "Forge_Ball_Peen_Hammer_Head",
+            "Forge_Club_Hammer_Head",
+            "Forge_Pick_Axe_Head"
+          ]
+        },
+        {
+          "id": "Base.SmithingMag6",
+          "sourceId": "SmithingMag6",
+          "names": {
+            "en": "Magazine: Modern Blacksmithing at Home",
+            "ru": "Журнал: «Современная металлообработка на дому»"
+          },
+          "recipes": [
+            "Forge",
+            "Advanced_Forge"
+          ]
+        },
+        {
+          "id": "Base.SmithingMag7",
+          "sourceId": "SmithingMag7",
+          "names": {
+            "en": "Magazine: Medieval Armory - June 1993",
+            "ru": "Журнал: «Средневековая оружейная» - Июнь 1993"
+          },
+          "recipes": [
+            "Forge_Crude_Sword_Blade",
+            "Forge_Crude_Shortsword_Blade",
+            "Forge_Sword_Blade",
+            "Forge_ShortSwordBlade",
+            "ForgeSpearHead",
+            "ForgeLongSpearHead",
+            "ForgeHandguardDagger"
+          ]
+        },
+        {
+          "id": "Base.SmithingMag8",
+          "sourceId": "SmithingMag8",
+          "names": {
+            "en": "Magazine: American Bladecraft",
+            "ru": "Журнал: «Американское искусство изготовления клинков»"
+          },
+          "recipes": [
+            "Forge_Meat_Cleaver_Blade",
+            "Forge_Hunting_Knife_Blade",
+            "Forge_Machete_Blade",
+            "Forge_Hand_Axe_Head",
+            "Forge_Wood_Axe_Head",
+            "Forge_Old_Axe_Head",
+            "Forge_Small_Knife",
+            "Forge_Large_Knife_Blade",
+            "Forge_Fleshing_Tool"
+          ]
+        },
+        {
+          "id": "Base.SmithingMag9",
+          "sourceId": "SmithingMag9",
+          "names": {
+            "en": "Magazine: Iron Age Blacksmithing",
+            "ru": "Журнал: «Металлообработка железного века»"
+          },
+          "recipes": [
+            "Charcoal_Pit",
+            "Forge_Primitive_Forge",
+            "Primitive_Furnace"
+          ]
+        },
+        {
+          "id": "Base.SmithingMag10",
+          "sourceId": "SmithingMag10",
+          "names": {
+            "en": "Magazine: Medieval Blacksmithing",
+            "ru": "Журнал: «Средневековая металлообработка»"
+          },
+          "recipes": [
+            "Smelting_Furnace",
+            "Blast_Furnace"
+          ]
+        },
+        {
+          "id": "Base.SmithingMag11",
+          "sourceId": "SmithingMag11",
+          "names": {
+            "en": "Magazine: Medieval Armory - May 1993",
+            "ru": "Журнал: «Средневековая оружейная» - Май 1993"
+          },
+          "recipes": [
+            "ForgeMaceHead",
+            "MakeSpikedClub",
+            "MakeSpikedBaseballBat",
+            "MakeSpikedCudgel",
+            "Forge_Old_Axe_Head",
+            "CarveShortBat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipes-armormag",
+      "kind": "recipeFamily",
+      "key": "ArmorMag",
+      "items": [
+        {
+          "id": "Base.ArmorMag1",
+          "sourceId": "ArmorMag1",
+          "names": {
+            "en": "Magazine: Outfit Apocalypse",
+            "ru": "Журнал: «Одежда для апокалипсиса»"
+          },
+          "recipes": [
+            "MakeTireBodyArmor",
+            "MakeTireForearmArmor",
+            "MakeTireShinArmor",
+            "MakeTireShoulderArmorLeft",
+            "MakeTireShoulderArmorRight",
+            "SpikePadding",
+            "SewLeatherCodpiece",
+            "SewLeatherGorget"
+          ]
+        },
+        {
+          "id": "Base.ArmorMag2",
+          "sourceId": "ArmorMag2",
+          "names": {
+            "en": "Magazine: Early Indigenous Armor - An In-Depth Study",
+            "ru": "Журнал: «Углублённое изучение первобытной туземной брони»"
+          },
+          "recipes": [
+            "MakeBoneBodyArmor",
+            "MakeBoneChoker",
+            "MakeBoneForearmArmor",
+            "MakeBoneShinArmor",
+            "MakeBoneShoulderArmor",
+            "MakeBoneThighArmor",
+            "MakeWoodBodyArmor",
+            "MakeWoodForearmArmor",
+            "MakeWoodShinArmor",
+            "MakeWoodShoulderArmor",
+            "MakeWoodThighArmor"
+          ]
+        },
+        {
+          "id": "Base.ArmorMag3",
+          "sourceId": "ArmorMag3",
+          "names": {
+            "en": "Magazine: Secrets of the Outback Outlaws",
+            "ru": "Журнал: «Тайны бандитов из глубинки»"
+          },
+          "recipes": [
+            "MakeScrapMetalHelmet",
+            "MakeScrapMetalBodyArmor",
+            "MakeScrapMetalShoulderArmor",
+            "MakeScrapMetalThighArmor"
+          ]
+        },
+        {
+          "id": "Base.ArmorMag4",
+          "sourceId": "ArmorMag4",
+          "names": {
+            "en": "Magazine: European Armor in the Late Medieval Era",
+            "ru": "Журнал: «Европейские доспехи позднего средневековья»"
+          },
+          "recipes": [
+            "base:assemble_shoulder_armor",
+            "Assemble_Articulated_Thigh_Armor",
+            "Forge_Codpiece",
+            "Forge_Gorget",
+            "Assemble_FullMetal_Forearm_Armor",
+            "Assemble_Articulated_Shin_Armor",
+            "Forge_Armored_Gloves",
+            "Forge_Metal_Helmet",
+            "Forge_CoatOfPlates",
+            "Forge_Buckle"
+          ]
+        },
+        {
+          "id": "Base.ArmorMag5",
+          "sourceId": "ArmorMag5",
+          "names": {
+            "en": "Magazine: Armor in the Iron Age",
+            "ru": "Журнал: «Броня железного века»"
+          },
+          "recipes": [
+            "Assemble_Forearm_Armor",
+            "Forge_Body_Armor",
+            "Assemble_Simple_Shoulder_Armor",
+            "Assemble_Thigh_Armor",
+            "Assemble_Shin_Armor",
+            "Forge_Metal_Mask",
+            "Forge_Buckle"
+          ]
+        },
+        {
+          "id": "Base.ArmorMag6",
+          "sourceId": "ArmorMag6",
+          "names": {
+            "en": "Magazine: Strange Histories - Siberian Bear Hunting",
+            "ru": "Журнал: «Странные истории - Охота на сибирского медведя»"
+          },
+          "recipes": [
+            "SpikePadding",
+            "SpikeArmorWelding",
+            "ForgeSpearHead",
+            "ForgeLongSpearHead"
+          ]
+        },
+        {
+          "id": "Base.ArmorMag7",
+          "sourceId": "ArmorMag7",
+          "names": {
+            "en": "Magazine: FBI Incident Report: San Fernando Bank Robbery",
+            "ru": "Журнал: «Отчёт ФБР: ограбление банка в Сан-Фернандо»"
+          },
+          "recipes": [
+            "base:makebulletprooflimbarmor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipes-cookingmag",
+      "kind": "recipeFamily",
+      "key": "CookingMag",
+      "items": [
+        {
+          "id": "Base.CookingMag1",
+          "sourceId": "CookingMag1",
+          "names": {
+            "en": "Magazine: Good Cooking - June 1993",
+            "ru": "Журнал: «Великолепная кухня» - Июнь 1993"
+          },
+          "recipes": [
+            "MakeCakeBatter",
+            "MakePieDough"
+          ]
+        },
+        {
+          "id": "Base.CookingMag2",
+          "sourceId": "CookingMag2",
+          "names": {
+            "en": "Magazine: Good Cooking - May 1993",
+            "ru": "Журнал: «Великолепная кухня» - Май 1993"
+          },
+          "recipes": [
+            "MakeBreadDough",
+            "MakeBaguetteDough",
+            "MakeBiscuits"
+          ]
+        },
+        {
+          "id": "Base.CookingMag3",
+          "sourceId": "CookingMag3",
+          "names": {
+            "en": "Magazine: Italian Delights",
+            "ru": "Журнал: «Итальянские деликатесы»"
+          },
+          "recipes": [
+            "MakePizza"
+          ]
+        },
+        {
+          "id": "Base.CookingMag4",
+          "sourceId": "CookingMag4",
+          "names": {
+            "en": "Magazine: Grandma's Kitchen",
+            "ru": "Журнал: «Бабушкина кухня»"
+          },
+          "recipes": [
+            "MakeChocolateCookieDough",
+            "MakeChocolateChipCookieDough",
+            "MakeOatmealCookieDough",
+            "MakeSugarCookieDough",
+            "MakeShortbreadCookieDough"
+          ]
+        },
+        {
+          "id": "Base.CookingMag5",
+          "sourceId": "CookingMag5",
+          "names": {
+            "en": "Magazine: World Cooking",
+            "ru": "Журнал: «Мировая кулинария»"
+          },
+          "recipes": [
+            "MakeSushi",
+            "MakeMaki",
+            "MakeOnigiri"
+          ]
+        },
+        {
+          "id": "Base.CookingMag6",
+          "sourceId": "CookingMag6",
+          "names": {
+            "en": "Magazine: Delicious Meals - June 1993",
+            "ru": "Журнал: «Вкуснейшие блюда» - Июнь 1993"
+          },
+          "recipes": [
+            "MakeFriedShrimp",
+            "MakeFriedOnionRings",
+            "MakeCabbageRolls",
+            "MakeGuacamole"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipes-electronicsmag",
+      "kind": "recipeFamily",
+      "key": "ElectronicsMag",
+      "items": [
+        {
+          "id": "Base.ElectronicsMag1",
+          "sourceId": "ElectronicsMag1",
+          "names": {
+            "en": "Magazine: Zapper!",
+            "ru": "Журнал: «Пультик!»"
+          },
+          "recipes": [
+            "MakeRemoteControllerV1",
+            "MakeRemoteControllerV2",
+            "MakeRemoteControllerV3",
+            "MakeRemoteTrigger",
+            "AddCraftedTriggerToBomb"
+          ]
+        },
+        {
+          "id": "Base.ElectronicsMag2",
+          "sourceId": "ElectronicsMag2",
+          "names": {
+            "en": "Magazine: Like Clockwork",
+            "ru": "Журнал: «Как часы»"
+          },
+          "recipes": [
+            "MakeTimer",
+            "AddTimerToBomb"
+          ]
+        },
+        {
+          "id": "Base.ElectronicsMag3",
+          "sourceId": "ElectronicsMag3",
+          "names": {
+            "en": "Magazine: Home Security Monthly",
+            "ru": "Журнал: «Ежемесячник домашней безопасности»"
+          },
+          "recipes": [
+            "AddMotionSensorV1ToBomb",
+            "AddMotionSensorV2ToBomb",
+            "AddMotionSensorV3ToBomb"
+          ]
+        },
+        {
+          "id": "Base.ElectronicsMag4",
+          "sourceId": "ElectronicsMag4",
+          "names": {
+            "en": "Magazine: How to Use Generators",
+            "ru": "Журнал: «Руководство по генераторам»"
+          },
+          "recipes": [
+            "Generator"
+          ]
+        },
+        {
+          "id": "Base.ElectronicsMag5",
+          "sourceId": "ElectronicsMag5",
+          "names": {
+            "en": "Magazine: Sparky's Lighting Guide",
+            "ru": "Журнал: «Руководство по освещению от Спарки»"
+          },
+          "recipes": [
+            "MakeImprovisedFlashlight",
+            "MakeImprovisedLantern"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipes-engineermagazine",
+      "kind": "recipeFamily",
+      "key": "EngineerMagazine",
+      "items": [
+        {
+          "id": "Base.EngineerMagazine1",
+          "sourceId": "EngineerMagazine1",
+          "names": {
+            "en": "Magazine: Real Spy Secrets - June 1993",
+            "ru": "Журнал: «Настоящие секреты шпионажа» - Июнь 1993"
+          },
+          "recipes": [
+            "MakeNoiseMaker",
+            "MakeFirecracker"
+          ]
+        },
+        {
+          "id": "Base.EngineerMagazine2",
+          "sourceId": "EngineerMagazine2",
+          "names": {
+            "en": "Magazine: The Cheapskate's John Spiral - Chemical Warfare",
+            "ru": "Журнал: «Бюджетный Джон Спайрал - Химическая война»"
+          },
+          "recipes": [
+            "MakeSmokeBomb",
+            "MakeCraftedGasMaskFilter",
+            "MakeImprovisedGasMask",
+            "RechargeFilters"
+          ]
+        },
+        {
+          "id": "Base.EngineerMagazine3",
+          "sourceId": "EngineerMagazine3",
+          "names": {
+            "en": "Magazine: The Cheapskate's John Spiral - Homemade Explosives",
+            "ru": "Журнал: «Бюджетный Джон Спайрал - Самодельная взрывчатка»"
+          },
+          "recipes": [
+            "MakeAerosolBomb",
+            "MakeFlameBomb",
+            "MakePipeBomb"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipes-farmingmag",
+      "kind": "recipeFamily",
+      "key": "FarmingMag",
+      "items": [
+        {
+          "id": "Base.FarmingMag1",
+          "sourceId": "FarmingMag1",
+          "names": {
+            "en": "Magazine: Kentucky Farmer - June 1993",
+            "ru": "Журнал: «Фермер Кентукки» - Июнь 1993"
+          },
+          "recipes": [
+            "MakeMildewCure"
+          ]
+        },
+        {
+          "id": "Base.FarmingMag2",
+          "sourceId": "FarmingMag2",
+          "names": {
+            "en": "Magazine: Kentucky Farmer - May 1993",
+            "ru": "Журнал: «Фермер Кентукки» - Май 1993"
+          },
+          "recipes": [
+            "MakeFliesCureFromCigarettes",
+            "MakeFliesCureFromLooseTobacco",
+            "MakeFliesCureFromChewingTobacco",
+            "MakeAphidsCure"
+          ]
+        },
+        {
+          "id": "Base.FarmingMag3",
+          "sourceId": "FarmingMag3",
+          "names": {
+            "en": "Magazine: Blooms and Blossoms",
+            "ru": "Журнал: «Цветы и бутоны»"
+          },
+          "recipes": [
+            "base:chamomile growing season",
+            "base:marigold growing season",
+            "base:sunflower growing season",
+            "base:rose growing season",
+            "base:poppy growing season",
+            "base:lavender growing season"
+          ]
+        },
+        {
+          "id": "Base.FarmingMag4",
+          "sourceId": "FarmingMag4",
+          "names": {
+            "en": "Magazine: The Farmers Guide",
+            "ru": "Журнал: «Руководство для фермеров»"
+          },
+          "recipes": [
+            "MakeScarecrow",
+            "MakeBarbedWire"
+          ]
+        },
+        {
+          "id": "Base.FarmingMag5",
+          "sourceId": "FarmingMag5",
+          "names": {
+            "en": "Magazine: American Homesteading",
+            "ru": "Журнал: «Американское сельское хозяйство»"
+          },
+          "recipes": [
+            "MakeJar"
+          ]
+        },
+        {
+          "id": "Base.FarmingMag6",
+          "sourceId": "FarmingMag6",
+          "names": {
+            "en": "Magazine: Cropping for Cash",
+            "ru": "Журнал: «Земледелие и заработок»"
+          },
+          "recipes": [
+            "base:barley growing season",
+            "base:corn growing season",
+            "base:flax growing season",
+            "base:rye growing season",
+            "base:soybean growing season",
+            "base:sugar beet growing season",
+            "base:tobacco growing season",
+            "base:wheat growing season"
+          ]
+        },
+        {
+          "id": "Base.FarmingMag7",
+          "sourceId": "FarmingMag7",
+          "names": {
+            "en": "Magazine: Growing Your Own",
+            "ru": "Журнал: «Выращиваем самостоятельно»"
+          },
+          "recipes": [
+            "base:bell pepper growing season",
+            "base:broccoli growing season",
+            "base:cabbage growing season",
+            "base:carrot growing season",
+            "base:cauliflower growing season",
+            "base:cucumber growing season",
+            "base:garlic growing season",
+            "base:green pea growing season",
+            "base:habanero growing season",
+            "base:jalapeno growing season",
+            "base:kale growing season",
+            "base:leek growing season",
+            "base:lettuce growing season",
+            "base:onion growing season",
+            "base:potato growing season",
+            "base:pumpkin growing season",
+            "base:radish growing season",
+            "base:spinach growing season",
+            "base:strawberry growing season",
+            "base:sweet potato growing season",
+            "base:tomato growing season",
+            "base:turnip growing season",
+            "base:watermelon growing season",
+            "base:zucchini growing season"
+          ]
+        },
+        {
+          "id": "Base.FarmingMag8",
+          "sourceId": "FarmingMag8",
+          "names": {
+            "en": "Magazine: Thyme Time",
+            "ru": "Журнал: «Время тимьяна»"
+          },
+          "recipes": [
+            "base:basil growing season",
+            "base:chives growing season",
+            "base:cilantro growing season",
+            "base:lemongrass growing season",
+            "base:mint growing season",
+            "base:oregano growing season",
+            "base:parsley growing season",
+            "base:sage growing season",
+            "base:rosemary growing season",
+            "base:thyme growing season",
+            "base:hops growing season"
+          ]
+        },
+        {
+          "id": "Base.FarmingMag9",
+          "sourceId": "FarmingMag9",
+          "names": {
+            "en": "Magazine: Herbal Remedy Growing",
+            "ru": "Журнал: «Выращивание лекарственных трав»"
+          },
+          "recipes": [
+            "base:black sage growing season",
+            "base:broadleaf plantain growing season",
+            "base:comfrey growing season",
+            "base:common mallow growing season",
+            "base:wild garlic growing season"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipes-fishingmag",
+      "kind": "recipeFamily",
+      "key": "FishingMag",
+      "items": [
+        {
+          "id": "Base.FishingMag1",
+          "sourceId": "FishingMag1",
+          "names": {
+            "en": "Magazine: Angler USA - June 1993",
+            "ru": "Журнал: «Рыболов США» - Июнь 1993"
+          },
+          "recipes": [
+            "MakeFishingRod",
+            "FixFishingRod",
+            "MakeChum"
+          ]
+        },
+        {
+          "id": "Base.FishingMag2",
+          "sourceId": "FishingMag2",
+          "names": {
+            "en": "Magazine: Angler USA - May 1993",
+            "ru": "Журнал: «Рыболов США» - Май 1993"
+          },
+          "recipes": [
+            "MakeFishingNet",
+            "GetWireBack"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipes-glassmakingmag",
+      "kind": "recipeFamily",
+      "key": "GlassmakingMag",
+      "items": [
+        {
+          "id": "Base.GlassmakingMag1",
+          "sourceId": "GlassmakingMag1",
+          "names": {
+            "en": "Magazine: Murano Glass Manual",
+            "ru": "Журнал: «Руководство по стеклу Мурано»"
+          },
+          "recipes": [
+            "MakeWineGlass",
+            "MakeLanternGlass"
+          ]
+        },
+        {
+          "id": "Base.GlassmakingMag2",
+          "sourceId": "GlassmakingMag2",
+          "names": {
+            "en": "Magazine: Carlow Crystal Guide",
+            "ru": "Журнал: «Путеводитель по хрусталю Карлоу»"
+          },
+          "recipes": [
+            "MakeDrinkingGlass",
+            "MakeGlassPanel"
+          ]
+        },
+        {
+          "id": "Base.GlassmakingMag3",
+          "sourceId": "GlassmakingMag3",
+          "names": {
+            "en": "Magazine: Bottle Making at Home",
+            "ru": "Журнал: «Изготовление бутылок на дому»"
+          },
+          "recipes": [
+            "MakeGlassBottle",
+            "MakeGlassJar"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipes-hempmag",
+      "kind": "recipeFamily",
+      "key": "HempMag",
+      "items": [
+        {
+          "id": "Base.HempMag1",
+          "sourceId": "HempMag1",
+          "names": {
+            "en": "Magazine: Legalize It!",
+            "ru": "Журнал: «За легализацию!»"
+          },
+          "recipes": [
+            "base:hemp growing season"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipes-herbalistmag",
+      "kind": "recipeFamily",
+      "key": "HerbalistMag",
+      "items": [
+        {
+          "id": "Base.HerbalistMag",
+          "sourceId": "HerbalistMag",
+          "names": {
+            "en": "Magazine: Wilderness Survival",
+            "ru": "Журнал: «Травы и выживание в дикой природе»"
+          },
+          "recipes": [
+            "Herbalist",
+            "MakeStoneBlade",
+            "FireHardenSpear",
+            "MakeCrudeWhetstone",
+            "MakePlantainPoultice",
+            "MakeComfreyPoultice",
+            "MakeWildGarlicPoultice",
+            "BindSpear"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipes-huntingmag",
+      "kind": "recipeFamily",
+      "key": "HuntingMag",
+      "items": [
+        {
+          "id": "Base.HuntingMag1",
+          "sourceId": "HuntingMag1",
+          "names": {
+            "en": "Magazine: Small Game Hunting",
+            "ru": "Журнал: «Охота на мелкую дичь»"
+          },
+          "recipes": [
+            "MakeSnareTrap"
+          ]
+        },
+        {
+          "id": "Base.HuntingMag2",
+          "sourceId": "HuntingMag2",
+          "names": {
+            "en": "Magazine: The Hunter",
+            "ru": "Журнал: «Охотник»"
+          },
+          "recipes": [
+            "MakeWoodenBoxTrap",
+            "MakeStickTrap"
+          ]
+        },
+        {
+          "id": "Base.HuntingMag3",
+          "sourceId": "HuntingMag3",
+          "names": {
+            "en": "Magazine: Wildlife Preserve",
+            "ru": "Журнал: «Заповедник»"
+          },
+          "recipes": [
+            "MakeTrapBox",
+            "MakeCageTrap"
+          ]
+        },
+        {
+          "id": "Base.HuntingMag4",
+          "sourceId": "HuntingMag4",
+          "names": {
+            "en": "Magazine: Get Stuffed",
+            "ru": "Журнал: «Таксидермия»"
+          },
+          "recipes": [
+            "MakeStagHeadTrophy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipes-keymag",
+      "kind": "recipeFamily",
+      "key": "KeyMag",
+      "items": [
+        {
+          "id": "Base.KeyMag1",
+          "sourceId": "KeyMag1",
+          "names": {
+            "en": "Magazine: The Cheapskate's John Spiral - Escaping Captivity",
+            "ru": "Журнал: «Бюджетный Джон Спайрал - Побег из плена»"
+          },
+          "recipes": [
+            "CopyBuildingKey",
+            "MakeScrewdriver"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipes-knittingmag",
+      "kind": "recipeFamily",
+      "key": "KnittingMag",
+      "items": [
+        {
+          "id": "Base.KnittingMag1",
+          "sourceId": "KnittingMag1",
+          "names": {
+            "en": "Magazine: Woolly Yarns - June 1993",
+            "ru": "Журнал: «Вязальные истории» - Июнь 1993"
+          },
+          "recipes": [
+            "KnitScarf",
+            "KnitLegwarmers",
+            "KnitSweaterVest",
+            "KnitSocks",
+            "KnitDoily"
+          ]
+        },
+        {
+          "id": "Base.KnittingMag2",
+          "sourceId": "KnittingMag2",
+          "names": {
+            "en": "Magazine: Woolly Yarns - May 1993",
+            "ru": "Журнал: «Вязальные истории» - Май 1993"
+          },
+          "recipes": [
+            "KnitWoolyHat",
+            "KnitBalaclavaFace",
+            "KnitBalaclavaFull",
+            "KnitBeany"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipes-mechanicmag",
+      "kind": "recipeFamily",
+      "key": "MechanicMag",
+      "items": [
+        {
+          "id": "Base.MechanicMag1",
+          "sourceId": "MechanicMag1",
+          "names": {
+            "en": "Magazine: Laines Standard Auto Manual",
+            "ru": "Журнал: «Стандартные модели автомобилей, руководство от Лайна»"
+          },
+          "recipes": [
+            "Basic Mechanics"
+          ]
+        },
+        {
+          "id": "Base.MechanicMag2",
+          "sourceId": "MechanicMag2",
+          "names": {
+            "en": "Magazine: Laines Commercial Auto Manual",
+            "ru": "Журнал: «Тяжёлые модели автомобилей, руководство от Лайна»"
+          },
+          "recipes": [
+            "Intermediate Mechanics"
+          ]
+        },
+        {
+          "id": "Base.MechanicMag3",
+          "sourceId": "MechanicMag3",
+          "names": {
+            "en": "Magazine: Laines Performance Auto Manual",
+            "ru": "Журнал: «Элитные модели автомобилей, руководство от Лайна»"
+          },
+          "recipes": [
+            "Advanced Mechanics"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipes-metalworkmag",
+      "kind": "recipeFamily",
+      "key": "MetalworkMag",
+      "items": [
+        {
+          "id": "Base.MetalworkMag1",
+          "sourceId": "MetalworkMag1",
+          "names": {
+            "en": "Magazine: Welder Monthly - June 1993",
+            "ru": "Журнал: «Ежемесячник сварщика» - Июнь 1993"
+          },
+          "recipes": [
+            "MetalWallLvl1",
+            "MetalWallLvl2",
+            "MetalFloorLvl1",
+            "MetalWindowFrameLvl1",
+            "MetalWindowFrameLvl2",
+            "MetalWallFrame",
+            "MetalDoorFrameLvl1",
+            "MetalDoorFrameLvl2",
+            "Metal_Stairs"
+          ]
+        },
+        {
+          "id": "Base.MetalworkMag2",
+          "sourceId": "MetalworkMag2",
+          "names": {
+            "en": "Magazine: Welder Monthly - May 1993",
+            "ru": "Журнал: «Ежемесячник сварщика» - Май 1993"
+          },
+          "recipes": [
+            "Metal_Counter_Lvl1",
+            "Metal_Counter_Lvl2",
+            "Metal_CounterCorner_Lvl1",
+            "Metal_CounterCorner_Lvl2",
+            "Metal_Crate_Lvl1",
+            "Metal_Crate_Lvl2",
+            "Metal_LockerBig_Lvl1",
+            "Metal_LockerBig_Lvl2",
+            "Metal_LockerSmall_Lvl1",
+            "Metal_LockerSmall_Lvl2",
+            "Metal_Shelves_Lvl1",
+            "Metal_Shelves_Lvl2"
+          ]
+        },
+        {
+          "id": "Base.MetalworkMag3",
+          "sourceId": "MetalworkMag3",
+          "names": {
+            "en": "Magazine: Welder Monthly - April 1993",
+            "ru": "Журнал: «Ежемесячник сварщика» - Апрель 1993"
+          },
+          "recipes": [
+            "MetalPoleFenceGate",
+            "MetalWireFenceGate",
+            "MetalWireFenceGateSmall",
+            "DoubleFenceGate",
+            "DoubleWireGate",
+            "MetalBigWireFence",
+            "MetalBigMetalFence",
+            "MetalPoleFenceGateSmall",
+            "MetalSmallPoleFence",
+            "MetalFenceLvl1",
+            "MetalSmallWireFence"
+          ]
+        },
+        {
+          "id": "Base.MetalworkMag4",
+          "sourceId": "MetalworkMag4",
+          "names": {
+            "en": "Magazine: Welder Monthly - March 1993",
+            "ru": "Журнал: «Ежемесячник сварщика» - Март 1993"
+          },
+          "recipes": [
+            "MakeMetalSheet",
+            "MakeSmallMetalSheet"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipes-primitivetoolmag",
+      "kind": "recipeFamily",
+      "key": "PrimitiveToolMag",
+      "items": [
+        {
+          "id": "Base.PrimitiveToolMag1",
+          "sourceId": "PrimitiveToolMag1",
+          "names": {
+            "en": "Magazine: Tool Use of Early Man",
+            "ru": "Журнал: «Применение инструментов древним человеком»"
+          },
+          "recipes": [
+            "MakeLargeStoneAxeHead",
+            "MakeStoneBlade",
+            "MakeStoneMaulHead",
+            "BindSpear",
+            "MakeStoneBladeScythe",
+            "SharpenBone",
+            "CarveFleshingTool",
+            "RemakeLongStoneBlade"
+          ]
+        },
+        {
+          "id": "Base.PrimitiveToolMag2",
+          "sourceId": "PrimitiveToolMag2",
+          "names": {
+            "en": "Magazine: Cultures of Prehistory",
+            "ru": "Журнал: «Культуры доисторических времён»"
+          },
+          "recipes": [
+            "MakeBoneFishingHook",
+            "MakeStoneAwl",
+            "MakeStoneChisel",
+            "MakeStoneDrill",
+            "MakeCrudeWhetstone",
+            "MakeStoneBladeSaw",
+            "CarveWhistle"
+          ]
+        },
+        {
+          "id": "Base.PrimitiveToolMag3",
+          "sourceId": "PrimitiveToolMag3",
+          "names": {
+            "en": "Magazine: Pioneering Carvers",
+            "ru": "Журнал: «Резчики-первопроходцы»"
+          },
+          "recipes": [
+            "CarveKnittingNeedles",
+            "CarveWoodenFork",
+            "MakeBoneFork",
+            "CarveWoodenSpade",
+            "CarveGoblets",
+            "CarveBucket"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipes-tailoringmag",
+      "kind": "recipeFamily",
+      "key": "TailoringMag",
+      "items": [
+        {
+          "id": "Base.TailoringMag1",
+          "sourceId": "TailoringMag1",
+          "names": {
+            "en": "Magazine: Ancient Tailoring",
+            "ru": "Журнал: «Портняжное дело древности»"
+          },
+          "recipes": [
+            "MakeBoneAwl",
+            "MakeBoneSewingNeedle",
+            "SewHideHoodie",
+            "SewHideRobe",
+            "SewHidePants",
+            "WeaveTwineShoes"
+          ]
+        },
+        {
+          "id": "Base.TailoringMag2",
+          "sourceId": "TailoringMag2",
+          "names": {
+            "en": "Magazine: Punk Fashion - From Trash to Thrash",
+            "ru": "Журнал: «Панк-мода – от треша к трэшу»"
+          },
+          "recipes": [
+            "MakeGarbageBagTankTop",
+            "MakeGarbageBagDress"
+          ]
+        },
+        {
+          "id": "Base.TailoringMag3",
+          "sourceId": "TailoringMag3",
+          "names": {
+            "en": "Magazine: Medieval Peasant Clothing",
+            "ru": "Журнал: «Одежда средневековых крестьян»"
+          },
+          "recipes": [
+            "SewHideBoots",
+            "SewHideCoat",
+            "SewHideHat",
+            "SewHideJacket"
+          ]
+        },
+        {
+          "id": "Base.TailoringMag4",
+          "sourceId": "TailoringMag4",
+          "names": {
+            "en": "Magazine: Leather Crafts",
+            "ru": "Журнал: «Изделия из кожи»"
+          },
+          "recipes": [
+            "SewHideWallet",
+            "SewBelt",
+            "SewLeatherToolRoll",
+            "SewSandals",
+            "SewLeatherGloves"
+          ]
+        },
+        {
+          "id": "Base.TailoringMag5",
+          "sourceId": "TailoringMag5",
+          "names": {
+            "en": "Magazine: Cowboy Living",
+            "ru": "Журнал: «Ковбойская жизнь»"
+          },
+          "recipes": [
+            "SewHolster",
+            "SewHolsterDouble",
+            "MakeWesternBoots",
+            "SewFurredHideCoat",
+            "SewFurredHideJacket",
+            "SewLeatherPants",
+            "SewSheepskinVest"
+          ]
+        },
+        {
+          "id": "Base.TailoringMag6",
+          "sourceId": "TailoringMag6",
+          "names": {
+            "en": "Magazine: Real Gladiators",
+            "ru": "Журнал: «Настоящие гладиаторы»"
+          },
+          "recipes": [
+            "SewLeatherVambrace",
+            "SewLeatherCodpiece",
+            "SewLeatherGorget",
+            "SewElbowPads",
+            "SewKneePads"
+          ]
+        },
+        {
+          "id": "Base.TailoringMag7",
+          "sourceId": "TailoringMag7",
+          "names": {
+            "en": "Magazine: Fun in the Woods!",
+            "ru": "Журнал: «Веселье в лесу!»"
+          },
+          "recipes": [
+            "AssembleSmallFramepack",
+            "AssembleLargeFramepack",
+            "SewClothSatchel",
+            "SewCrudeLeatherBackpack"
+          ]
+        },
+        {
+          "id": "Base.TailoringMag8",
+          "sourceId": "TailoringMag8",
+          "names": {
+            "en": "Magazine: Outdoor Gear, Done Right",
+            "ru": "Журнал: «Снаряжение для активного отдыха: как правильно»"
+          },
+          "recipes": [
+            "SewLeatherGaiter",
+            "SewLeatherWaterBag",
+            "SewHideSleepingBag",
+            "SewBandolier",
+            "SewHideFannyBag"
+          ]
+        },
+        {
+          "id": "Base.TailoringMag9",
+          "sourceId": "TailoringMag9",
+          "names": {
+            "en": "Magazine: Alpine Explorers",
+            "ru": "Журнал: «Исследователи Альп»"
+          },
+          "recipes": [
+            "MakeAdvancedFramepackFrame",
+            "MakeAdvancedLargeFramepackFrame",
+            "AssembleAdvancedFramepack",
+            "AssembleAdvancedLargeFramepack",
+            "SewSheepskinPants"
+          ]
+        },
+        {
+          "id": "Base.TailoringMag10",
+          "sourceId": "TailoringMag10",
+          "names": {
+            "en": "Magazine: Homespun",
+            "ru": "Журнал: «Натуральная ткань»"
+          },
+          "recipes": [
+            "SewDressKnees",
+            "SewDressLong",
+            "SewShirt",
+            "SewSkirtKnees",
+            "SewSkirtLong",
+            "SewLongjohns",
+            "SewLongjohnsBottom",
+            "SewShirtSleeveless",
+            "SewTrousers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipes-trickmag",
+      "kind": "recipeFamily",
+      "key": "TrickMag",
+      "items": [
+        {
+          "id": "Base.TrickMag1",
+          "sourceId": "TrickMag1",
+          "names": {
+            "en": "Magazine: Real Spy Secrets - May 1993",
+            "ru": "Журнал: «Настоящие секреты шпионажа» - Май 1993"
+          },
+          "recipes": [
+            "MakeHollowBook"
+          ]
+        },
+        {
+          "id": "Base.TrickMag2",
+          "sourceId": "TrickMag2",
+          "names": {
+            "en": "Magazine: The Cheapskate's John Spiral - Forging New Identities",
+            "ru": "Журнал: «Бюджетный Джон Спайрал - Формирование новой личности»"
+          },
+          "recipes": [
+            "MakeBlankID"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipes-weaponmag",
+      "kind": "recipeFamily",
+      "key": "WeaponMag",
+      "items": [
+        {
+          "id": "Base.WeaponMag1",
+          "sourceId": "WeaponMag1",
+          "names": {
+            "en": "Magazine: The First Weapons",
+            "ru": "Журнал: «Первобытные орудия»"
+          },
+          "recipes": [
+            "MakeBoneHatchetHead",
+            "MakeJawboneAxe",
+            "MakeJawboneClub",
+            "MakeBoneClub",
+            "SharpenBone",
+            "SharpenLongBone",
+            "SharpenJawbone",
+            "BoneSpikeWeapon"
+          ]
+        },
+        {
+          "id": "Base.WeaponMag2",
+          "sourceId": "WeaponMag2",
+          "names": {
+            "en": "Magazine: No Man's Land",
+            "ru": "Журнал: «Ничейная земля»"
+          },
+          "recipes": [
+            "CanReinforceWeapon",
+            "MakeCraftedGasMaskFilter",
+            "RechargeFilters"
+          ]
+        },
+        {
+          "id": "Base.WeaponMag3",
+          "sourceId": "WeaponMag3",
+          "names": {
+            "en": "Magazine: The Cheapskate's John Spiral - Prison Defense",
+            "ru": "Журнал: «Бюджетный Джон Спайрал - Тюремная оборона»"
+          },
+          "recipes": [
+            "MakeShiv",
+            "MakeGlassShiv",
+            "MakeToothbrushShiv",
+            "base:makemagazinearmor",
+            "MakeImprovisedLighter"
+          ]
+        },
+        {
+          "id": "Base.WeaponMag4",
+          "sourceId": "WeaponMag4",
+          "names": {
+            "en": "Magazine: Bloody Japanese Wrestling Deathmatch!",
+            "ru": "Журнал: «Кровавые японский разборки!»"
+          },
+          "recipes": [
+            "BarbedWireWeapon"
+          ]
+        },
+        {
+          "id": "Base.WeaponMag5",
+          "sourceId": "WeaponMag5",
+          "names": {
+            "en": "Magazine: The Cheapskate's John Spiral - Street Violence",
+            "ru": "Журнал: «Бюджетный Джон Спайрал - Уличное насилие»"
+          },
+          "recipes": [
+            "MakeRakeHeadWeapon",
+            "MakeSawbladeWeapon",
+            "SheetMetalWeapon",
+            "MakeSawPlank",
+            "MakeBucketMaul",
+            "MakeKettleMaul",
+            "MakeBrakeWeapon"
+          ]
+        },
+        {
+          "id": "Base.WeaponMag6",
+          "sourceId": "WeaponMag6",
+          "names": {
+            "en": "Magazine: Revolting Peasants",
+            "ru": "Журнал: «Восстание крестьян»"
+          },
+          "recipes": [
+            "MakeGardenForkHeadWeapon",
+            "MakeSpadeHeadCudgel",
+            "MakeRailspikeWeapon",
+            "MakeSawPlank"
+          ]
+        },
+        {
+          "id": "Base.WeaponMag7",
+          "sourceId": "WeaponMag7",
+          "names": {
+            "en": "Magazine: The Louisville Bruiser",
+            "ru": "Журнал: «Луисвиллский громила»"
+          },
+          "recipes": [
+            "CarveBat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipes-radiomag",
+      "kind": "recipeFamily",
+      "key": "RadioMag",
+      "items": [
+        {
+          "id": "Base.RadioMag1",
+          "sourceId": "RadioMag1",
+          "names": {
+            "en": "Magazine: Guerilla Radio - June 1993",
+            "ru": "Журнал: «Партизанское радио» - Июнь 1993"
+          },
+          "recipes": [
+            "CraftMakeshiftRadio"
+          ]
+        },
+        {
+          "id": "Base.RadioMag2",
+          "sourceId": "RadioMag2",
+          "names": {
+            "en": "Magazine: Sparky's Radio Guide",
+            "ru": "Журнал: «Руководство по радиосвязи от Спарки»"
+          },
+          "recipes": [
+            "CraftMakeshiftWalkieTalkie"
+          ]
+        },
+        {
+          "id": "Base.RadioMag3",
+          "sourceId": "RadioMag3",
+          "names": {
+            "en": "Magazine: Guerilla Radio - May 1993",
+            "ru": "Журнал: «Партизанское радио» - Май 1993"
+          },
+          "recipes": [
+            "CraftMakeshiftHAMRadio"
+          ]
+        }
+      ]
+    }
+  ]
+}

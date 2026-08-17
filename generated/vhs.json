@@ -1,0 +1,1682 @@
+{
+  "id": "vhs",
+  "icon": "📼",
+  "groups": [
+    {
+      "id": "vhs-series-carzone",
+      "kind": "mediaSeries",
+      "key": "series:Carzone",
+      "names": {
+        "en": "Carzone",
+        "ru": "Автозона"
+      },
+      "items": [
+        {
+          "id": "VHS: Carzone E1",
+          "sourceId": "07b0cd73-7563-4699-9fb4-99316a0fc0bd",
+          "names": {
+            "en": "VHS: Carzone E1",
+            "ru": "VHS-кассета: Автозона [Серия 1]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Mechanics",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Carzone E2",
+          "sourceId": "7b192b30-ea36-4395-a5e4-ac2d825d3b91",
+          "names": {
+            "en": "VHS: Carzone E2",
+            "ru": "VHS-кассета: Автозона [Серия 2]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Mechanics",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Carzone E3",
+          "sourceId": "313fa630-d448-44ab-b1f0-7cff1d1db830",
+          "names": {
+            "en": "VHS: Carzone E3",
+            "ru": "VHS-кассета: Автозона [Серия 3]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Mechanics",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vhs-series-exposure-survival",
+      "kind": "mediaSeries",
+      "key": "series:Exposure Survival",
+      "names": {
+        "en": "Exposure Survival",
+        "ru": "Выживание на открытой местности"
+      },
+      "items": [
+        {
+          "id": "VHS: Exposure Survival E1",
+          "sourceId": "ccfd97d7-6b57-432c-bca7-f9a271f8012f",
+          "names": {
+            "en": "VHS: Exposure Survival E1",
+            "ru": "VHS-кассета: Выживание на открытой местности [Серия 1]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Fishing",
+              "amount": 1
+            },
+            {
+              "type": "recipe",
+              "recipe": "MakeFishingRod"
+            }
+          ]
+        },
+        {
+          "id": "VHS: Exposure Survival E2",
+          "sourceId": "6f1be5b5-d871-4ebf-bc44-2657f7c89bb5",
+          "names": {
+            "en": "VHS: Exposure Survival E2",
+            "ru": "VHS-кассета: Выживание на открытой местности [Серия 2]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Fishing",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Exposure Survival E3",
+          "sourceId": "7402fb83-b5b3-4b08-99f9-82bc67f4572b",
+          "names": {
+            "en": "VHS: Exposure Survival E3",
+            "ru": "VHS-кассета: Выживание на открытой местности [Серия 3]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Farming",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Exposure Survival E4",
+          "sourceId": "a628a723-ac78-4bcb-927a-f84ad8c6c286",
+          "names": {
+            "en": "VHS: Exposure Survival E4",
+            "ru": "VHS-кассета: Выживание на открытой местности [Серия 4]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Carpentry",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Exposure Survival E5",
+          "sourceId": "1123df57-5e9b-4d61-88f1-7561949132e3",
+          "names": {
+            "en": "VHS: Exposure Survival E5",
+            "ru": "VHS-кассета: Выживание на открытой местности [Серия 5]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Carpentry",
+              "amount": 1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Foraging",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Exposure Survival E6",
+          "sourceId": "75928dcd-c613-4a1e-afb5-20c4c671b835",
+          "names": {
+            "en": "VHS: Exposure Survival E6",
+            "ru": "VHS-кассета: Выживание на открытой местности [Серия 6]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Trapping",
+              "amount": 1
+            },
+            {
+              "type": "recipe",
+              "recipe": "MakeWoodenBoxTrap"
+            }
+          ]
+        },
+        {
+          "id": "VHS: Exposure Survival E7",
+          "sourceId": "2dcd687b-ac76-4b33-b0b7-79ddfba2feb4",
+          "names": {
+            "en": "VHS: Exposure Survival E7",
+            "ru": "VHS-кассета: Выживание на открытой местности [Серия 7]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Foraging",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Exposure Survival E8",
+          "sourceId": "f74df7fc-20ae-4600-b2d2-f504d9355440",
+          "names": {
+            "en": "VHS: Exposure Survival E8",
+            "ru": "VHS-кассета: Выживание на открытой местности [Серия 8]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Carpentry",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vhs-series-the-cook-show",
+      "kind": "mediaSeries",
+      "key": "series:The Cook Show",
+      "names": {
+        "en": "The Cook Show",
+        "ru": "Кулинарное Шоу"
+      },
+      "items": [
+        {
+          "id": "VHS: The Cook Show E1",
+          "sourceId": "e6fd44a9-1774-4204-ab45-9b316301aa2b",
+          "names": {
+            "en": "VHS: The Cook Show E1",
+            "ru": "VHS-кассета: Кулинарное Шоу [Серия 1]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Cooking",
+              "amount": 1
+            },
+            {
+              "type": "recipe",
+              "recipe": "MakeCakeBatter"
+            }
+          ]
+        },
+        {
+          "id": "VHS: The Cook Show E2",
+          "sourceId": "a754fdaf-5bac-40cd-9a69-da90e8a0cac7",
+          "names": {
+            "en": "VHS: The Cook Show E2",
+            "ru": "VHS-кассета: Кулинарное Шоу [Серия 2]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Cooking",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: The Cook Show E3",
+          "sourceId": "7933a371-a8a6-4c31-8886-7a97d89f2c7e",
+          "names": {
+            "en": "VHS: The Cook Show E3",
+            "ru": "VHS-кассета: Кулинарное Шоу [Серия 3]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Cooking",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: The Cook Show E4",
+          "sourceId": "4cc3b806-4630-4dfc-a935-efa700fbd7fb",
+          "names": {
+            "en": "VHS: The Cook Show E4",
+            "ru": "VHS-кассета: Кулинарное Шоу [Серия 4]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Cooking",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: The Cook Show E5",
+          "sourceId": "2695eb00-ee79-4b39-833a-1023a28ce397",
+          "names": {
+            "en": "VHS: The Cook Show E5",
+            "ru": "VHS-кассета: Кулинарное Шоу [Серия 5]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Cooking",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: The Cook Show E6",
+          "sourceId": "01b3d832-602c-4566-b8d6-c2b74a4a0b00",
+          "names": {
+            "en": "VHS: The Cook Show E6",
+            "ru": "VHS-кассета: Кулинарное Шоу [Серия 6]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Cooking",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: The Cook Show E7",
+          "sourceId": "2c2a052d-097c-4507-85f4-7fda90f3e3d1",
+          "names": {
+            "en": "VHS: The Cook Show E7",
+            "ru": "VHS-кассета: Кулинарное Шоу [Серия 7]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Cooking",
+              "amount": 1
+            },
+            {
+              "type": "recipe",
+              "recipe": "MakePieDough"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vhs-series-woodcraft",
+      "kind": "mediaSeries",
+      "key": "series:Woodcraft",
+      "names": {
+        "en": "Woodcraft",
+        "ru": "Краснодеревщик"
+      },
+      "items": [
+        {
+          "id": "VHS: Woodcraft E1",
+          "sourceId": "dedd4e83-6e3b-4f4f-9c9b-72a5ed08969d",
+          "names": {
+            "en": "VHS: Woodcraft E1",
+            "ru": "VHS-кассета: Краснодеревщик [Серия 1]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Carpentry",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Woodcraft E2",
+          "sourceId": "c2d01da8-8e04-4889-8676-bb633e98df2d",
+          "names": {
+            "en": "VHS: Woodcraft E2",
+            "ru": "VHS-кассета: Краснодеревщик [Серия 2]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Carpentry",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Woodcraft E3",
+          "sourceId": "3e9c5cf0-bf40-40eb-bcd7-4fd6c5ae58ca",
+          "names": {
+            "en": "VHS: Woodcraft E3",
+            "ru": "VHS-кассета: Краснодеревщик [Серия 3]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Carpentry",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Woodcraft E4",
+          "sourceId": "0627a89a-a32b-4e80-9926-815aa9d22b2b",
+          "names": {
+            "en": "VHS: Woodcraft E4",
+            "ru": "VHS-кассета: Краснодеревщик [Серия 4]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Carpentry",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Woodcraft E5",
+          "sourceId": "2bf49f71-0d46-43aa-bbfd-f311e5bda9b2",
+          "names": {
+            "en": "VHS: Woodcraft E5",
+            "ru": "VHS-кассета: Краснодеревщик [Серия 5]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Carpentry",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Woodcraft E6",
+          "sourceId": "968591cd-d4aa-4ef1-9632-7771a1f5b9ab",
+          "names": {
+            "en": "VHS: Woodcraft E6",
+            "ru": "VHS-кассета: Краснодеревщик [Серия 6]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Carpentry",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Woodcraft E7",
+          "sourceId": "01dedfea-62eb-4ae6-a4bc-5e629b7ba54b",
+          "names": {
+            "en": "VHS: Woodcraft E7",
+            "ru": "VHS-кассета: Краснодеревщик [Серия 7]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Carpentry",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vhs-retail-other",
+      "kind": "mediaCategory",
+      "key": "retail-other",
+      "items": [
+        {
+          "id": "VHS: A Day on the Farm",
+          "sourceId": "fa0cd1c6-3846-4652-8be6-bb1f8c2b176c",
+          "names": {
+            "en": "VHS: A Day on the Farm",
+            "ru": "VHS-кассета: День на ферме"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Husbandry",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: A Stitch in Time",
+          "sourceId": "066ed71a-1803-4143-8151-3d6461a19e79",
+          "names": {
+            "en": "VHS: A Stitch in Time",
+            "ru": "VHS-кассета: Один стежок вовремя"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Tailoring",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Adefope Fencing Special",
+          "sourceId": "89d33c66-7071-4b82-859f-2062bfe8db19",
+          "names": {
+            "en": "VHS: Adefope Fencing Special",
+            "ru": "VHS-кассета: Специальный выпуск о заборах Adefope"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "MetalWelding",
+              "amount": 1
+            },
+            {
+              "type": "recipe",
+              "recipe": "MetalFenceLvl1"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MetalSmallPoleFence"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MetalPoleFenceGateSmall"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MetalBigMetalFence"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MetalPoleFenceGate"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MetalWireFenceGateSmall"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MetalSmallWireFence"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MetalWireFenceGate"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MetalBigWireFence"
+            },
+            {
+              "type": "recipe",
+              "recipe": "DoubleWireGate"
+            }
+          ]
+        },
+        {
+          "id": "VHS: Better Fishing With Jason Master",
+          "sourceId": "c7d905cf-3fe7-44e6-89a9-5d501bc73944",
+          "names": {
+            "en": "VHS: Better Fishing With Jason Master",
+            "ru": "VHS-кассета: Успешный улов с Джейсоном Мастером"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Fishing",
+              "amount": 1
+            },
+            {
+              "type": "recipe",
+              "recipe": "MakeFishingRod"
+            },
+            {
+              "type": "recipe",
+              "recipe": "FixFishingRod"
+            }
+          ]
+        },
+        {
+          "id": "VHS: Combat Wound Management",
+          "sourceId": "4653d39e-2fcf-49c2-9b51-0ab992fa123c",
+          "names": {
+            "en": "VHS: Combat Wound Management",
+            "ru": "VHS-кассета: Лечение боевых ранений"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "FirstAid",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Controlling Nasty Crop Pests and Diseases",
+          "sourceId": "4cd4e3d3-c7ad-4848-875d-dd86d946bd45",
+          "names": {
+            "en": "VHS: Controlling Nasty Crop Pests and Diseases",
+            "ru": "VHS-кассета: Борьба с опасными вредителями и болезнями"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Farming",
+              "amount": 1
+            },
+            {
+              "type": "recipe",
+              "recipe": "MakeMildewCure"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MakeFliesCure"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MakeSlugTrap"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MakeAphidsCure"
+            }
+          ]
+        },
+        {
+          "id": "VHS: Dead Wrong",
+          "sourceId": "31a726b7-0ee6-408b-8599-95c80aa8a6c5",
+          "names": {
+            "en": "VHS: Dead Wrong",
+            "ru": "VHS-кассета: Роковая ошибка"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Reloading",
+              "amount": 1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Aiming",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Emergency First Aid",
+          "sourceId": "955bf539-6b8b-4dea-9fde-7bfaf3b31983",
+          "names": {
+            "en": "VHS: Emergency First Aid",
+            "ru": "VHS-кассета: Первая неотложная помощь"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "FirstAid",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: From Ore to Store",
+          "sourceId": "200e0912-8bfc-4d16-bd0b-8c63a7893773",
+          "names": {
+            "en": "VHS: From Ore to Store",
+            "ru": "VHS-кассета: От руды до прилавков страны"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "LongBlade",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Growing Fruit and Veg at Home 1",
+          "sourceId": "1a22a4b3-156b-4474-a455-8d6c066e5a21",
+          "names": {
+            "en": "VHS: Growing Fruit and Veg at Home 1",
+            "ru": "VHS-кассета: Выращивание фруктов и овощей дома [Серия 1]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Farming",
+              "amount": 1
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:cabbage growing season"
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:potato growing season"
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:radish growing season"
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:carrot growing season"
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:onion growing season"
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:broccoli growing season"
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:strawberry growing season"
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:tomato growing season"
+            }
+          ]
+        },
+        {
+          "id": "VHS: Growing Fruit and Veg at Home 2",
+          "sourceId": "a7cd7482-cc83-4097-9ce9-c14eb745014d",
+          "names": {
+            "en": "VHS: Growing Fruit and Veg at Home 2",
+            "ru": "VHS-кассета: Выращивание фруктов и овощей дома [Серия 2]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Farming",
+              "amount": 1
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:green pea growing season"
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:soybean growing season"
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:kale growing season"
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:garlic growing season"
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:sweet potato growing season"
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:corn growing season"
+            }
+          ]
+        },
+        {
+          "id": "VHS: Growing Herbs at Home",
+          "sourceId": "1c687700-baf6-4901-83e7-11038b7292a9",
+          "names": {
+            "en": "VHS: Growing Herbs at Home",
+            "ru": "VHS-кассета: Выращивание трав дома"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Farming",
+              "amount": 1
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:basil growing season"
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:chives growing season"
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:cilantro growing season"
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:oregano growing season"
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:parsley growing season"
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:sage growing season"
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:rosemary growing season"
+            },
+            {
+              "type": "recipe",
+              "recipe": "base:thyme growing season"
+            }
+          ]
+        },
+        {
+          "id": "VHS: Home Welding Guide",
+          "sourceId": "c1a3d275-4b61-4b29-94cd-2a87b183f5e8",
+          "names": {
+            "en": "VHS: Home Welding Guide",
+            "ru": "VHS-кассета: Руководство по сварке в домашних условиях"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "MetalWelding",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: How Electricity Works",
+          "sourceId": "9f33c7f2-2af6-4d44-a9bc-630ee8310a2f",
+          "names": {
+            "en": "VHS: How Electricity Works",
+            "ru": "VHS-кассета: Как работает электричество"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Electricity",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Knapping: The Ancient Art",
+          "sourceId": "c3d6c81d-a141-49ce-9127-79180cf23c2c",
+          "names": {
+            "en": "VHS: Knapping: The Ancient Art",
+            "ru": "VHS-кассета: Камнеобработка: древнее искусство"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "FlintKnapping",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Knox Gun Owners Club's Guide to Guns",
+          "sourceId": "729fc45b-5f9c-46b1-8cb6-d4978b050068",
+          "names": {
+            "en": "VHS: Knox Gun Owners Club's Guide to Guns",
+            "ru": "VHS-кассета: Руководство клуба владельцев огнестрельного оружия Нокса"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Reloading",
+              "amount": 1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Aiming",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Making Sushi at Home",
+          "sourceId": "988e8c5a-93b4-456f-be54-4638c5dc7812",
+          "names": {
+            "en": "VHS: Making Sushi at Home",
+            "ru": "VHS-кассета: Готовим суши дома"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "recipe",
+              "recipe": "MakeSushi"
+            },
+            {
+              "type": "skillXp",
+              "skill": "Cooking",
+              "amount": 1
+            },
+            {
+              "type": "recipe",
+              "recipe": "MakeMaki"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MakeOnigiri"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MakeFriedShrimp"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MakeCabbageRolls"
+            }
+          ]
+        },
+        {
+          "id": "VHS: Mother's Boy",
+          "sourceId": "9ec23879-13eb-4b6a-ab44-e9038952104f",
+          "names": {
+            "en": "VHS: Mother's Boy",
+            "ru": "VHS-кассета: Маменькин сынок"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "ShortBlade",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Pottery for Anyone",
+          "sourceId": "7e395694-9830-4066-8709-bf285677937d",
+          "names": {
+            "en": "VHS: Pottery for Anyone",
+            "ru": "VHS-кассета: Гончарное дело для всех"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Pottery",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Rosewood Medical First Aid",
+          "sourceId": "0cd1fbcb-1ea6-4edc-aeb6-f0a81eff6c5e",
+          "names": {
+            "en": "VHS: Rosewood Medical First Aid",
+            "ru": "VHS-кассета: Оказание первой помощи - медицинский центр Роузвуда"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "FirstAid",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: The Dog Goblin",
+          "sourceId": "21411665-0ce7-4200-83a1-43ae2e6cbbb3",
+          "names": {
+            "en": "VHS: The Dog Goblin",
+            "ru": "VHS-кассета: Псиногоблин"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "status",
+              "status": "stress",
+              "amount": 0.2
+            },
+            {
+              "type": "status",
+              "status": "fatigue",
+              "amount": -1
+            },
+            {
+              "type": "status",
+              "status": "panic",
+              "amount": 25
+            },
+            {
+              "type": "status",
+              "status": "fatigue",
+              "amount": -2
+            },
+            {
+              "type": "status",
+              "status": "panic",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "id": "VHS: The Petting Zoo",
+          "sourceId": "b4830b9a-341e-4f2e-b6f6-87aaaaf99d00",
+          "names": {
+            "en": "VHS: The Petting Zoo",
+            "ru": "VHS-кассета: Контактный зоопарк"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Husbandry",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Working Clay at Home",
+          "sourceId": "dccc28f4-fc37-4d74-928d-9f7d1bdf4e3f",
+          "names": {
+            "en": "VHS: Working Clay at Home",
+            "ru": "VHS-кассета: Работа с глиной дома"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Pottery",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "VHS: Z-Squad S2.03",
+          "sourceId": "4f3f30d6-df77-4e85-b1cb-4ca7e67addd9",
+          "names": {
+            "en": "VHS: Z-Squad S2.03",
+            "ru": "VHS-кассета: Отряд-Z [Сезон 2|Серия 3]"
+          },
+          "category": "Retail-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "MetalWelding",
+              "amount": 1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Mechanics",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vhs-home",
+      "kind": "mediaCategory",
+      "key": "home",
+      "items": [
+        {
+          "id": "Home VHS: Basic Gun Handling (Officer Use Only)",
+          "sourceId": "f33ce778-8d37-4fba-889d-d736434aad22",
+          "names": {
+            "en": "Home VHS: Basic Gun Handling (Officer Use Only)",
+            "ru": "Домашняя VHS-кассета: Основы обращения с оружием (только для полицейских)"
+          },
+          "category": "Home-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Aiming",
+              "amount": 2
+            },
+            {
+              "type": "skillXp",
+              "skill": "Reloading",
+              "amount": 2
+            },
+            {
+              "type": "skillXp",
+              "skill": "Aiming",
+              "amount": 1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Reloading",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "Home VHS: Combat Wound Management",
+          "sourceId": "8c150873-8bd1-4316-ae3f-a37742ccfa20",
+          "names": {
+            "en": "Home VHS: Combat Wound Management",
+            "ru": "Домашняя VHS-кассета: Лечение боевых ранений"
+          },
+          "category": "Home-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "FirstAid",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "Home VHS: Grady v King",
+          "sourceId": "541b5fff-7f01-402a-8e8a-98cfd0c90916",
+          "names": {
+            "en": "Home VHS: Grady v King",
+            "ru": "Домашняя VHS-кассета: Грейди против Кинга"
+          },
+          "category": "Home-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Lightfoot",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "Home VHS: Granny Nani",
+          "sourceId": "00a8b565-a566-44f3-b6d2-7a1ae2eafb0c",
+          "names": {
+            "en": "Home VHS: Granny Nani",
+            "ru": "Домашняя VHS-кассета: Бабушка Нани"
+          },
+          "category": "Home-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Tailoring",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "Home VHS: Mathematical Quadratics and Algebraic Configurations",
+          "sourceId": "68785929-d79c-4170-9fc8-5289bbf05388",
+          "names": {
+            "en": "Home VHS: Mathematical Quadratics and Algebraic Configurations",
+            "ru": "Домашняя VHS-кассета: Квадратные уравнения и геометрия конфигураций"
+          },
+          "category": "Home-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Blunt",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "Home VHS: Muldraugh AV Club",
+          "sourceId": "ffe28381-b743-4300-8c5a-89b4c4983d05",
+          "names": {
+            "en": "Home VHS: Muldraugh AV Club",
+            "ru": "Домашняя VHS-кассета: Клуб радиолюбителей Малдро"
+          },
+          "category": "Home-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Electricity",
+              "amount": 1
+            },
+            {
+              "type": "recipe",
+              "recipe": "CraftMakeshiftRadio"
+            }
+          ]
+        },
+        {
+          "id": "Home VHS: no 9",
+          "sourceId": "fe4ede3c-a153-4e46-aebe-9681d14fe196",
+          "names": {
+            "en": "Home VHS: no 9",
+            "ru": "Домашняя VHS-кассета: Номер 9"
+          },
+          "category": "Home-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "MetalWelding",
+              "amount": 1
+            },
+            {
+              "type": "recipe",
+              "recipe": "MetalFenceLvl1"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MetalSmallPoleFence"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MetalPoleFenceGateSmall"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MetalBigMetalFence"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MetalPoleFenceGate"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MetalSmallWireFence"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MetalWireFenceGateSmall"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MetalWireFenceGate"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MetalBigWireFence"
+            },
+            {
+              "type": "recipe",
+              "recipe": "DoubleWireGate"
+            }
+          ]
+        },
+        {
+          "id": "Home VHS: nof vid",
+          "sourceId": "1c6745f6-70b8-49e8-9087-b1bbb9263985",
+          "names": {
+            "en": "Home VHS: nof vid",
+            "ru": "Домашняя VHS-кассета: НМК видео"
+          },
+          "category": "Home-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "MetalWelding",
+              "amount": 1
+            },
+            {
+              "type": "recipe",
+              "recipe": "MetalFloorLvl1"
+            },
+            {
+              "type": "recipe",
+              "recipe": "MetalWallLvl1"
+            }
+          ]
+        },
+        {
+          "id": "Home VHS: OSCC '92",
+          "sourceId": "1559a55a-bfc9-4cfc-967b-e26b860894c6",
+          "names": {
+            "en": "Home VHS: OSCC '92",
+            "ru": "Домашняя VHS-кассета: КЧСК 1992"
+          },
+          "category": "Home-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Mechanics",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "Home VHS: RMFA",
+          "sourceId": "14fca23a-86ca-44b3-8342-264791175421",
+          "names": {
+            "en": "Home VHS: RMFA",
+            "ru": "Домашняя VHS-кассета: ППРК"
+          },
+          "category": "Home-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "FirstAid",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "Home VHS: stock cars",
+          "sourceId": "8904b5c7-86f6-4b49-a163-cf37d4421895",
+          "names": {
+            "en": "Home VHS: stock cars",
+            "ru": "Домашняя VHS-кассета: Гонках сток-каров"
+          },
+          "category": "Home-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Mechanics",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "Home VHS: Tailoring 101",
+          "sourceId": "af941537-39ac-42fb-8c7a-ed346ded282e",
+          "names": {
+            "en": "Home VHS: Tailoring 101",
+            "ru": "Домашняя VHS-кассета: Шитьё для чайников"
+          },
+          "category": "Home-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Tailoring",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "Home VHS: Tree Planting Guide",
+          "sourceId": "db7deaf2-ddbe-42c8-8fd3-9725d8fdeff3",
+          "names": {
+            "en": "Home VHS: Tree Planting Guide",
+            "ru": "Домашняя VHS-кассета: Руководство по посадке деревьев"
+          },
+          "category": "Home-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Farming",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "id": "Home VHS: TV repair",
+          "sourceId": "c23539e8-c5eb-4f58-850f-18522250c470",
+          "names": {
+            "en": "Home VHS: TV repair",
+            "ru": "Домашняя VHS-кассета: Ремонт ТВ"
+          },
+          "category": "Home-VHS",
+          "effects": [
+            {
+              "type": "status",
+              "status": "boredom",
+              "amount": -1
+            },
+            {
+              "type": "skillXp",
+              "skill": "Electricity",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

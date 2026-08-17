@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "defaultLanguage": "en",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "sourceHash": "421f8d9e123c1017",
+  "counts": {
+    "books": 120,
+    "recipeSources": 87,
+    "vhs": 63
+  },
+  "diagnostics": {
+    "unknownMediaCodes": 0,
+    "missingTranslations": 0
+  }
+}

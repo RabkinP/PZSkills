@@ -1,0 +1,141 @@
+{
+  "meta": { "name": "English", "showEnglishSecondary": false },
+  "ui": {
+    "pageTitle": "PZ Checklist — Books, Magazines, VHS",
+    "heading": "Project Zomboid — Checklist (Books · Magazines · VHS)",
+    "totalFound": "Found:",
+    "language": "Language",
+    "exportJson": "Export JSON",
+    "importJson": "Import JSON",
+    "resetAll": "Reset all",
+    "searchPlaceholder": "Search by name, ID, skill, recipe or effect…",
+    "hideFound": "Hide found",
+    "toggleWholeGroup": "Check/uncheck the whole group",
+    "checkWholeGroup": "Check the whole group",
+    "progressExported": "Progress exported ✓",
+    "progressImported": "Progress imported ✓",
+    "importFailed": "Could not import JSON",
+    "resetConfirm": "Reset ALL checklist marks and settings?",
+    "loadFailed": "Could not load generated checklist data.",
+    "levels": "Levels {from}–{to}",
+    "skillXp": "{skill} +XP",
+    "recipe": "Recipe: {recipe}",
+    "statusIncrease": "{status} +{amount}",
+    "statusDecrease": "{status} {amount}"
+  },
+  "categories": {
+    "books": "Skill Books",
+    "recipeSources": "Recipe Sources",
+    "vhs": "VHS Tapes"
+  },
+  "categoryNotes": {
+    "books": [
+      "Each skill book boosts XP for the level range defined by the game data.",
+      "Book sets (*Set) may contain all volumes of a series."
+    ],
+    "recipeSources": [
+      "These items teach one or more crafting recipes according to LearnedRecipes in the game data."
+    ],
+    "vhs": [
+      "This list contains VHS tapes with skill XP, recipe-learning effects, plus exceptional harmful tapes tracked by the checklist.",
+      "Retail VHS and Home VHS are grouped separately; multi-episode retail series get their own groups."
+    ]
+  },
+  "skills": {
+    "Aiming": "Aiming",
+    "Reloading": "Reloading",
+    "LongBlade": "Long Blade",
+    "Blunt": "Blunt",
+    "ShortBlade": "Short Blade",
+    "Carpentry": "Carpentry",
+    "Carving": "Carving",
+    "Cooking": "Cooking",
+    "Electricity": "Electrical",
+    "Farming": "Farming",
+    "FirstAid": "First Aid",
+    "Fishing": "Fishing",
+    "FlintKnapping": "Flint Knapping",
+    "Foraging": "Foraging",
+    "Glassmaking": "Glassmaking",
+    "Masonry": "Masonry",
+    "Mechanics": "Mechanics",
+    "MetalWelding": "Metal Welding",
+    "Blacksmith": "Blacksmithing",
+    "Pottery": "Pottery",
+    "Tailoring": "Tailoring",
+    "Trapping": "Trapping",
+    "Husbandry": "Animal Care",
+    "Butchering": "Butchering",
+    "Tracking": "Tracking",
+    "Maintenance": "Maintenance",
+    "Lightfoot": "Lightfooted"
+  },
+  "skillDescriptions": {
+    "Aiming": "Aiming skill — accuracy with firearms.",
+    "Reloading": "Reloading skill — firearm reloading speed.",
+    "LongBlade": "Long Blade skill — proficiency with long-bladed weapons.",
+    "Carpentry": "Carpentry skill — construction and woodworking.",
+    "Carving": "Carving skill — crafting items from wood and other natural materials.",
+    "Cooking": "Cooking skill — preparing food and unlocking cooking capabilities.",
+    "Electricity": "Electrical skill — working with electrical devices and systems.",
+    "Farming": "Farming skill — growing and caring for crops.",
+    "FirstAid": "First Aid skill — treating wounds and injuries.",
+    "Fishing": "Fishing skill — catching fish.",
+    "FlintKnapping": "Flint Knapping skill — making stone tools.",
+    "Foraging": "Foraging skill — finding useful resources in the wild.",
+    "Glassmaking": "Glassmaking skill — making glass items and containers.",
+    "Masonry": "Masonry skill — building with stone and brick.",
+    "Mechanics": "Mechanics skill — vehicle repair and maintenance.",
+    "MetalWelding": "Metal Welding skill — welding and metal construction.",
+    "Blacksmith": "Blacksmithing skill — forging metal tools and weapons.",
+    "Pottery": "Pottery skill — creating ceramic objects.",
+    "Tailoring": "Tailoring skill — repairing and making clothing.",
+    "Trapping": "Trapping skill — trapping animals.",
+    "Husbandry": "Animal Care skill — caring for livestock and animals.",
+    "Butchering": "Butchering skill — processing animal carcasses.",
+    "Tracking": "Tracking skill — following animal and survivor tracks.",
+    "Maintenance": "Maintenance skill — reducing wear on tools and weapons."
+  },
+  "recipeGroups": {
+    "SmithingMag": "Blacksmithing — magazines",
+    "ArmorMag": "Armor and Protection — magazines",
+    "CookingMag": "Cooking — magazines",
+    "ElectronicsMag": "Electronics — magazines",
+    "EngineerMagazine": "Engineering / Espionage — magazines",
+    "FarmingMag": "Farming — magazines",
+    "FishingMag": "Fishing — magazines",
+    "GlassmakingMag": "Glassmaking — magazines",
+    "HempMag": "Hemp — magazine",
+    "HerbalistMag": "Herbalism — magazine",
+    "HuntingMag": "Hunting and Trapping — magazines",
+    "KeyMag": "Locksmithing — magazine",
+    "KnittingMag": "Knitting — magazines",
+    "MechanicMag": "Mechanics — magazines",
+    "MetalworkMag": "Metalworking / Welding — magazines",
+    "PrimitiveToolMag": "Primitive Tools — magazines",
+    "TailoringMag": "Tailoring — magazines",
+    "TrickMag": "Tricks and Espionage — magazines",
+    "WeaponMag": "Weapons — magazines",
+    "RadioMag": "Radio — magazines"
+  },
+  "mediaGroups": {
+    "home": "Home VHS",
+    "retail-other": "Other Retail VHS"
+  },
+  "statuses": {
+    "boredom": "Boredom",
+    "fatigue": "Fatigue",
+    "panic": "Panic",
+    "stress": "Stress"
+  },
+  "recipes": {
+    "MakeCakeBatter": "Cake Batter",
+    "MakePieDough": "Pie Dough",
+    "MakeFishingRod": "Fishing Rod",
+    "FixFishingRod": "Repair Fishing Rod",
+    "MakeWoodenBoxTrap": "Wooden Box Trap",
+    "CraftMakeshiftRadio": "Makeshift Radio",
+    "MetalFloorLvl1": "Metal Floor",
+    "MetalWallLvl1": "Metal Wall"
+  }
+}

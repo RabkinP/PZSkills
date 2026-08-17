@@ -1,0 +1,141 @@
+{
+  "meta": { "name": "Русский", "showEnglishSecondary": true },
+  "ui": {
+    "pageTitle": "PZ Checklist — книги, журналы, VHS",
+    "heading": "Project Zomboid — чек-лист (книги · журналы · VHS)",
+    "totalFound": "Всего найдено:",
+    "language": "Язык",
+    "exportJson": "Экспорт JSON",
+    "importJson": "Импорт JSON",
+    "resetAll": "Сбросить всё",
+    "searchPlaceholder": "Поиск по названию, ID, навыку, рецепту или эффекту…",
+    "hideFound": "Скрыть найденные",
+    "toggleWholeGroup": "Отметить/снять всю группу",
+    "checkWholeGroup": "Отметить всю группу",
+    "progressExported": "Прогресс экспортирован ✓",
+    "progressImported": "Прогресс импортирован ✓",
+    "importFailed": "Не удалось импортировать JSON",
+    "resetConfirm": "Сбросить ВСЕ отметки и настройки чек-листа?",
+    "loadFailed": "Не удалось загрузить сгенерированные данные чек-листа.",
+    "levels": "Уровни {from}–{to}",
+    "skillXp": "{skill} +XP",
+    "recipe": "Рецепт: {recipe}",
+    "statusIncrease": "{status} +{amount}",
+    "statusDecrease": "{status} {amount}"
+  },
+  "categories": {
+    "books": "Скиллбуки",
+    "recipeSources": "Источники рецептов",
+    "vhs": "VHS-кассеты"
+  },
+  "categoryNotes": {
+    "books": [
+      "Каждая книга даёт буст XP для диапазона уровней, указанного непосредственно в игровых данных.",
+      "В игре также могут существовать наборы книг (*Set), содержащие все тома серии."
+    ],
+    "recipeSources": [
+      "Эти предметы обучают одному или нескольким рецептам крафта согласно LearnedRecipes в игровых данных."
+    ],
+    "vhs": [
+      "В список входят VHS с опытом навыков, изучением рецептов, а также исключительные вредные кассеты, которые отслеживает чек-лист.",
+      "Розничные и домашние VHS сгруппированы отдельно; многосерийные розничные шоу получают собственные группы."
+    ]
+  },
+  "skills": {
+    "Aiming": "Точность",
+    "Reloading": "Перезарядка",
+    "LongBlade": "Длинное режущее",
+    "Blunt": "Дробящее",
+    "ShortBlade": "Короткое режущее",
+    "Carpentry": "Плотничество",
+    "Carving": "Резьба",
+    "Cooking": "Кулинария",
+    "Electricity": "Электрика",
+    "Farming": "Фермерство",
+    "FirstAid": "Медицина",
+    "Fishing": "Рыболовство",
+    "FlintKnapping": "Камнеобработка",
+    "Foraging": "Собирательство",
+    "Glassmaking": "Стеклоделие",
+    "Masonry": "Каменная кладка",
+    "Mechanics": "Автомеханика",
+    "MetalWelding": "Газосварка",
+    "Blacksmith": "Кузнечное дело",
+    "Pottery": "Гончарное дело",
+    "Tailoring": "Шитьё",
+    "Trapping": "Звероловство",
+    "Husbandry": "Уход за животными",
+    "Butchering": "Мясницкое дело",
+    "Tracking": "Выслеживание",
+    "Maintenance": "Прочность",
+    "Lightfoot": "Лёгкий шаг"
+  },
+  "skillDescriptions": {
+    "Aiming": "Навык Aiming — точность стрельбы из огнестрельного оружия.",
+    "Reloading": "Навык Reloading — скорость перезарядки огнестрельного оружия.",
+    "LongBlade": "Навык LongBlade — владение длинноклинковым оружием.",
+    "Carpentry": "Навык Carpentry — строительство и работа с деревом.",
+    "Carving": "Навык Carving — создание предметов из дерева и природных материалов.",
+    "Cooking": "Навык Cooking — приготовление еды.",
+    "Electricity": "Навык Electricity — работа с электрическими устройствами.",
+    "Farming": "Навык Farming — выращивание растений и уход за огородом.",
+    "FirstAid": "Навык FirstAid — лечение ран и травм.",
+    "Fishing": "Навык Fishing — рыбная ловля.",
+    "FlintKnapping": "Навык FlintKnapping — изготовление каменных орудий.",
+    "Foraging": "Навык Foraging — поиск полезных ресурсов в природе.",
+    "Glassmaking": "Навык Glassmaking — создание стеклянных предметов и сосудов.",
+    "Masonry": "Навык Masonry — строительство из камня и кирпича.",
+    "Mechanics": "Навык Mechanics — ремонт и обслуживание автомобилей.",
+    "MetalWelding": "Навык MetalWelding — сварка и создание металлических конструкций.",
+    "Blacksmith": "Навык Blacksmith — ковка металлических инструментов и оружия.",
+    "Pottery": "Навык Pottery — создание керамических предметов.",
+    "Tailoring": "Навык Tailoring — ремонт и создание одежды.",
+    "Trapping": "Навык Trapping — установка ловушек для животных.",
+    "Husbandry": "Навык Husbandry — уход за домашним скотом и животными.",
+    "Butchering": "Навык Butchering — разделка туш животных.",
+    "Tracking": "Навык Tracking — выслеживание животных и выживших.",
+    "Maintenance": "Навык Maintenance — замедление износа инструментов и оружия."
+  },
+  "recipeGroups": {
+    "SmithingMag": "Кузнечное дело — журналы",
+    "ArmorMag": "Броня и защита — журналы",
+    "CookingMag": "Кулинария — журналы",
+    "ElectronicsMag": "Электроника — журналы",
+    "EngineerMagazine": "Инженерия / Шпионаж — журналы",
+    "FarmingMag": "Фермерство — журналы",
+    "FishingMag": "Рыболовство — журналы",
+    "GlassmakingMag": "Стеклоделие — журналы",
+    "HempMag": "Конопля — журнал",
+    "HerbalistMag": "Травничество — журнал",
+    "HuntingMag": "Охота и ловушки — журналы",
+    "KeyMag": "Слесарное дело — журнал",
+    "KnittingMag": "Вязание — журналы",
+    "MechanicMag": "Автомеханика — журналы",
+    "MetalworkMag": "Металлообработка / Сварка — журналы",
+    "PrimitiveToolMag": "Примитивные инструменты — журналы",
+    "TailoringMag": "Пошив — журналы",
+    "TrickMag": "Хитрости и шпионаж — журналы",
+    "WeaponMag": "Оружие — журналы",
+    "RadioMag": "Радио — журналы"
+  },
+  "mediaGroups": {
+    "home": "Домашние VHS-кассеты",
+    "retail-other": "Прочие розничные VHS"
+  },
+  "statuses": {
+    "boredom": "Скука",
+    "fatigue": "Усталость",
+    "panic": "Паника",
+    "stress": "Стресс"
+  },
+  "recipes": {
+    "MakeCakeBatter": "тесто для торта",
+    "MakePieDough": "тесто для пирога",
+    "MakeFishingRod": "удочка",
+    "FixFishingRod": "ремонт удочки",
+    "MakeWoodenBoxTrap": "деревянная ловушка",
+    "CraftMakeshiftRadio": "самодельное радио",
+    "MetalFloorLvl1": "металлический пол",
+    "MetalWallLvl1": "металлическая стена"
+  }
+}
